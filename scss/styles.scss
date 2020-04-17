@@ -1907,6 +1907,19 @@ footer {
 
     .list-group ul {
       margin-bottom: 0;
+
+      li .discount-price .price-discount {
+        margin-right: 0rem !important;
+      }
+
+      li .price {
+        padding-right: 0 !important;
+      }
+
+      li > p {
+
+        padding-left: .6rem !important;
+      }
     }
 
     #calculator-custom-qty {
@@ -2068,11 +2081,13 @@ footer {
         padding-left: .6rem !important;
       } 
 
-      .price-discount {
-        margin-right: .5rem !important
-      }
   }
 
+}
+
+.cros-sell-calc {
+  padding-right: 13px;
+  padding-left: 13px
 }
 
 .cross-sell-accordian-title {

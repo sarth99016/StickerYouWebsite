@@ -1754,6 +1754,18 @@ footer .mobile-accordion h5 button[aria-expanded="true"]:after {
   margin-bottom: 0;
 }
 
+.quote-calculator .calculator-bg .list-group ul li .discount-price .price-discount {
+  margin-right: 0rem !important;
+}
+
+.quote-calculator .calculator-bg .list-group ul li .price {
+  padding-right: 0 !important;
+}
+
+.quote-calculator .calculator-bg .list-group ul li > p {
+  padding-left: .6rem !important;
+}
+
 .quote-calculator .calculator-bg #calculator-custom-qty {
   color: #01acdc;
   cursor: pointer;
@@ -1907,8 +1919,9 @@ footer .mobile-accordion h5 button[aria-expanded="true"]:after {
   padding-left: .6rem !important;
 }
 
-#cross-sell-update li .price-discount {
-  margin-right: .5rem !important;
+.cros-sell-calc {
+  padding-right: 13px;
+  padding-left: 13px;
 }
 
 .cross-sell-accordian-title {
