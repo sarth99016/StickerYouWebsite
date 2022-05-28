@@ -3929,82 +3929,251 @@ footer .footer-drop-links i {
 
 /*End Product page*/
 /*Start Cart Page*/
-.cart-items {
+#cart .good-hands-msg {
+  background-color: #4C555B;
+  padding: 16px 15px;
+}
+
+#cart .good-hands-msg p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+@media all and (max-width: 767px) {
+  #cart .good-hands-msg p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  #cart .good-hands-msg p b {
+    font-weight: 700;
+  }
+}
+
+#cart .cart-head {
+  border-bottom: 1px solid #B4B4B4;
+}
+
+#cart .cart-head .select-all input {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#cart .cart-head .select-all label {
+  color: #01ACDC;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#cart .cart-items {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#cart .cart-items .cart-item {
+  position: relative;
+  border-bottom: 1px dashed #4c4c4c;
+}
+
+#cart .cart-items .cart-item > .row {
+  opacity: .3;
+  transition: opacity 150ms ease-in-out;
+}
+
+#cart .cart-items .cart-item.selected > .row {
+  opacity: 1;
+}
+
+#cart .cart-items .cart-item.selected > .row .price {
+  color: #01ACDC !important;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item .title {
+    font-size: 16px;
+  }
+}
+
+#cart .cart-items .cart-item .size, #cart .cart-items .cart-item .name {
+  font-size: 16px;
+}
+
+#cart .cart-items .cart-item .size strong, #cart .cart-items .cart-item .name strong {
+  font-weight: 500;
+}
+
+#cart .cart-items .cart-item .cart-item-price .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7B7B7B;
+}
+
+#cart .cart-items .cart-item .cart-item-price .quantity label {
+  font-size: 14px;
+}
+
+#cart .cart-items .cart-item .cart-item-price .quantity input {
+  max-width: 75px;
+  border-radius: 6px;
+  padding: 5px 12px;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item .cart-item-price .quantity input {
+    max-width: 130px;
+  }
+}
+
+#cart .cart-items .cart-item .cart-item-buttons {
+  row-gap: 1rem;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item .cart-item-buttons {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .quantity label {
+  font-size: 14px;
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .quantity input {
+  max-width: 75px;
+  border-radius: 6px;
+  padding: 5px 12px;
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .cart-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item .cart-item-buttons .cart-btn {
+    flex-grow: 1;
+  }
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .cart-btn span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #17082D;
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .separator {
+  position: relative;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+#cart .cart-items .cart-item .cart-item-buttons .separator::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 30px;
+  right: 0;
+  border-right: 1px solid #B4B4B4;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item .cart-item-buttons .separator::after {
+    height: 100%;
+  }
+}
+
+#cart .cart-items .cart-item input.checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 40%;
+  z-index: 100;
+  opacity: 1;
+}
+
+@media all and (max-width: 767px) {
+  #cart .cart-items .cart-item input.checkbox {
+    position: relative;
+  }
+}
+
+#cart .cart-items .cart-carousel .owl-dots {
+  display: flex !important;
+  bottom: 5px;
+  left: 65%;
+}
+
+#cart .cart-items .cart-carousel .owl-dots .owl-dot span {
+  width: 7px;
+  height: 7px;
+  background-color: rgba(1, 172, 220, 0.3);
+}
+
+#cart .cart-items .cart-carousel .owl-dots .owl-dot.active span {
+  background-color: #01ACDC;
+}
+
+#cart .checkout {
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.cart-items .cart-item .cart-item-price .row.quantity {
-  flex-wrap: nowrap !important;
-}
-
-.cart-items .cart-item .cart-item-price input {
-  width: 75px;
-  text-align: center;
-}
-
-.cart-items .cart-item .cart-item-price .btn {
-  padding-right: 40px;
-  padding-left: 40px;
-}
-
-.checkout {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.checkout .checkout_info {
+#cart .checkout .checkout_info {
   background-color: #f2f2f2;
   padding: 15px;
 }
 
-.checkout .checkout_info p {
+#cart .checkout .checkout_info p {
   display: flex;
   justify-content: space-between;
 }
 
-.checkout .checkout_info .total {
+#cart .checkout .checkout_info .total {
   font-weight: 500;
 }
 
-.checkout .checkout_info .checkout_button {
+#cart .checkout .checkout_info .checkout_button {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.checkout .checkout_info .checkout_button.disabled, .checkout .checkout_info .checkout_button:disabled {
+#cart .checkout .checkout_info .checkout_button.disabled, #cart .checkout .checkout_info .checkout_button:disabled {
   background-color: #969696;
 }
 
-.checkout .checkout_specials .promo-code {
+#cart .checkout .checkout_specials .promo-code {
   background-color: #f2f2f2;
   padding: 15px;
 }
 
-.checkout .checkout_specials .instrctions {
+#cart .checkout .checkout_specials .instrctions {
   background-color: #f2f2f2;
   padding: 15px;
 }
 
-.checkout .checkout_specials p {
+#cart .checkout .checkout_specials p {
   font-size: 15px;
 }
 
-.checkout .checkout_questions p {
+#cart .checkout .checkout_questions p {
   font-size: 15px;
 }
 
-.payment-information {
+#cart .payment-information {
   background-color: #F5F5F5;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
-.cart-item {
-  position: relative;
-}
-
-.cart-item-bottom {
+#cart .cart-item-bottom {
   position: absolute;
   bottom: 0;
   flex-direction: row !important;
@@ -4012,7 +4181,7 @@ footer .footer-drop-links i {
   left: 165px;
 }
 
-.cart-item-bottom .btn {
+#cart .cart-item-bottom .btn {
   padding-right: 40px;
   padding-left: 40px;
 }

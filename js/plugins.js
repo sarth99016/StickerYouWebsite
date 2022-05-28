@@ -1,6 +1,27 @@
 $(document).ready(function () {
   "use strict";
 
+  $(".cart-carousel").owlCarousel({
+    //Responsive
+    loop: false,
+    margin: 10,
+    nav: false,
+    dots: true,  
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+        stagePadding: 0,
+        margin: 18,
+        mouseDrag: true,
+        touchDrage: true,
+      },
+    },
+  });
+
   $(".owl-carousel").owlCarousel({
     //Responsive
     loop: false,
@@ -511,6 +532,4 @@ $(document).ready(function () {
     e.addEventListener('mouseenter', function() {target.classList.add('show')});
     e.addEventListener('mouseleave', function() {target.classList.remove('show')});
   })
-
- 
 });
