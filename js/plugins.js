@@ -4,18 +4,19 @@ $(document).ready(function () {
   $(".cart-carousel").owlCarousel({
     //Responsive
     loop: false,
-    margin: 10,
+    margin: 0,
     nav: false,
     dots: true,  
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
+        stagePadding: 0
       },
       1000: {
         items: 1,
         stagePadding: 0,
-        margin: 18,
+        margin: 0,
         mouseDrag: true,
         touchDrage: true,
       },
@@ -206,6 +207,13 @@ $(document).ready(function () {
       $('.toTop').css('bottom', '30px')
     } else {
       $('.toTop').css('bottom', '-100px')
+    }
+
+    // add shadow to sticky checkout when it reeaches top of page
+    if($(this).scrollTop() >= $('#sticky-checkout').offset().top) {
+      $('#sticky-checkout').addClass('shadow-b')
+    } else {
+      $('#sticky-checkout').removeClass('shadow-b')
     }
   });
 

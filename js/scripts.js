@@ -164,13 +164,27 @@
   if ($(window).innerWidth() <= 768) {
     $('.category-items.guest').appendTo(host);
     $('.art-asset .row.guest').insertBefore('.art-asset .row.host');
-    $('.cart-item-buttons.guest').insertAfter('.cart-item .host-1');
-    $('.quantity.guest').insertAfter('.cart-item-price p');
+    $('.cart-item-buttons.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).insertAfter(parentEl.find('.host-1'))
+    });
+
+    $('.quantity.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).insertAfter(parentEl.find('.cart-item-price p'))
+    });
   } else {
     $('.category-items.guest').insertAfter(sibling);
     $('.art-asset .row.guest').prependTo('.section-content');
-    $('.cart-item-buttons.guest').appendTo('.cart-item .host-1');
-    $('.quantity.guest').prependTo('.cart-item-buttons.guest');
+    $('.cart-item-buttons.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).appendTo(parentEl.find('.host-1'))
+    });
+
+    $('.quantity.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).prependTo(parentEl.find('.cart-item-buttons.guest'))
+    });
   }
 
   $(window).resize(function () {
@@ -183,13 +197,27 @@
     if ($(this).innerWidth() <= 768) {
       $('.category-items.guest').appendTo(host);
       $('.art-asset .row.guest').insertBefore('.art-asset .row.host');
-      $('.cart-item-buttons.guest').insertAfter('.cart-item .host-1');
-      $('.quantity.guest').insertAfter('.cart-item-price p');
+      $('.cart-item-buttons.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).insertAfter(parentEl.find('.host-1'))
+    });
+
+    $('.quantity.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).insertAfter(parentEl.find('.cart-item-price p'))
+    });
     } else {
       $('.category-items.guest').insertAfter(sibling);
       $('.art-asset .row.guest').prependTo('.section-content');
-      $('.cart-item-buttons.guest').appendTo('.cart-item .host-1');
-      $('.quantity.guest').prependTo('.cart-item-buttons.guest');
+      $('.cart-item-buttons.guest').each( function() {
+      const parentEl = $(this).parents('.cart-item');
+      $(this).appendTo(parentEl.find('.host-1'))
+      });
+
+      $('.quantity.guest').each( function() {
+        const parentEl = $(this).parents('.cart-item');
+        $(this).prependTo(parentEl.find('.cart-item-buttons.guest'))
+      });
     }
   });
 
@@ -336,5 +364,17 @@
       $(this).parents('.cart-item').removeClass('selected');
     }
   })
+
+    $('.cart-item input.checkbox').each(function() {
+      if(this.checked) {
+        $(this).parents('.cart-item').addClass('selected');
+      }
+    })
   
+  //select/unselect all items when clicking "select all" checkbox
+
+  $('input#select-all').change(function() {
+    $('.cart-item input.checkbox').trigger('click');
+  });
+
 })(jQuery);
