@@ -4144,9 +4144,15 @@ footer .footer-drop-links i {
   #sticky-checkout {
     z-index: 999;
     background-color: #fff;
-    transition:  shadow 150ms ease-in-out;
+    bottom: -200px;
+    opacity: 0;
+    transition:  shadow, opacity, bottom 300ms ease-in-out;
     &.shadow-b {
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    &.show {
+      bottom: 0;
+      opacity: 1;
     }
   }
   .good-hands-msg {
@@ -4198,6 +4204,9 @@ footer .footer-drop-links i {
     .cart-item {
       position: relative;
       border-bottom: 1px dashed #4c4c4c;
+      &:last-of-type {
+        border-bottom: 0;
+      }
       @include respond-to-screen-size-by-min($sm) {
       padding-left: 20px;
         }

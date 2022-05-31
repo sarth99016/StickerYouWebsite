@@ -160,7 +160,23 @@ $(document).ready(function () {
     },
   });
 
+  // Initialise Carousel
+  const cartCarousel = new Carousel(document.querySelector("#cart-carousel"), {
+    Dots: false,
+  });
 
+  // Customize Fancybox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: {
+      on: {
+        change: (that) => {
+          cartCarousel.slideTo(cartCarousel.findPageForSlide(that.page), {
+            friction: 0,
+          });
+        },
+      },
+    },
+  });
 
   
   // Where we located on the page
@@ -188,7 +204,6 @@ $(document).ready(function () {
 
   // Menu & Search Dissapear On Scroll 1/4 Page and reappear on scrolling up
   $(window).scroll(function () {
-    console.log($(this).scrollTop());
     let sTop = $(this).scrollTop();
     let headerH = $("header").innerHeight();
     if ($(this).scrollTop() > winH / 10) {
@@ -215,8 +230,14 @@ $(document).ready(function () {
     } else {
       $('#sticky-checkout').removeClass('shadow-b')
     }
-  });
 
+    // Show up the sticky "coninue to checkout" box when user scroll down to the 4th item
+    if($(this).scrollTop() > $('#cart .cart-items .cart-item:nth-of-type(5)').offset().top) {
+      $('#sticky-checkout').addClass('show')
+    } else {
+      $('#sticky-checkout').removeClass('show')
+    }
+  });
   // hide navbar search by the time you scroll down to the first row of product
   $(window).scroll(function () {
     if ($(".feature-products .custom-stickers") === true) {
