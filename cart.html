@@ -1509,72 +1509,73 @@
 
           <!-- Start checkout box -->
           <div class="checkout col-lg-4 pl-lg- mt-5 mt-lg-0">
-            <div class="title d-flex align-items-center justify-content-between">
-              <h2 class="checkout_heading">Order Summary</h2>
-              <img  src="./img/verisign.png" alt="virsion secured">
-            </div>
-            <div class="checkout_info mb-4">
-              <p class="mb-2">
-                <span class="items_num">Subtotal (<span class="num">3</span> items)</span> 
-                <span id="subtotal">$159.98</span>
-              </p>
-              <p class="mb-2">
-                <span>Shipping Method</span>
-                <span id="shipping">-</span>
-              </p>
-              <p class="mb-2">
-                <span>Aproximate Shipping </span> 
-                <span id="approx-shipping">-</span>
-              </p>
-              <p class="mb-2">
-                <span>Tax</span> 
-                <span id="tax">$17</span>
-              </p>
-              <hr class="my-3 w-100" />
-              <p class=" total">
-                <strong>Total (USD)</strong> 
-                <span id="total">$159.98</span>
-              </p>
-              <a href="#">
-                <button class="checkout_button btn btn-primary w-100">
-                  Continue to Secure Checkout
-                </button>
-              </a>
-              <div class="afterpay d-flex align-items-center flex-wrap mt-3 mb-4">
-                <span>4 payments of $25.23  with</span>
-                <img src="./img/afterpay.svg" alt="afterpay">
-                <img src="./img/icon-library/question-mark.svg" alt="question-mark">
+            <div class="checkout_wrapper">
+              <div class="title d-flex align-items-center justify-content-between">
+                <h2 class="checkout_heading">Order Summary</h2>
+                <img  src="./img/verisign.png" alt="virsion secured">
               </div>
-              <div class="we-accept">
-                <h4 class="mb-2">We Accept</h4>
-                <div class="logos">
-                  <img class="w-100" src="./img/payment-methods.svg" alt="payment-methods">
+              <div class="checkout_info mb-4">
+                <p class="mb-2">
+                  <span class="items_num">Subtotal (<span class="num">3</span> items)</span> 
+                  <span id="subtotal">$159.98</span>
+                </p>
+                <p class="mb-2">
+                  <span>Shipping Method</span>
+                  <span id="shipping">-</span>
+                </p>
+                <p class="mb-2">
+                  <span>Aproximate Shipping </span> 
+                  <span id="approx-shipping">-</span>
+                </p>
+                <p class="mb-2">
+                  <span>Tax</span> 
+                  <span id="tax">$17</span>
+                </p>
+                <hr class="my-3 w-100" />
+                <p class=" total">
+                  <strong>Total (USD)</strong> 
+                  <span id="total">$159.98</span>
+                </p>
+                <a href="./checkout.html">
+                  <button class="checkout_button btn btn-primary w-100">
+                    Continue to Secure Checkout
+                  </button>
+                </a>
+                <div class="afterpay d-flex align-items-center flex-wrap mt-3 mb-4">
+                  <span>4 payments of $25.23  with</span>
+                  <img src="./img/afterpay.svg" alt="afterpay">
+                  <img src="./img/icon-library/question-mark.svg" alt="question-mark">
+                </div>
+                <div class="we-accept">
+                  <h4 class="mb-2">We Accept</h4>
+                  <div class="logos">
+                    <img class="w-100" src="./img/payment-methods.svg" alt="payment-methods">
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="checkout_questions">
+                <div class="checkout_ques mb-3">
+                  <h4>Promo Code? Special Instructions?</h4>
+                  <p>
+                    Don't worry! You can enter this information in the later
+                    stages of the cheskout process
+                  </p>
+                </div>
+                <div class="checkout_ques">
+                  <h4>Satisfaction Guaranteed</h4>
+                  <p>
+                    You will love our products. We guarantee it! <br />
+                    Question? <a href="#">Contact Us</a>
+                  </p>
+                </div>
 
-            <div class="checkout_questions">
-              <div class="checkout_ques mb-3">
-                <h4>Promo Code? Special Instructions?</h4>
-                <p>
-                  Don't worry! You can enter this information in the later
-                  stages of the cheskout process
-                </p>
+                <a href="#">
+                  <button class="download-invoice btn btn-outline d-flex align-items-center justify-content-between">
+                    <img src="./img/icon-library/Download.svg" alt="Download">
+                    <span>Download Invoice</span>
+                  </button>
+                </a>
               </div>
-              <div class="checkout_ques">
-                <h4>Satisfaction Guaranteed</h4>
-                <p>
-                  You will love our products. We guarantee it! <br />
-                  Question? <a href="#">Contact Us</a>
-                </p>
-              </div>
-
-              <a href="#">
-                <button class="download-invoice btn btn-outline d-flex align-items-center justify-content-between">
-                  <img src="./img/icon-library/Download.svg" alt="Download">
-                  <span>Download Invoice</span>
-                </button>
-              </a>
             </div>
           </div>
           <!-- End checkout box -->
@@ -1588,7 +1589,7 @@
     </div>
   </main>
 
-  <!-- Modal -->
+  <!-- Delete Modal popup -->
   <div class="modal fade pr-0" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -1609,7 +1610,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal popup -->
+  <!-- Delete Modal popup -->
 
   <!-- Footer -->
   <footer class="container-fluid py-5">
