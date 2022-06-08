@@ -4813,9 +4813,12 @@ footer .footer-drop-links i {
       .card {
         border: 1px solid #ededed;
         border-radius: 12px;
-        &.active {
-          border-color: #01ACDC
+        transition: all 300ms ease-in-out;
+        &.active, &:hover {
+          border-color: #01ACDC;
+          cursor: pointer
         }
+        
         .card-body {
           padding: 1rem 3rem;
           @include respond-to-screen-size-by-max(480px) {
@@ -4839,7 +4842,10 @@ footer .footer-drop-links i {
       .card-header {
         background: transparent;
         border: none;
-        padding: 12px 16px ;
+        padding: 0 ;
+        .btn {
+          padding: 12px 16px;
+        }
       }
       label {
         text-align: left;
@@ -4883,6 +4889,9 @@ footer .footer-drop-links i {
           }
       }
       .submit {
+        label {
+          cursor: pointer;
+        }
         input[type=checkbox] {
           width: 16px;
           height: 16px;
@@ -4898,18 +4907,22 @@ footer .footer-drop-links i {
     .table-row {
       padding-top: .75rem;
       padding-bottom: .75rem;
-      border-bottom: 1px solid #ddd;
       align-items: center;
       background-color: transparent;
       border: 1px solid #dedede;
       border-radius: 12px;
       margin-bottom: 12px;
+      transition: all 300ms ease-in-out;
       &.active {
         border-color: #01ACDC;
       }
       .default {
         font-size: 16px;
         font-weight: 600;
+      }
+      &:hover {
+        border-color: #01ACDC;
+        cursor: pointer;
       }
     }
   }
@@ -5045,6 +5058,9 @@ footer .footer-drop-links i {
         border: 1px solid #ededed;
         border-radius: 12px;
         gap: 12px;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+        &:hover{border-color: #01ACDC;}
         .custom-radio-button {
           // display: inline-flex;
           line-height: 0;
@@ -5080,6 +5096,7 @@ footer .footer-drop-links i {
 
     .tfoot {
       .custom-checkbox-button {
+        cursor: pointer;
         line-height: 24px;
         @include respond-to-screen-size-by-max($sm) {
           line-height: 0;    

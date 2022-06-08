@@ -1817,7 +1817,7 @@
   </header>
   <!-- secondary Header -->
 
-  <main id="checkout">
+  <main id="checkout" class="pb-5">
     <!-- Top nav bar -->
     <div class="top-nav">
       <div class="container">
@@ -1844,7 +1844,7 @@
           <!-- Drop down -->
           <div class=" d-md-block">
             
-            <div class="tab-content pb-5" id="nav-tabContent">
+            <div class="tab-content pb-5 pb-lg-0" id="nav-tabContent">
               <div class="tab-pane fade tab-shipping show active" id="shipping" role="tabpanel"
                   aria-labelledby="shipping-tab">
                   <!-- Proceed error message -->
@@ -1871,7 +1871,7 @@
 
                 <div class="shipping-address-table mb-5">
                   <div class="table-wrapper">
-                    <label class="table-row">
+                    <label class="table-row active">
                       <div class="address-column font-weight-light d-flex align-items-start">
                         <div class="radio pr-3">
                           <span class="custom-radio-button">
@@ -1920,7 +1920,7 @@
                       <div class="card">
                         <div class="card-header" id="headingOne">
                           <h2 class="mb-0">
-                            <button id="#add-new-address-btn" class="btn btn-link btn-block text-left d-flex align-items-center p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button id="#add-new-address-btn" class="btn btn-link btn-block text-left d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="address" id="add-new-address" value="add-new-address">
@@ -2310,10 +2310,15 @@
                                 </label>
                               </div>
                               <div class="mt-4 text-left submit">
-                                <label class="w-100 mb-1 d-flex align-items-center">
-                                  <input type="checkbox" aria-label="Checkbox for following text input">
+                                <label class="custom-checkbox-button pr-3">
+                                  <input type="checkbox" id="shipped-order" class="d-none">
+                                  <span class="ml-0 mr-1"></span>
                                   <span>Make this address my default</span>
                                 </label>
+                                <!-- <label class="w-100 mb-1 d-flex align-items-center">
+                                  <input type="checkbox" aria-label="Checkbox for following text input">
+                                  <span>Make this address my default</span>
+                                </label> -->
                               </div>
                             </form>
                           </div>
@@ -2463,7 +2468,7 @@
                       <div class="card active">
                         <div class="card-header" id="headingThree">
                           <h2 class="mb-0">
-                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center  p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="pay" id="" value="visa-mastercard" checked="true">
@@ -2549,7 +2554,7 @@
                       <div class="card">
                         <div class="card-header" id="headingFour">
                           <h2 class="mb-0">
-                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center  p-0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="pay" id="pay-with-paypal" value="paypal">
@@ -2578,7 +2583,7 @@
                       <div class="card">
                         <div class="card-header" id="headingFive">
                           <h2 class="mb-0">
-                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center  p-0" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="pay" id="pay-with-afterpay" value="afterpay">
@@ -2610,7 +2615,7 @@
                       <div class="card">
                         <div class="card-header" id="headingSix">
                           <h2 class="mb-0">
-                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center  p-0" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <button id="" class="btn btn-link btn-block text-left d-flex align-items-center " type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="pay" id="pay-with-afterpay" value="amex">
@@ -2706,7 +2711,7 @@
                       <div class="card">
                         <div class="card-header" id="headingOne">
                           <h2 class="mb-0">
-                            <button id="#add-new-address-btn" class="btn btn-link btn-block text-left d-flex align-items-center p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button id="#add-new-address-btn" class="btn btn-link btn-block text-left d-flex align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               <div class="radio pr-3">
                                 <span class="custom-radio-button">
                                     <input type="radio" name="shipping" id="" value="add-new-address">
@@ -3451,7 +3456,7 @@
                   </a>
                 </div>
                 <!-- Questions -->
-                <div class="checkout_questions mt-5">
+                <div class="checkout_questions mt-4">
                   <div class="checkout_ques promo">
                     <h4>Promo Code? Special Instructions?</h4>
                     <p>
@@ -3986,8 +3991,10 @@
           // change checkbtn text when stitch between methods
           if($(this).find('input[name=pay]').val() == 'paypal') {
             $(checkoutBtn).find('span').text('Place your order with')
+            $(checkoutBtn).find('img').addClass('d-none')
             $(checkoutBtn).find('img.paypal').removeClass('d-none')
             $(mobileCheckoutBtn).find('span').text('Place your order with')
+            $(mobileCheckoutBtn).find('img').addClass('d-none')
             $(mobileCheckoutBtn).find('img.paypal').removeClass('d-none')
           } else if ($(this).find('input[name=pay]').val() == 'afterpay') {
             $(checkoutBtn).find('span').text('Place your order with')
@@ -4021,7 +4028,7 @@
         $('.billing-address-table  .table-row').on('click', function() {
           $(this).find('input:radio[name=shipping]').prop('checked', true);
           $(this).parents('.billing-address-table').find('.accordion .card').removeClass('active');
-          $(this).parents('.billing-address-table').find('.accordion #collapseOne').removeClass('show');
+          // $(this).parents('.billing-address-table').find('.accordion #collapseOne').removeClass('show');
         });
 
         //radio buttons listener
@@ -4142,56 +4149,78 @@
         checkoutBtn.click(checkoutBtnHandler)
         mobileCheckoutBtn.click(checkoutBtnHandler)
 
-        $('#same-shipping-address').change(function (event) {
-            if (this.checked) {
-                $('#not-same-shipping-address').addClass('d-none')
-            } else {
-                $('#not-same-shipping-address').removeClass('d-none')
-            }
-        })
+        // $('#same-shipping-address').change(function (event) {
+        //     if (this.checked) {
+        //         $('#not-same-shipping-address').addClass('d-none')
+        //     } else {
+        //         $('#not-same-shipping-address').removeClass('d-none')
+        //     }
+        // })
 
+        // Hide Add New Address when clicks on any existing  address
+        $('.shipping-address-table .table-row').click(function (e) { 
+          $('.add-new-address #collapseOne').animate({height: '0'}, 300)
+          setTimeout(() => {$('.add-new-address #collapseOne').attr('class', 'collapse')  }, 300)
+        });
+        // when click on one payment option Hide other payment options
+        $('#payment .accordion .card-header .btn').click(function (e) { 
+          $(this).parents('.accordion').siblings().find('[data-parent="#accordionExample"]').animate({height: '0'}, 300)
+          setTimeout(() => {$(this).parents('.accordion').siblings().find('[data-parent="#accordionExample"]').attr('class', 'collapse')  }, 300)
+        });
+        $('#payment .payment-details .table-row').click(function (e) { 
+          $(this).parents('.payment-details').find('.accordion').find('[data-parent="#accordionExample"]').animate({height: '0'}, 300)
+          setTimeout(() => {$(this).parents('.payment-details').find('.accordion').find('[data-parent="#accordionExample"]').attr('class', 'collapse')  }, 300)
+        });
+        $('#payment .billing-address-table .table-row').click(function (e) { 
+          // alert('ss')
+          $(this).parents('.billing-address-table').find('.accordion').find('[data-parent="#accordionExample"]').animate({height: '0'}, 300)
+          setTimeout(() => {$(this).parents('.billing-address-table').find('.accordion').find('[data-parent="#accordionExample"]').attr('class', 'collapse')  }, 300)
+        });
 
+        
         // add new addres form submit
-        $('#add-new-address-form').submit(function (event) {
-            event.preventDefault();
-            const firstName = $(this).find('[name=first-name]');
-            const lastName = $(this).find('[name=last-name]');
-            const company = $(this).find('[name=company]');
-            const address = $(this).find('[name=address]');
-            const telephone = $(this).find('[name=telephone]');
-            const townCity = $(this).find('[name=town-city]');
-            const country = $(this).find('[name=country]');
-            const stateProvince = $(this).find('[name=state-province]');
-            const zipPostalCode = $(this).find('[name=zip-postal-code]');
+        // $('#add-new-address-form').submit(function (event) {
+
+        //     event.preventDefault();
+        //     const firstName = $(this).find('[name=first-name]');
+        //     const lastName = $(this).find('[name=last-name]');
+        //     const company = $(this).find('[name=company]');
+        //     const address = $(this).find('[name=address]');
+        //     const telephone = $(this).find('[name=telephone]');
+        //     const townCity = $(this).find('[name=town-city]');
+        //     const country = $(this).find('[name=country]');
+        //     const stateProvince = $(this).find('[name=state-province]');
+        //     const zipPostalCode = $(this).find('[name=zip-postal-code]');
 
 
-            if (
-                firstName.val() && lastName.val() &&
-                company.val() && address.val() &&
-                telephone.val() && townCity.val() &&
-                country.val() && stateProvince.val() &&
-                zipPostalCode.val()
-            ) {
-                const id = Date.now()
-                const row = document.createElement('div')
-                $(row).addClass('table-row');
-                const html = `
-                <div class="address-column font-weight-light d-flex align-items-center">
-                    <div class="radio pr-3">
-                        <input type="radio" name="address" id="address${id}" value="id">
-                    </div>
-                    <label for="address${id}" class="info">
-                        <p class="mb-1">${firstName.val()} ${lastName.val()}</p>
-                        <span>${address.val()}, ${townCity.val()}, ${stateProvince.val()} ${zipPostalCode.val()}, ${country.val()}</span>
-                    </label>
-                </div>
-                `
-                $(row).html(html);
-                $('.shipping-address-table .table-wrapper .table-row').last().after(row);
-                this.reset()
-                $(this).parents('.table-row').addClass('d-none');
-            }
-        })
+        //     if (
+        //         firstName.val() && lastName.val() &&
+        //         company.val() && address.val() &&
+        //         telephone.val() && townCity.val() &&
+        //         country.val() && stateProvince.val() &&
+        //         zipPostalCode.val()
+        //     ) {
+        //         const id = Date.now()
+        //         const row = document.createElement('div')
+        //         $(row).addClass('table-row');
+        //         const html = `
+        //         <div class="address-column font-weight-light d-flex align-items-center">
+        //             <div class="radio pr-3">
+        //                 <input type="radio" name="address" id="address${id}" value="id">
+        //             </div>
+        //             <label for="address${id}" class="info">
+        //                 <p class="mb-1">${firstName.val()} ${lastName.val()}</p>
+        //                 <span>${address.val()}, ${townCity.val()}, ${stateProvince.val()} ${zipPostalCode.val()}, ${country.val()}</span>
+        //             </label>
+        //         </div>
+        //         `
+        //         $(row).html(html);
+        //         $('.shipping-address-table .table-wrapper .table-row').last().after(row);
+        //         this.reset()
+        //         $(this).parents('.table-row').addClass('d-none');
+        //     }
+        // })
+
     </script>
 </body>
 

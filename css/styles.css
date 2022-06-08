@@ -4682,10 +4682,12 @@ footer .footer-drop-links i {
 #checkout #payment .accordion .card, #checkout .shipping-address-table .accordion .card, #checkout .billing-address-table .accordion .card {
   border: 1px solid #ededed;
   border-radius: 12px;
+  transition: all 300ms ease-in-out;
 }
 
-#checkout #payment .accordion .card.active, #checkout .shipping-address-table .accordion .card.active, #checkout .billing-address-table .accordion .card.active {
+#checkout #payment .accordion .card.active, #checkout #payment .accordion .card:hover, #checkout .shipping-address-table .accordion .card.active, #checkout .shipping-address-table .accordion .card:hover, #checkout .billing-address-table .accordion .card.active, #checkout .billing-address-table .accordion .card:hover {
   border-color: #01ACDC;
+  cursor: pointer;
 }
 
 #checkout #payment .accordion .card .card-body, #checkout .shipping-address-table .accordion .card .card-body, #checkout .billing-address-table .accordion .card .card-body {
@@ -4710,6 +4712,10 @@ footer .footer-drop-links i {
 #checkout #payment .accordion .card-header, #checkout .shipping-address-table .accordion .card-header, #checkout .billing-address-table .accordion .card-header {
   background: transparent;
   border: none;
+  padding: 0;
+}
+
+#checkout #payment .accordion .card-header .btn, #checkout .shipping-address-table .accordion .card-header .btn, #checkout .billing-address-table .accordion .card-header .btn {
   padding: 12px 16px;
 }
 
@@ -4757,6 +4763,10 @@ footer .footer-drop-links i {
   color: #868B92;
 }
 
+#checkout #payment .accordion .submit label, #checkout .shipping-address-table .accordion .submit label, #checkout .billing-address-table .accordion .submit label {
+  cursor: pointer;
+}
+
 #checkout #payment .accordion .submit input[type=checkbox], #checkout .shipping-address-table .accordion .submit input[type=checkbox], #checkout .billing-address-table .accordion .submit input[type=checkbox] {
   width: 16px;
   height: 16px;
@@ -4772,12 +4782,12 @@ footer .footer-drop-links i {
 #checkout #payment .table-row, #checkout .shipping-address-table .table-row, #checkout .billing-address-table .table-row {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  border-bottom: 1px solid #ddd;
   align-items: center;
   background-color: transparent;
   border: 1px solid #dedede;
   border-radius: 12px;
   margin-bottom: 12px;
+  transition: all 300ms ease-in-out;
 }
 
 #checkout #payment .table-row.active, #checkout .shipping-address-table .table-row.active, #checkout .billing-address-table .table-row.active {
@@ -4787,6 +4797,11 @@ footer .footer-drop-links i {
 #checkout #payment .table-row .default, #checkout .shipping-address-table .table-row .default, #checkout .billing-address-table .table-row .default {
   font-size: 16px;
   font-weight: 600;
+}
+
+#checkout #payment .table-row:hover, #checkout .shipping-address-table .table-row:hover, #checkout .billing-address-table .table-row:hover {
+  border-color: #01ACDC;
+  cursor: pointer;
 }
 
 #checkout .billing-address-table label {
@@ -4914,6 +4929,12 @@ footer .footer-drop-links i {
   border: 1px solid #ededed;
   border-radius: 12px;
   gap: 12px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+#checkout .shipping-methods-table .shipping-method-item label:hover {
+  border-color: #01ACDC;
 }
 
 #checkout .shipping-methods-table .shipping-method-item label .custom-radio-button {
@@ -4948,6 +4969,7 @@ footer .footer-drop-links i {
 }
 
 #checkout .shipping-methods-table .tfoot .custom-checkbox-button {
+  cursor: pointer;
   line-height: 24px;
 }
 
