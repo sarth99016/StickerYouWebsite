@@ -491,13 +491,14 @@ i.fa.fa-angle-down,
 }
 
 .custom-checkbox-button input[type=checkbox] + span {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   display: inline-block;
   border-width: 1px;
   border-style: solid;
   border-color: #C7C7C7;
-  border-radius: 2px;
+  border-radius: 50%;
   position: relative;
   vertical-align: middle;
 }
@@ -515,9 +516,9 @@ i.fa.fa-angle-down,
   content: '\2713';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 3px;
   color: #fff;
-  line-height: 15px;
+  line-height: 19px;
   font-size: 15px;
   font-weight: 400;
 }
@@ -4280,7 +4281,7 @@ footer .footer-drop-links i {
   justify-content: space-between;
 }
 
-#cart .checkout .checkout_info #subtotal, #cart .checkout .checkout_info #shipping, #cart .checkout .checkout_info #handling, #cart .checkout .checkout_info #tax, #checkout .checkout .checkout_info #subtotal, #checkout .checkout .checkout_info #shipping, #checkout .checkout .checkout_info #handling, #checkout .checkout .checkout_info #tax {
+#cart .checkout .checkout_info #subtotal, #cart .checkout .checkout_info #shipping, #cart .checkout .checkout_info #handling, #cart .checkout .checkout_info #tax, #cart .checkout .checkout_info #items-num .num, #checkout .checkout .checkout_info #subtotal, #checkout .checkout .checkout_info #shipping, #checkout .checkout .checkout_info #handling, #checkout .checkout .checkout_info #tax, #checkout .checkout .checkout_info #items-num .num {
   font-weight: 500;
 }
 
@@ -4359,11 +4360,15 @@ footer .footer-drop-links i {
   font-size: 14px;
   color: #000;
   transform: rotate(0);
-  transition: transform 150ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 #cart .checkout .accordion .card-header .btn[aria-expanded=true] .bi, #checkout .checkout .accordion .card-header .btn[aria-expanded=true] .bi {
   transform: rotate(180deg);
+}
+
+#cart .checkout .accordion .collapsing, #checkout .checkout .accordion .collapsing {
+  transition: height 450ms ease-in-out !important;
 }
 
 #cart .checkout .accordion .card-body, #checkout .checkout .accordion .card-body {
@@ -4570,7 +4575,6 @@ footer .footer-drop-links i {
   font-size: 15px;
   font-weight: 500;
   line-height: 27px;
-  margin-right: 15px;
 }
 
 #checkout .top-nav .nav-tabs .nav-item::after {
@@ -4716,7 +4720,7 @@ footer .footer-drop-links i {
 }
 
 #checkout #payment .accordion .card-header .btn, #checkout .shipping-address-table .accordion .card-header .btn, #checkout .billing-address-table .accordion .card-header .btn {
-  padding: 12px 16px;
+  padding: 12px;
 }
 
 #checkout #payment .accordion label, #checkout .shipping-address-table .accordion label, #checkout .billing-address-table .accordion label {
@@ -4973,12 +4977,6 @@ footer .footer-drop-links i {
   line-height: 24px;
 }
 
-@media all and (max-width: 768px) {
-  #checkout .shipping-methods-table .tfoot .custom-checkbox-button {
-    line-height: 0;
-  }
-}
-
 #checkout .shipping-methods-table .tfoot label {
   font-weight: 600;
   font-size: 16px;
@@ -4986,6 +4984,37 @@ footer .footer-drop-links i {
 
 #checkout .shipping-methods-table .tfoot label p {
   font-weight: 400 !important;
+}
+
+#checkout .shipping-methods-table .custom-radio-button input[type=radio] + span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#checkout .shipping-methods-table .custom-radio-button input[type=radio] + span:after {
+  font-weight: 400;
+}
+
+#checkout .shipping-methods-table .custom-radio-button input[type=radio]:checked + span {
+  border-color: transparent;
+  background-color: #01ACDC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#checkout .shipping-methods-table .custom-radio-button input[type=radio]:checked + span:after {
+  content: '\2713';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  line-height: 19px;
+  font-size: 13px;
+  color: #fff;
+  background-color: transparent;
 }
 
 #checkout .alert {
@@ -5081,6 +5110,14 @@ footer .footer-drop-links i {
   box-shadow: 0px 4px 16px #F5F5F5;
   border-radius: 16px;
   padding: 32px;
+}
+
+@media all and (max-width: 768px) {
+  #checkout #order-confirmation #review-your-order {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
 }
 
 #checkout #register {

@@ -1828,17 +1828,28 @@
             <span class="ml-2">Back to Shopping Cart</span>
           </a>
           <nav class="nav nav-tabs justify-content-between justify-content-lg-center" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active flex-column flex-md-row" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="true"><span class="num mb-2 mb-md-0">1</span> Shipping & Delivery</a>
+            <a class="nav-item nav-link active flex-column flex-md-row" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="true">
+              <span class="num mb-2 mb-md-0 mr-md-3">1</span>
+              <span class="d-none d-md-inline">Shipping & Delivery</span>
+              <span class="d-md-none">Shipping</span>
+            </a>
 
-            <a class="nav-item nav-link flex-column flex-md-row" id="review-and-pay-tab" data-toggle="tab" href="#review-and-pay" role="tab" aria-controls="review-and-pay" aria-selected="false"><span class="num mb-2 mb-md-0">2</span>Payment & Billing</a>
+            <a class="nav-item nav-link flex-column flex-md-row" id="review-and-pay-tab" data-toggle="tab" href="#review-and-pay" role="tab" aria-controls="review-and-pay" aria-selected="false">
+              <span class="num mb-2 mb-md-0 mr-md-3">2</span>
+              <span class="d-none d-md-inline">Payment & Billing</span>
+              <span class="d-md-none">Payment</span>
+            </a>
 
-            <a class="nav-item nav-link flex-column flex-md-row" id="order-confirmation-tab" data-toggle="tab" href="#order-confirmation" role="tab" aria-controls="order-confirmation" aria-selected="false"><span class="num mb-2 mb-md-0">3</span> Confirmation </a>
+            <a class="nav-item nav-link flex-column flex-md-row" id="order-confirmation-tab" data-toggle="tab" href="#order-confirmation" role="tab" aria-controls="order-confirmation" aria-selected="false">
+              <span class="num mb-2 mb-md-0 mr-md-3">3</span> 
+              Confirmation 
+            </a>
           </nav>
         </div>
       </div>
     </div>
     <!-- Top nav bar -->
-    <div class="container checkout-container mt-3 mt-md-5">
+    <div class="container checkout-container mt-5">
       <div class="row align-items-start gap-wide">
         <div class="col-lg">
           <!-- Drop down -->
@@ -2440,13 +2451,15 @@
                     </div>
                     <div class="tfoot pr-3">
                       <div class="checkbox d-flex align-items-start">
-                        <label class="custom-checkbox-button pr-3">
+                        <label class="custom-checkbox-button d-flex align-items-start ">
                           <input type="checkbox" id="shipped-order">
                           <span></span>
+                          <div class="pl-2">
+                            Check this box if order needs to be blind shipped
+                            <p class="mb-0">When checked, will not print the name and address of the sender on the package</p></div>
                         </label>
                         <label for="shipped-order">
-                            Check this box if order needs to be blind shipped
-                            <p class="mb-0">When checked, will not print the name and address of the sender on the package</p>
+                            
                         </label>
                       </div>
                     </div>
@@ -2485,7 +2498,7 @@
                           <div class="card-body">
                             <form>
                               <div class="form-group mb-3">
-                                <label class="w-100 mb-0">Name on Card <span class="text-danger">*</span>
+                                <label class="w-100 mb-0">Name On Card <span class="text-danger">*</span>
                                   <div class="input-group ">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text" id="basic-addon1">
@@ -2674,13 +2687,15 @@
                     </label>
                     <!-- payment checkbox  -->
                     <div class="checkbox">
-                      <label class="w-100 mb-1 d-flex align-items-center">
-                        <input class="mr-2" type="checkbox" aria-label="Checkbox for following text input">
-                        <span class="d-block mr-2">Make this address my default</span>
+                      <label class="custom-checkbox-button w-100 mb-3 d-flex align-items-center">
+                        <input type="checkbox" class="d-none">
+                        <span class="ml-0 mr-2"></span>
+                        <span class="d-block mr-2">Send restrictive confirmation</span>
                         <img src="./img/icon-library/exclamation.svg" alt="exclamation">
                       </label>
-                      <label class="w-100 mb-1 d-flex align-items-center">
-                        <input class="mr-2" type="checkbox" aria-label="Checkbox for following text input">
+                      <label class="custom-checkbox-button w-100 mb-0 d-flex align-items-center">
+                        <input type="checkbox" class="d-none">
+                        <span class="ml-0 mr-2"></span>
                         <span class="d-block mr-2">Purchase order # on my shipment</span>
                         <img src="./img/icon-library/exclamation.svg" alt="exclamation">
                       </label>
@@ -2718,7 +2733,7 @@
                                     <span></span>
                                 </span>
                               </div>
-                              <p class="title mb-0">Add new address</p>
+                              <p class="title mb-0">Use a Different Billing Address</p>
                             </button>
                           </h2>
                         </div>
@@ -3311,8 +3326,9 @@
                           </div>
                           <button class="btn btn-primary">Set Password</button>
                           <div class="mt-3 text-left keep">
-                            <label class="w-100 mb-1 d-flex align-items-center">
-                              <input class="mr-2" type="checkbox" aria-label="Checkbox for following text input">
+                            <label class="custom-checkbox-button w-100 mb-3 d-flex align-items-center">
+                              <input type="checkbox" class="d-none">
+                              <span class="ml-0 mr-2"></span>
                               <span>Keep me signed in</span>
                             </label>
                           </div>
@@ -3339,7 +3355,7 @@
           <!-- Drop down -->
         </div>
         <!-- Order summary -->
-          <div class="checkout col-lg-5 col-xl-4 pl-lg- mt-5 mt-lg-0">
+          <div class="checkout col-lg-5 col-xl-4 px-lg-0 mt-5 mt-lg-0">
             <div class="checkout_wrapper">
               <a href="#" class="parent_copy"></a>
               <div class="title d-flex align-items-center justify-content-between">
@@ -3426,8 +3442,12 @@
                 </div>
                 <!-- Your items -->
                 <div class="checkout_info">
+                  <p class="mb-2 d-none" id="items-num">
+                    <span>Cart items</span> 
+                    <span class="num">4</span>
+                  </p>
                   <p class="mb-2">
-                    <span class="items_num">Subtotal (<span class="num">4</span> items)</span> 
+                    <span>Subtotal (<span class="num">4</span> items)</span> 
                     <span id="subtotal">$159.98</span>
                   </p>
                   <p class="mb-2">
@@ -3450,7 +3470,7 @@
                   <a href="#" class="parent mt-4">
                     <button class="checkout_button btn btn-primary w-100 mt-4 d-flex align-items-center justify-content-center" id="checkout_button" data-role="continue">
                       <span>Proceed to Payment</span>
-                      <img class="paypal d-none" src="./img/paypal.png" alt="paypal">
+                      <img class="paypal d-none" src="./img/icon-library/PayPal.svg" alt="paypal">
                       <img class="afterpay d-none" src="./img/afterpay.svg" alt="after">
                     </button>
                   </a>
@@ -3930,7 +3950,7 @@
     <a href="#" class="">
       <button class="checkout_button btn btn-primary w-100 d-flex align-items-center justify-content-center" id="checkout_button" data-role="continue">
         <span>Proceed to Payment</span>
-        <img class="paypal d-none" src="./img/paypal.png" alt="paypal">
+        <img class="paypal d-none" src="./img/icon-library/PayPal.svg" alt="paypal">
         <img class="afterpay d-none" src="./img/afterpay.svg" alt="after">
       </button>
     </a>
@@ -4143,6 +4163,8 @@
             mobileCheckoutBtn.parents('#checkout-sticky').addClass('d-none')
             $('#review-and-pay-tab, #shipping-tab').addClass('disabled');
             $('.tab-order-confirmation').fadeIn().addClass('show');
+            $('.checkout_info #items-num').removeClass('d-none')
+            $('.checkout_wrapper .accordion').addClass('d-none')
           }
         }
 

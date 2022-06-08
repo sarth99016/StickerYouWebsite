@@ -550,13 +550,14 @@ i.fa.fa-angle-down,
 
     + {
       span {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
         display: inline-block;
         border-width: 1px;
         border-style: solid;
         border-color: #C7C7C7;
-        border-radius: 2px;
+        border-radius: 50%;
         position: relative;
         vertical-align: middle;
 
@@ -576,11 +577,12 @@ i.fa.fa-angle-down,
             content: '\2713';
             position: absolute;
             top: 0;
-            left: 0;
+            left: 3px;
             color: #fff;
-            line-height: 15px;
+            line-height: 19px;
             font-size: 15px;
             font-weight: 400;
+            
           }
         }
       }
@@ -4427,7 +4429,7 @@ footer .footer-drop-links i {
         justify-content: space-between;
       }
 
-      #subtotal, #shipping, #handling, #tax {
+      #subtotal, #shipping, #handling, #tax, #items-num .num {
         font-weight: 500;
       }
 
@@ -4504,7 +4506,7 @@ footer .footer-drop-links i {
             font-size: 14px;
             color: #000;
             transform: rotate(0);
-            transition:  transform 150ms ease-in-out
+            transition:  transform 300ms ease-in-out
           }
         &[aria-expanded=true] {
           .bi {
@@ -4512,6 +4514,9 @@ footer .footer-drop-links i {
           }
         }
         }
+      }
+      .collapsing {
+        transition: height 450ms ease-in-out !important;
       }
       .card-body {
         border: 1px solid #B4B4B4;
@@ -4702,7 +4707,6 @@ footer .footer-drop-links i {
           font-size: 15px;
           font-weight: 500;
           line-height: 27px;
-          margin-right: 15px;
         }
         &::after {
           position: absolute;
@@ -4844,8 +4848,9 @@ footer .footer-drop-links i {
         border: none;
         padding: 0 ;
         .btn {
-          padding: 12px 16px;
+          padding: 12px ;
         }
+        
       }
       label {
         text-align: left;
@@ -5062,7 +5067,6 @@ footer .footer-drop-links i {
         transition: all 300ms ease-in-out;
         &:hover{border-color: #01ACDC;}
         .custom-radio-button {
-          // display: inline-flex;
           line-height: 0;
         }
         .method {
@@ -5099,7 +5103,7 @@ footer .footer-drop-links i {
         cursor: pointer;
         line-height: 24px;
         @include respond-to-screen-size-by-max($sm) {
-          line-height: 0;    
+          // line-height: 0;    
         }
       
       }
@@ -5111,6 +5115,34 @@ footer .footer-drop-links i {
         }
       }
     }
+    .custom-radio-button input[type=radio] + span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      &:after {
+        font-weight: 400;
+      }
+    }
+    .custom-radio-button input[type=radio]:checked + span {
+      border-color: transparent;
+      background-color: #01ACDC;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      &:after {
+        content: '\2713';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        left: 4px;
+        line-height: 19px;
+        font-size: 13px;
+        color: #fff;
+        background-color: transparent;
+      }
+    }
+  
   }
 
   .alert {
@@ -5201,6 +5233,14 @@ footer .footer-drop-links i {
       box-shadow: 0px 4px 16px #F5F5F5;
       border-radius: 16px;
       padding: 32px
+    }
+
+    #review-your-order {
+      @include respond-to-screen-size-by-max($sm) {
+        border: none;
+        box-shadow: none;
+        padding: 0
+      }
     }
   }
 
