@@ -4519,9 +4519,9 @@ footer .footer-drop-links i {
         transition: height 450ms ease-in-out !important;
       }
       .card-body {
-        border: 1px solid #B4B4B4;
+        // border: 1px solid #B4B4B4;
         border-radius: 8px;
-        padding: 8px;
+        padding: 8px 0;
         .item {
           column-gap: 16px;
         }
