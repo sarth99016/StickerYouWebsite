@@ -363,6 +363,7 @@
     } else {
       $(this).parents('.cart-item').removeClass('selected');
     }
+
   })
 
     $('.cart-item input.checkbox').each(function() {
@@ -372,9 +373,45 @@
     })
   
   //select/unselect all items when clicking "select all" checkbox
-
   $('input#select-all').change(function() {
-    $('.cart-item input.checkbox').trigger('click');
+    if(!$(this).attr('checked')) {
+
+      $('.cart-item input.checkbox').trigger('click');
+    }
   });
 
+  // Change items number when check/uncheck items
+  let checkedItemsNum = $('.cart-items').children('.cart-item.selected').length
+    $('[data-value=items-num]').text(checkedItemsNum);
+    $('.cart-items .cart-item input[type=checkbox]').on('input', function() {
+      let checkedItemsNum = $('.cart-items').children('.cart-item.selected').length;
+      $('[data-value=items-num]').text(checkedItemsNum);
+    });
+
+  //change subtotal when check/uncheck items
+  let subTotal = 0;
+  let tax = parseFloat($('#tax .value').text())
+  $('.cart-items .cart-item.selected .price .value').each(function() {
+    subTotal += parseFloat($(this).text())
+  });
+  $('[data-value=sub-total] .value').text(subTotal)
+
+  // when check/uncheck items
+  $('.cart-items .cart-item input.checkbox').on('change', function(e) {
+    let price = parseFloat($(this).parents('.cart-item').find('.price .value').text())
+    if($(this).attr('checked')) {
+      subTotal -= price;
+      $('[data-value=sub-total] .value').text(subTotal)
+      $(this).removeAttr('checked')
+      $('#total .value').text(subTotal + tax)
+    } else {
+      subTotal += price;
+      $('[data-value=sub-total] .value').text(subTotal);
+      $('#total .value').text(subTotal + tax)
+      $(this).attr('checked', 'checked');
+
+    }
+  })
+
+  
 })(jQuery);

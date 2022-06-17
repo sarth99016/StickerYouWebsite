@@ -2456,10 +2456,7 @@
                           <span></span>
                           <div class="pl-2">
                             Check this box if order needs to be blind shipped
-                            <p class="mb-0">When checked, will not print the name and address of the sender on the package</p></div>
-                        </label>
-                        <label for="shipped-order">
-                            
+                            <p class="mb-0 mt-2">When checked, will not print the name and address of the sender on the package</p></div>
                         </label>
                       </div>
                     </div>
@@ -3110,7 +3107,7 @@
                               </div>
                               <div class="form-group mb-2">
                                 <label class="w-100 mb-1">
-                                  Phone Number <span class="text-danger">*</span>
+                                  Phone Number <span class="optional">(optional)</span>
                                   <input type="tel" class="form-control" name="phone" placeholder="+1 ( ___ ) ___ - ____">
                                   <span class="hint">For order fullfillment purposes</span>
                                 </label>
@@ -3992,6 +3989,9 @@
 
         // Add new address functions
         $('.accordion.add-new-address .card-header').on('click', function() {
+          if($(this).find('input:radio[name=address]').prop('checked')) {
+            return false
+          }
           $(this).find('input:radio[name=address]').prop('checked', true);
           $(this).parent().addClass('active');
           $('#checkout .shipping-address-table .table-wrapper .table-row').removeClass('active');
@@ -4194,7 +4194,6 @@
           setTimeout(() => {$(this).parents('.payment-details').find('.accordion').find('[data-parent="#accordionExample"]').attr('class', 'collapse')  }, 300)
         });
         $('#payment .billing-address-table .table-row').click(function (e) { 
-          // alert('ss')
           $(this).parents('.billing-address-table').find('.accordion').find('[data-parent="#accordionExample"]').animate({height: '0'}, 300)
           setTimeout(() => {$(this).parents('.billing-address-table').find('.accordion').find('[data-parent="#accordionExample"]').attr('class', 'collapse')  }, 300)
         });

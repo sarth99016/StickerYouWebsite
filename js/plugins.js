@@ -224,19 +224,26 @@ $(document).ready(function () {
       $('.toTop').css('bottom', '-100px')
     }
 
-    // add shadow to sticky checkout when it reeaches top of page
-    if($(this).scrollTop() >= $('#sticky-checkout').offset().top) {
-      $('#sticky-checkout').addClass('shadow-b')
-    } else {
-      $('#sticky-checkout').removeClass('shadow-b')
-    }
+    // // add shadow to sticky checkout when it reeaches top of page
+    // if($(this).scrollTop() >= $('#checkout #sticky-checkout').offset().top) {
+    //   $('#checkout #sticky-checkout').addClass('shadow-b')
+    // } else {
+    //   $('#checkout #sticky-checkout').removeClass('shadow-b')
+    // }
 
-    // Show up the sticky "coninue to checkout" box when user scroll down to the 4th item
-    if($(this).scrollTop() > $('#cart .cart-items .cart-item:nth-of-type(5)').offset().top) {
-      $('#sticky-checkout').addClass('show')
-    } else {
-      $('#sticky-checkout').removeClass('show')
-    }
+    // // Show up the sticky "coninue to checkout" box when user scroll down to the 4th item
+    // if($(this).scrollTop() > $('#cart .cart-items .cart-item:nth-of-type(5)').offset().top) {
+    //   $('#checkout #sticky-checkout').addClass('show')
+    // } else {
+    //   $('#checkout #sticky-checkout').removeClass('show')
+    // }
+
+      //add box-shadow to sticky checkout button when it reaches the top page
+      if($(this).scrollTop() >= $('#cart #sticky-checkout').offset().top) {
+        $('#cart #sticky-checkout').addClass('shadow')
+      } else {
+        $('#cart #sticky-checkout').removeClass('shadow')
+      }
   });
   // hide navbar search by the time you scroll down to the first row of product
   $(window).scroll(function () {
