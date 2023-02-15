@@ -42,45 +42,45 @@
   <header class="page-header container-fluid">
     <div class="container">
       <div class="row d-flex justify-content-center flex-column flex-sm-row">
-  
+
         <!-- Mobile Nav Toggle -->
-        <nav 
-          class="d-none primary-nav desktop mobile navbar navbar-expand-lg fixed-top-right navbar-light">
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-            data-target="#navbarNavMobileMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <nav class="d-none primary-nav desktop mobile navbar navbar-expand-lg fixed-top-right navbar-light">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavMobileMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-icon-line line-1"></span>
             <span class="navbar-icon-line line-2"></span>
             <span class="navbar-icon-line line-3"></span>
           </button>
         </nav>
-  
-        <!-- Logo -->
-          <span class="logo">
-            <a href="#"><img src="img/sylogo-2x.png" alt="StickerYou Custom Stickers" /></a>
-          </span>
-  
+
+
         <div class="nav-group col d-flex align-items-center flex-wrap ml-sm-4">
-  
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#"><img src="img/sylogo-2x.png" alt="StickerYou Custom Stickers" /></a>
+          </div>
+
           <!-- Seacrh -->
-          <div class="search input-group">
+          <div class="search input-group pt-2 px-4">
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
             <div class="input-group-append">
               <span class="input-group-text"><i class="fas fa-search"></i></span>
             </div>
           </div>
-  
+
           <!-- Secondary Nav -->
-          <div class="secondary-nav d-flex align-items-center flex-wrap flex-sm-nowrap justify-content-center">
+          <div class="secondary-nav d-flex align-items-center flex-wrap flex-md-nowrap justify-content-center pt-2">
             <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-outline-primary">Get a
                 Quote</button></a>
             <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-primary">Create Now</button></a>
-            <div class="currency dropdown show mx-2">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+            <!-- Account dropdown -->
+            <div class="currency dropdown show mx-2 d-none">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <span class="label active font-weight-400">Hi, Vivian <i class="fa fa-angle-down pl-1"></i></span>
               </a>
-  
+
               <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
                 <a class="dropdown-item currency-style" href="#">
                   <span class="label active">My Account</span>
@@ -91,62 +91,66 @@
                   <span class="label">Logout</span></a>
               </div>
             </div>
-  
+            <!-- Currency dropdown -->
             <div class="currency dropdown show mx-2">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <img class="flag" src="img/Currency/flag-usd.png" width="21" height="15" alt="USD" />
                 <span class="label active font-weight-400">USD <i class="fa fa-angle-down pl-1"></i></span>
               </a>
-  
+
               <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
-                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png"
-                    width="21" height="15" alt="USD" />
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png" width="21"
+                    height="15" alt="USD" />
                   <span class="label active">USD</span>
                 </a>
-                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png"
-                    width="21" height="15" alt="CAD" />
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png" width="21"
+                    height="15" alt="CAD" />
                   <span class="label">CAD</span></a>
-                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png"
-                    width="21" height="15" alt="GBP" />
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png" width="21"
+                    height="15" alt="GBP" />
                   <span class="label">GBP</span></a>
-                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png"
-                    width="21" height="15" alt="AUD" />
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png" width="21"
+                    height="15" alt="AUD" />
                   <span class="label">AUD</span></a>
-                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png"
-                    width="21" height="15" alt="EUR" />
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png" width="21"
+                    height="15" alt="EUR" />
                   <span class="label">EUR</span></a>
               </div>
             </div>
-  
+
             <div class="cart mx-2">
-              <a href="#"><img src="img/online-shopping-cart.png" alt="shopping cart"><span class="num">2</span></a>
+              <!-- <a href="#"><img src="img/online-shopping-cart.png" alt="shopping cart"><span class="num">2</span></a> -->
+              <a href="/account/login" title="Login" class="btn btn-circ btn-circ-user-profile">&nbsp;</a>
+              <a href="/cart" title="Your shopping cart" class="btn btn-circ btn-circ-cart">
+                <span id="cart-counter" class="num d-none">0</span>
+              </a>
             </div>
           </div>
-  
+
           <!-- primary Nav -->
           <nav class="primary-nav navbar navbar-expand-lg fixed-top-right navbar-light pl-0">
             <!-- Nav Toggler -- No Need For it
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Nav Toggler -->
-  
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- Nav Toggler -->
+
             <div class="collapse navbar-collapse show flex-column flex-sm-row" id="navbarNavAltMarkup">
               <!-- Dropdown #1 -->
               <div class="dropdown">
-                <a class="shop " href="#" role="button" id="dropdownShopLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">All Products
+                <a class="shop " href="#" role="button" id="dropdownShopLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">All Products
                   <i class="fa fa-angle-down pl-1"></i>
                 </a>
-  
+
                 <div class="dropdown-menu" aria-labelledby="dropdownShopLink">
                   <div class="row">
                     <!-- LIST #1 -->
                     <div class="col-12 col-sm-6 col-lg-3 menu_list">
                       <h4>Shop By Product</h4>
-  
+
                       <div class="dropdown-item sub">
                         <a data-show="stickers" class="" href="#">Stickers <i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #1 (STICKERS)-->
@@ -192,7 +196,7 @@
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="dropdown-item sub">
                         <a data-show="labels" class="" href="#">lables <i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #1 (STICKERS)-->
@@ -239,8 +243,8 @@
                           </div>
                         </div>
                       </div>
-  
-  
+
+
                       <div class="dropdown-item sub">
                         <a data-show="decals" class="" href="#">Decals <i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #4 (Decals)-->
@@ -282,11 +286,10 @@
                           </div>
                         </div>
                       </div>
-  
-  
+
+
                       <div class="dropdown-item sub">
-                        <a data-show="temporary-tattoos" class="" href="#">Temporary Tattoos <i
-                            class="fa fa-angle-right"></i></a>
+                        <a data-show="temporary-tattoos" class="" href="#">Temporary Tattoos <i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
                         <div class="dropdown-secondary-menu" id="temporary-tattoos">
                           <div class="row h-100">
@@ -308,7 +311,8 @@
                                     <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
                                   </a>
                                 </div>
-                                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
                               </div>
                             </div>
                             <!-- LIST #3 -->
@@ -320,13 +324,14 @@
                                     <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
                                   </a>
                                 </div>
-                                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="dropdown-item sub">
                         <a data-show="iron-on" class="" href="#">Iron-On Transfers <i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #5 (Iron-On)-->
@@ -338,14 +343,14 @@
                               <div class="card">
                                 <div class="img">
                                   <a href="#">
-                                    <img class="w-100"
-                                      src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
+                                    <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
                                       alt="Solid Iron-ons">
                                   </a>
                                 </div>
                                 <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
                                 <div class="btn-box">
-                                  <button class="btn btn-outline-primary abs"><a href="#">See All Iron-Ons</a></button>
+                                  <button class="btn btn-outline-primary abs"><a href="#">See All
+                                      Iron-Ons</a></button>
                                 </div>
                               </div>
                             </div>
@@ -377,10 +382,9 @@
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="dropdown-item sub">
-                        <a data-show="magnet" class="" href="#">Magnet<i
-                            class="fa fa-angle-right"></i></a>
+                        <a data-show="magnet" class="" href="#">Magnet<i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
                         <div class="dropdown-secondary-menu" id="magnet">
                           <div class="row h-100">
@@ -395,8 +399,8 @@
                             </div>
                             <!-- LIST #2 -->
                             <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                              
-  
+
+
                               <h4>Car Magnets</h4>
                               <div class="card">
                                 <div class="img">
@@ -404,7 +408,8 @@
                                     <img class="w-100" src="/img/products/CustomCarMagnets.jpg" alt="Custom Car Magnets">
                                   </a>
                                 </div>
-                                <p>Super durable and thicker magnets that will stay strong and last long on any vehicle.</p>
+                                <p>Super durable and thicker magnets that will stay strong and last long on any
+                                  vehicle.</p>
                               </div>
                             </div>
                             <!-- LIST #3 -->
@@ -422,12 +427,11 @@
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="dropdown-item"><a href="#">Patches</a></div>
-  
+
                       <div class="dropdown-item sub">
-                        <a data-show="packaging-pouches" class="" href="#">Packaging Pouches<i
-                            class="fa fa-angle-right"></i></a>
+                        <a data-show="packaging-pouches" class="" href="#">Packaging Pouches<i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
                         <div class="dropdown-secondary-menu" id="packaging-pouches">
                           <div class="row h-100">
@@ -449,7 +453,9 @@
                                     <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
                                   </a>
                                 </div>
-                                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and customize your labels.</p>
+                                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of
+                                  colors and
+                                  customize your labels.</p>
                               </div>
                             </div>
                             <!-- LIST #3 -->
@@ -461,18 +467,19 @@
                                     <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
                                   </a>
                                 </div>
-                                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide variety of pouch colors and sizes, and personalize your labels.</p>
+                                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays.
+                                  Select from a
+                                  wide variety of pouch colors and sizes, and personalize your labels.</p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="dropdown-item"><a href="#">Name Badges</a></div>
-  
+
                       <div class="dropdown-item sub">
-                        <a data-show="static-clings" class="" href="#">Static Clings<i
-                            class="fa fa-angle-right"></i></a>
+                        <a data-show="static-clings" class="" href="#">Static Clings<i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
                         <div class="dropdown-secondary-menu" id="static-clings">
                           <div class="row h-100">
@@ -494,7 +501,7 @@
                                 <button class="btn btn-outline-primary abs"><a href="#">See All Clings</a></button>
                               </div>
                             </div>
-                            
+
                             <!-- LIST #3 -->
                             <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
                               <h4>Most Popular</h4>
@@ -504,15 +511,15 @@
                                     <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
                                   </a>
                                 </div>
-                                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="dropdown-item sub mb-5">
-                        <a data-show="yard-signs" class="" href="#">Yard Signs<i
-                            class="fa fa-angle-right"></i></a>
+                        <a data-show="yard-signs" class="" href="#">Yard Signs<i class="fa fa-angle-right"></i></a>
                         <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
                         <div class="dropdown-secondary-menu" id="yard-signs">
                           <div class="row h-100">
@@ -521,7 +528,8 @@
                               <h4>Make Your Own Yard Sign</h4>
                               <a class="dropdown-item" href="#">Custom Yard Signs</a>
                               <div class="btn-box">
-                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard Signs</a></button>
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard
+                                    Signs</a></button>
                               </div>
                             </div>
                             <!-- LIST #2 -->
@@ -532,7 +540,8 @@
                               <a class="dropdown-item" href="#">Birthday Yard Signs</a>
                               <a class="dropdown-item" href="#">Wedding Yard Signs</a>
                               <div class="btn-box">
-                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard Signs</a></button>
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard
+                                    Signs</a></button>
                               </div>
                             </div>
                           </div>
@@ -588,7 +597,7 @@
                         </div>
                       </div>
                     </div>
-  
+
                   </div>
                 </div>
               </div>
@@ -600,11 +609,11 @@
               <div class="dropdown"><a href="#">Magnets</a></div>
             </div>
           </nav>
-  
+
         </div>
       </div>
-  
-  
+
+
       <div class="d-none search mobile input-group my-3">
         <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
         <div class="input-group-append">
@@ -612,16 +621,15 @@
         </div>
       </div>
     </div>
-  
+
     <!-- MOBILE MENU -->
     <div class="mobile-menu collapse navbar-collapse" id="navbarNavMobileMarkup">
       <!-- toggle icon -->
       <div class="toggle-icon">
         <!-- Mobile Nav Toggle -->
         <nav aria-label="" class="primary-nav mobile navbar navbar-expand-lg fixed-top-right navbar-light">
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-            data-target="#navbarNavMobileMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavMobileMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-icon-line line-1"></span>
             <span class="navbar-icon-line line-2"></span>
             <span class="navbar-icon-line line-3"></span>
@@ -637,7 +645,7 @@
         </div>
       </div>
       <!-- toggle icon -->
-  
+
       <!-- Search -->
       <div class="search sidemenu mobile input-group my-3">
         <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
@@ -645,9 +653,9 @@
           <span class="input-group-text"><i class="fas fa-search"></i></span>
         </div>
       </div>
-  
-  
-  
+
+
+
       <!-- Menu Links -->
       <div class="menu-links w-100">
         <!-- icon grid -->
@@ -675,7 +683,7 @@
                 Decals
               </span>
             </a>
-            
+
           </div>
           <div class="grid-icon">
             <a href="#">
@@ -709,15 +717,15 @@
               </span>
             </a>
           </div>
-          
+
         </div>
         <!-- Item #1 -->
         <div class="menu-item menu-cat">
-  
+
           <a class="shop" href="#mobileShopMenu" role="button" style="font-weight: 400;">
             All Products <i class="fa fa-angle-right"></i>
           </a>
-  
+
           <!-- Mobile SideBar Menu -->
           <div id="mobileShopMenu" class="">
             <!-- Back to main menu -->
@@ -725,7 +733,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Main Menu</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list">
               <h4>Shop By Product</h4>
@@ -783,7 +791,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #1 (STICKERS)-->
           <div id="StickersSubMenu" class="">
             <!-- Back to main menu -->
@@ -791,7 +799,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop by Format</h4>
@@ -828,7 +836,7 @@
               <button class="btn btn-outline-primary"><a href="#">See All Stickers</a></button>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #2 (Labels)-->
           <div id="LabelsSubMenu" class="">
             <!-- Back to main menu -->
@@ -836,7 +844,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Roll Labels</h4>
@@ -874,7 +882,7 @@
               <a class="dropdown-item" href="#">Business Labels</a>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #3 (Tattoos)-->
           <div id="TattoosSubMenu" class="">
             <!-- Back to main menu -->
@@ -882,7 +890,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Tattoos</h4>
@@ -913,7 +921,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #4 (Decals)-->
           <div id="DecalsSubMenu" class="">
             <!-- Back to main menu -->
@@ -921,7 +929,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Wall Decals</h4>
@@ -954,7 +962,7 @@
               <button class="btn btn-outline-primary"><a href="#">See All Decals</a></button>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #5 (Iron-on)-->
           <div id="IronOnSubMenu" class="">
             <!-- Back to main menu -->
@@ -962,15 +970,14 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Solid Iron-Ons</h4>
               <div class="card">
                 <div class="img">
                   <a href="#">
-                    <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
-                      alt="Solid Iron-ons">
+                    <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg" alt="Solid Iron-ons">
                   </a>
                 </div>
                 <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
@@ -996,15 +1003,14 @@
               <div class="card">
                 <div class="img">
                   <a href="#"></a>
-                  <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg"
-                    alt="Lettering Transfers">
+                  <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg" alt="Lettering Transfers">
                 </div>
                 <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
                 <button class="btn btn-outline-primary"><a href="#">See All Iron-Ons</a></button>
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #6 (Magnet)-->
           <div id="MagnetsSubMenu" class="">
             <!-- Back to main menu -->
@@ -1012,13 +1018,13 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Magnets</h4>
               <a class="dropdown-item" href="#">Car Magnets</a>
               <a class="dropdown-item" href="#">Fridge Magnets</a>
-                <button class="btn btn-outline-primary"><a href="#">See All Magnets</a></button>
+              <button class="btn btn-outline-primary"><a href="#">See All Magnets</a></button>
             </div>
             <!-- LIST #2 -->
             <div class="menu_list border-none">
@@ -1038,14 +1044,13 @@
               <div class="card">
                 <div class="img">
                   <a href="#"></a>
-                  <img class="w-100" src="/img/products/CustomMagnets_2.jpg"
-                    alt="Fridge Magnets">
+                  <img class="w-100" src="/img/products/CustomMagnets_2.jpg" alt="Fridge Magnets">
                 </div>
                 <p>Order custom magnets in any shape and size, in quantities as low as 1 magnet.</p>
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #7 (Packaging Pouches)-->
           <div id="PouchesSubMenu" class="">
             <!-- Back to main menu -->
@@ -1053,13 +1058,13 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Packaging Pouches</h4>
               <a class="dropdown-item" href="#">Flat Pouches</a>
               <a class="dropdown-item" href="#">Stand-Up Pouches</a>
-                <button class="btn btn-outline-primary"><a href="#">See All Pouches</a></button>
+              <button class="btn btn-outline-primary"><a href="#">See All Pouches</a></button>
             </div>
             <!-- LIST #2 -->
             <div class="menu_list border-none">
@@ -1070,7 +1075,9 @@
                     <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
                   </a>
                 </div>
-                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and customize your labels.</p>
+                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and
+                  customize your
+                  labels.</p>
               </div>
             </div>
             <!-- LIST #3 -->
@@ -1082,11 +1089,13 @@
                     <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
                   </a>
                 </div>
-                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide variety of pouch colors and sizes, and personalize your labels.</p>
+                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide
+                  variety of
+                  pouch colors and sizes, and personalize your labels.</p>
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #8 (Static Clings)-->
           <div id="ClingsSubMenu" class="">
             <!-- Back to main menu -->
@@ -1094,20 +1103,20 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Shop Static Cling Pages</h4>
               <a class="dropdown-item" href="#">Clear Static Clings</a>
               <a class="dropdown-item" href="#">White Static Clings</a>
-                <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
+              <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
             </div>
             <!-- LIST #2 -->
             <div class="menu_list border-none">
               <h4>Shop Large Cling Decals</h4>
               <a class="dropdown-item" href="#">Clear Static Clings</a>
               <a class="dropdown-item" href="#">White Static Clings</a>
-                <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
+              <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
             </div>
             <!-- LIST #3 -->
             <div class="menu_list border-none">
@@ -1122,7 +1131,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Mobile SideBar SubMenu #9 (Yard Signs)-->
           <div id="YardSignsSubMenu" class="">
             <!-- Back to main menu -->
@@ -1130,7 +1139,7 @@
               <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
             <!-- Back to main menu -->
-  
+
             <!-- LIST #1 -->
             <div class="menu_list border-none">
               <h4>Make Your Own Yard Sign</h4>
@@ -1144,7 +1153,7 @@
               <a class="dropdown-item" href="#">Real Estate Yard Signs</a>
               <a class="dropdown-item" href="#">Birthday Yard Signs</a>
               <a class="dropdown-item" href="#">Wedding Yard Signs</a>
-                <button class="btn btn-outline-primary"><a href="#">See All Yard Signs</a></button>
+              <button class="btn btn-outline-primary"><a href="#">See All Yard Signs</a></button>
             </div>
             <!-- LIST #3 -->
             <div class="menu_list border-none">
@@ -1159,10 +1168,10 @@
               </div>
             </div>
           </div>
-  
+
         </div>
       </div>
-  
+
       <!-- bottom links -->
       <div class="container-fluid mobile-fluid text-center mb-0 p-0">
         <div class=" btn-primary-square-container">
@@ -1189,8 +1198,29 @@
         </div>
       </div>
     </div>
+
+    <div class="scrollmenu d-none">
+      <a href="/products/custom-stickers/335" id="dropdown-18534-Link" class="quote-request">
+        Custom Stickers
+      </a>
+      <a href="/products/custom-labels/654" id="dropdown-18556-Link" class="quote-request">
+        Custom Labels
+      </a>
+      <a href="/products/decals/535" id="dropdown-17209-Link" class="quote-request">
+        Decals
+      </a>
+      <a href="/products/temporary-tattoos/601" id="dropdown-17324-Link" class="quote-request">
+        Temporary Tattoos
+      </a>
+      <a href="/products/iron-on-transfers/616" id="dropdown-18681-Link" class="quote-request">
+        Iron-Ons
+      </a>
+      <a href="/products/magnets/634" id="dropdown-18682-Link" class="quote-request">
+        Magnets
+      </a>
+    </div>
   </header>
-    <!-- End Header -->
+  <!-- End Header -->
 
   <main id="cart">
     <!-- Top-bar-message -->
@@ -1213,9 +1243,10 @@
           4 items in your cart
         </h1>
       </div>
-      <div id="sticky-checkout" class="d-md-none sticky-top py-3">
+      <div id="sticky-checkout" class="d-md-none fixed-bottom py-3">
         <div class="container">
-          <h4 class="mb-4">Subtotal (<span data-value="items-num">4</span> items): <span id="total">$<span class="value">0</span> </span></h4>
+          <h4 class="mb-4">Subtotal (<span data-value="items-num">4</span> items): <span id="total">$<span class="value">0</span>
+            </span></h4>
           <a href="./checkout.html">
             <button class="checkout_button btn btn-primary w-100">
               Continue to Secure Checkout
@@ -1245,39 +1276,48 @@
               </h1>
               <div class="select-all d-none d-md-block">
                 <label for="select-all" class="custom-checkbox-button pr-3">
-                  <input type="checkbox" name="select" id="select-all" class="d-none">
+                  <input type="checkbox" name="select" id="select-all" class="d-none" checked>
                   <span class="ml-0 mr-1"></span>
                   Select all (<span data-value="all-items">4</span>) items for checkout
                 </label>
               </div>
             </div>
+            <!-- Cart Alert -->
+            <div class="alert alert-info mt-4" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#17A2B8" class="bi bi-exclamation-circle-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+              <div>Add <strong>$15.65</strong> of eligible items to your order to qualify for <a href="#"
+                  class="alert-link">FREE</a>
+                shipping!</div>
+            </div>
+            <!-- Cart Alert -->
+
             <!-- Item 1 -->
             <div class="cart-item py-5 d-flex flex-column">
               <!-- Item checkbox -->
               <div class="box d-flex align-items-center order-2">
                 <label for="select-1" class="custom-checkbox-button pr-3">
-                  <input type="checkbox" name="select" id="select-1" class="d-none form-control checkbox">
+                  <input type="checkbox" name="select" id="select-1" class="d-none form-control checkbox" checked>
                   <span class="ml-0 mr-1 checkbox"></span>
-                  <span class="d-md-none ml-2">Item selected for checkout</span>
+                  <span class="d-md-none ml-2 semibold">Item selected for checkout</span>
                 </label>
               </div>
               <div class="row align-items-start order-1 mb-4 mb-md-0">
                 <div id="cart-carousel" class="cart-carousel owl-carousel owl-theme d-flex col-4 col-md-3">
                   <!-- image 1 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/white-vinyl.png"
-                    data-fancybox="gallery"
+                  <div class="card" data-src="./img/index/product-slider/white-vinyl.png" data-fancybox="gallery"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
                     <img class="card-img-top" src="./img/index/product-slider/white-vinyl.png" />
                   </div>
                   <!-- image 2 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/white-vinyl.png"
-                    data-fancybox="gallery"
+                  <div class="card" data-src="./img/index/product-slider/white-vinyl.png" data-fancybox="gallery"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
                     <img class="card-img-top" src="./img/index/product-slider/white-vinyl.png" />
                   </div>
-                  
+
                 </div>
                 <div class="d-flex flex-wrap col-8 col-md-9 mt-0 host-1">
                   <div class="cart-item-info col mb-3 mb-md-0 px-0">
@@ -1286,8 +1326,9 @@
                     <p class="name mb-1 mb-md-3 d-flex">
                       Name: <strong class="ml-2">2.00" x 2.00" Custom Die-cut Sticker</strong>
                     </p>
-                    </div>
-                    <div class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
+                  </div>
+                  <div
+                    class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
                     <p class="price mb-0 mb-md-3">
                       <strong>$<span class="value">93.80</span></strong>
                     </p>
@@ -1295,53 +1336,53 @@
                   <!-- cart buttons -->
                   <div class="cart-item-buttons guest d-flex flex-wrap col-12 mt-4 mt-md-0 px-0">
                     <!-- Quantity -->
-                    <div class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
-                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Quantity:</label>
-                      <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                    <div
+                      class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
+                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
+                      <div class="d-flex align-items-center">
+                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <p class="price-discount m-0 ml-3">-10%</p>
+                      </div>
                     </div>
                     <!-- Duplicate -->
-                    <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
+                    <div class="cart-btn separator d-flex align-items-center justify-content-center order-1 order-md-0" href="#">
                       <span>Duplicate</span>
+                      <img class="ml-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
                     </div>
                     <!-- Edit -->
                     <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/Edit.svg" alt="Edit">
-                      <span>Edit item</span>
+                      <span>Edit</span>
+                      <img class="ml-2" src="./img/icon-library/Edit.svg" alt="Edit">
                     </div>
                     <!-- Remove -->
-                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0 order-2" data-toggle="modal"
+                      data-target="#staticBackdrop">
                       <img class="mr-2" src="./img/icon-library/Delete.svg" alt="Delete">
-                      <span>Remove</span>
                     </div>
-                <!-- Bottom -->
+                    <!-- Bottom -->
                   </div>
+                </div>
               </div>
-            </div>
             </div>
             <!-- Item 2 -->
             <div class="cart-item py-5 d-flex flex-column">
               <!-- Item checkbox -->
               <div class="box d-flex align-items-center order-2">
                 <label for="select-2" class="custom-checkbox-button pr-3">
-                  <input type="checkbox" name="select" id="select-2" class="d-none form-control checkbox">
+                  <input type="checkbox" name="select" id="select-2" class="d-none form-control checkbox" checked>
                   <span class="ml-0 mr-1 checkbox"></span>
-                  <span class="d-md-none ml-2">Item selected for checkout</span>
+                  <span class="d-md-none ml-2 semibold">Item selected for checkout</span>
                 </label>
               </div>
               <div class="row align-items-start order-1 mb-4 mb-md-0">
                 <div id="cart-carousel" class="cart-carousel owl-carousel owl-theme d-flex col-4 col-md-3">
                   <!-- image 1 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/glossy-roll-label.png"
-                    data-fancybox="gallery-2"
+                  <div class="card" data-src="./img/index/product-slider/glossy-roll-label.png" data-fancybox="gallery-2"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
-                    <img class="card-img-top" src="./img/index/product-slider/glossy-roll-label.png" alt="glossy-roll"/>
+                    <img class="card-img-top" src="./img/index/product-slider/glossy-roll-label.png" alt="glossy-roll" />
                   </div>
                   <!-- image 2 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/glossy-roll-label.png"
-                    data-fancybox="gallery-2"
+                  <div class="card" data-src="./img/index/product-slider/glossy-roll-label.png" data-fancybox="gallery-2"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
                     <img class="card-img-top" src="./img/index/product-slider/glossy-roll-label.png" alt="glossy-roll" />
                   </div>
@@ -1353,8 +1394,9 @@
                     <p class="name mb-1 mb-md-3 d-flex">
                       Name: <strong class="ml-2">2.00" x 2.00" Custom Die-cut Sticker</strong>
                     </p>
-                    </div>
-                    <div class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
+                  </div>
+                  <div
+                    class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
                     <p class="price mb-0 mb-md-3">
                       <strong>$<span class="value">129.00</span></strong>
                     </p>
@@ -1362,53 +1404,53 @@
                   <!-- cart buttons -->
                   <div class="cart-item-buttons guest d-flex flex-wrap col-12 mt-4 mt-md-0 px-0">
                     <!-- Quantity -->
-                    <div class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
-                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Quantity:</label>
-                      <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                    <div
+                      class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
+                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
+                      <div class="d-flex align-items-center">
+                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <p class="price-discount m-0 ml-3">-10%</p>
+                      </div>
                     </div>
                     <!-- Duplicate -->
-                    <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
+                    <div class="cart-btn separator d-flex align-items-center justify-content-center order-1 order-md-0" href="#">
                       <span>Duplicate</span>
+                      <img class="ml-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
                     </div>
                     <!-- Edit -->
                     <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/Edit.svg" alt="Edit">
-                      <span>Edit item</span>
+                      <span>Edit</span>
+                      <img class="ml-2" src="./img/icon-library/Edit.svg" alt="Edit">
                     </div>
                     <!-- Remove -->
-                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0 order-2" data-toggle="modal"
+                      data-target="#staticBackdrop">
                       <img class="mr-2" src="./img/icon-library/Delete.svg" alt="Delete">
-                      <span>Remove</span>
                     </div>
-                <!-- Bottom -->
+                    <!-- Bottom -->
                   </div>
+                </div>
               </div>
-            </div>
             </div>
             <!-- Item 3 -->
             <div class="cart-item py-5 d-flex flex-column">
               <!-- Item checkbox -->
               <div class="box d-flex align-items-center order-2">
                 <label for="select-3" class="custom-checkbox-button pr-3">
-                  <input type="checkbox" name="select" id="select-3" class="d-none form-control checkbox">
+                  <input type="checkbox" name="select" id="select-3" class="d-none form-control checkbox" checked>
                   <span class="ml-0 mr-1 checkbox"></span>
-                  <span class="d-md-none ml-2">Item selected for checkout</span>
+                  <span class="d-md-none ml-2 semibold">Item selected for checkout</span>
                 </label>
               </div>
               <div class="row align-items-start order-1 mb-4 mb-md-0">
                 <div id="cart-carousel" class="cart-carousel owl-carousel owl-theme d-flex col-4 col-md-3">
                   <!-- image 1 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/viny-removable.png"
-                    data-fancybox="gallery-3"
+                  <div class="card" data-src="./img/index/product-slider/viny-removable.png" data-fancybox="gallery-3"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
-                    <img class="card-img-top" src="./img/index/product-slider/viny-removable.png" alt="viny-removable"/>
+                    <img class="card-img-top" src="./img/index/product-slider/viny-removable.png" alt="viny-removable" />
                   </div>
                   <!-- image 2 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/viny-removable.png"
-                    data-fancybox="gallery-3"
+                  <div class="card" data-src="./img/index/product-slider/viny-removable.png" data-fancybox="gallery-3"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
                     <img class="card-img-top" src="./img/index/product-slider/viny-removable.png" alt="viny-removable" />
                   </div>
@@ -1420,8 +1462,9 @@
                     <p class="name mb-1 mb-md-3 d-flex">
                       Name: <strong class="ml-2">2.00" x 2.00" Custom Die-cut Sticker</strong>
                     </p>
-                    </div>
-                    <div class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
+                  </div>
+                  <div
+                    class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
                     <p class="price mb-0 mb-md-3">
                       <strong>$<span class="value">35.12</span></strong>
                     </p>
@@ -1429,53 +1472,53 @@
                   <!-- cart buttons -->
                   <div class="cart-item-buttons guest d-flex flex-wrap col-12 mt-4 mt-md-0 px-0">
                     <!-- Quantity -->
-                    <div class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
-                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Quantity:</label>
-                      <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                    <div
+                      class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
+                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
+                      <div class="d-flex align-items-center">
+                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <p class="price-discount m-0 ml-3">-10%</p>
+                      </div>
                     </div>
                     <!-- Duplicate -->
-                    <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
+                    <div class="cart-btn separator d-flex align-items-center justify-content-center order-1 order-md-0" href="#">
                       <span>Duplicate</span>
+                      <img class="ml-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
                     </div>
                     <!-- Edit -->
                     <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/Edit.svg" alt="Edit">
-                      <span>Edit item</span>
+                      <span>Edit</span>
+                      <img class="ml-2" src="./img/icon-library/Edit.svg" alt="Edit">
                     </div>
                     <!-- Remove -->
-                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0 order-2" data-toggle="modal"
+                      data-target="#staticBackdrop">
                       <img class="mr-2" src="./img/icon-library/Delete.svg" alt="Delete">
-                      <span>Remove</span>
                     </div>
-                <!-- Bottom -->
+                    <!-- Bottom -->
                   </div>
+                </div>
               </div>
-            </div>
             </div>
             <!-- Item 4 -->
             <div class="cart-item py-5 d-flex flex-column">
               <!-- Item checkbox -->
               <div class="box d-flex align-items-center order-2">
                 <label for="select-4" class="custom-checkbox-button pr-3">
-                  <input type="checkbox" name="select" id="select-4" class="d-none form-control checkbox">
+                  <input type="checkbox" name="select" id="select-4" class="d-none form-control checkbox" checked>
                   <span class="ml-0 mr-1 checkbox"></span>
-                  <span class="d-md-none ml-2">Item selected for checkout</span>
+                  <span class="d-md-none ml-2 semibold">Item selected for checkout</span>
                 </label>
               </div>
               <div class="row align-items-start order-1 mb-4 mb-md-0">
                 <div id="cart-carousel" class="cart-carousel owl-carousel owl-theme d-flex col-4 col-md-3">
                   <!-- image 1 -->
-                  <div class="card "
-                    data-src="./img/index/product-slider/glossy-kiss-cut.png"
-                    data-fancybox="gallery-4"
+                  <div class="card " data-src="./img/index/product-slider/glossy-kiss-cut.png" data-fancybox="gallery-4"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
-                    <img class="card-img-top" src="./img/index/product-slider/glossy-kiss-cut.png" alt="glossy-kiss-cut"/>
+                    <img class="card-img-top" src="./img/index/product-slider/glossy-kiss-cut.png" alt="glossy-kiss-cut" />
                   </div>
                   <!-- image 2 -->
-                  <div class="card"
-                    data-src="./img/index/product-slider/glossy-kiss-cut.png"
-                    data-fancybox="gallery-4"
+                  <div class="card" data-src="./img/index/product-slider/glossy-kiss-cut.png" data-fancybox="gallery-4"
                     data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
                     <img class="card-img-top" src="./img/index/product-slider/glossy-kiss-cut.png" alt="glossy-kiss-cut" />
                   </div>
@@ -1487,8 +1530,9 @@
                     <p class="name mb-1 mb-md-3 d-flex">
                       Name: <strong class="ml-2">2.00" x 2.00" Custom Die-cut Sticker</strong>
                     </p>
-                    </div>
-                    <div class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
+                  </div>
+                  <div
+                    class="cart-item-price host col-12 col-md d-flex flex-md-column justify-content-between align-items-end text-md-right col-6 col-md-3 mt-4 mt-sm-0 pl-0 ">
                     <p class="price mb-0 mb-md-3">
                       <strong>$<span class="value">48.63</span></strong>
                     </p>
@@ -1496,29 +1540,33 @@
                   <!-- cart buttons -->
                   <div class="cart-item-buttons guest d-flex flex-wrap col-12 mt-4 mt-md-0 px-0">
                     <!-- Quantity -->
-                    <div class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
-                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Quantity:</label>
-                      <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                    <div
+                      class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
+                      <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
+                      <div class="d-flex align-items-center">
+                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <p class="price-discount m-0 ml-3">-10%</p>
+                      </div>
                     </div>
                     <!-- Duplicate -->
-                    <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
+                    <div class="cart-btn separator d-flex align-items-center justify-content-center order-1 order-md-0" href="#">
                       <span>Duplicate</span>
+                      <img class="ml-2" src="./img/icon-library/duplicate.svg" alt="duplicate">
                     </div>
                     <!-- Edit -->
                     <div class="cart-btn separator d-flex align-items-center justify-content-center" href="#">
-                      <img class="mr-2" src="./img/icon-library/Edit.svg" alt="Edit">
-                      <span>Edit item</span>
+                      <span>Edit</span>
+                      <img class="ml-2" src="./img/icon-library/Edit.svg" alt="Edit">
                     </div>
                     <!-- Remove -->
-                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0" data-toggle="modal" data-target="#staticBackdrop">
+                    <div class="cart-btn d-flex align-items-center justify-content-center mr-0 order-2" data-toggle="modal"
+                      data-target="#staticBackdrop">
                       <img class="mr-2" src="./img/icon-library/Delete.svg" alt="Delete">
-                      <span>Remove</span>
                     </div>
-                <!-- Bottom -->
+                    <!-- Bottom -->
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
 
@@ -1527,11 +1575,11 @@
             <div class="checkout_wrapper">
               <div class="title d-flex align-items-center justify-content-between">
                 <h2 class="checkout_heading">Order Summary</h2>
-                <img  src="./img/verisign.png" alt="virsion secured">
+                <img src="./img/verisign.png" alt="virsion secured">
               </div>
               <div class="checkout_info mb-4">
                 <p class="mb-2">
-                  <span class="items_num">Subtotal (<span data-value="items-num">4</span> items)</span> 
+                  <span class="items_num">Subtotal (<span data-value="items-num">4</span> items)</span>
                   <span id="subtotal" data-value="sub-total">$<span class="value">159.98</span></span>
                 </p>
                 <p class="mb-2">
@@ -1539,16 +1587,16 @@
                   <span id="shipping">-</span>
                 </p>
                 <p class="mb-2">
-                  <span>Aproximate Shipping </span> 
+                  <span>Aproximate Shipping </span>
                   <span id="approx-shipping">-</span>
                 </p>
                 <p class="mb-2">
-                  <span>Tax</span> 
+                  <span>Tax</span>
                   <span id="tax">$<span class="value">17</span></span>
                 </p>
                 <hr class="my-3 w-100" />
                 <p class=" total">
-                  <strong>Total (USD)</strong> 
+                  <strong>Total (USD)</strong>
                   <span id="total">$<span class="value">0</span></span>
                 </p>
                 <a href="./checkout.html">
@@ -1557,7 +1605,7 @@
                   </button>
                 </a>
                 <div class="afterpay d-flex align-items-center flex-wrap mt-3 mb-4">
-                  <span>4 payments of $25.23  with</span>
+                  <span>4 payments of $25.23 with</span>
                   <img src="./img/afterpay.svg" alt="afterpay">
                   <img src="./img/icon-library/question-mark.svg" alt="question-mark">
                 </div>
@@ -1594,18 +1642,19 @@
             </div>
           </div>
           <!-- End checkout box -->
+        </div>
       </div>
-    </div>
-    <!-- End Shopping wrapper -->
+      <!-- End Shopping wrapper -->
 
       <!-- Sign Up -->
-    <div class="signup-img d-none d-md-block">
-      <img class="w-100" src="./img/signup-img.png" alt="">
-    </div>
+      <div class="signup-img d-none d-md-block">
+        <img class="w-100" src="./img/signup-img.png" alt="">
+      </div>
   </main>
 
   <!-- Delete Modal popup -->
-  <div class="modal fade pr-0" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade pr-0" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -1680,51 +1729,41 @@
 
             <!-- DROPDOWN LINKS -->
             <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a class="shop collapsed" data-toggle="collapse" href="#customProducts" role="button"
-                aria-expanded="false" aria-controls="mobileShopMenu">
+              <a class="shop collapsed" data-toggle="collapse" href="#customProducts" role="button" aria-expanded="false"
+                aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Shop Custom Products</h5>
                 <i class="fas fa-chevron-down"></i>
               </a>
               <div id="customProducts" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Custom Stickers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Labels
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Decals
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Temporary Tattoos
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Iron-On Transfers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Patches
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Name Badges
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Magnets
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Packaging Pouches
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Yard Signs
                   </a>
                 </ul>
@@ -1741,32 +1780,25 @@
               </a>
               <div id="whoWeAre" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     About Us
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Newsletter
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     StickerYou Blog
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Careers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Privacy Policy
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Terms of Use
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Free Samples & Catalog
                   </a>
                 </ul>
@@ -1783,28 +1815,22 @@
               </a>
               <div id="workWithUs" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Promo & Reseller
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Sponsorships
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Student Discount
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Affiliate Program
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Packaging Solutions
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Contact a Product Expert
                   </a>
                 </ul>
@@ -1814,43 +1840,35 @@
 
             <!-- DROPDOWN LINKS -->
             <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a id="a-support" class="shop open" data-toggle="collapse" href="#support" role="button"
-                aria-expanded="false" aria-controls="mobileShopMenu">
+              <a id="a-support" class="shop open" data-toggle="collapse" href="#support" role="button" aria-expanded="false"
+                aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Support</h5>
                 <i class="fas fa-chevron-up"></i>
               </a>
               <div id="support" class="collapse show">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     FAQ's
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Return Policy
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Pricing
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Shipping
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Art & Design Services
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Video Tutorials
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Get a Quote
                   </a>
-                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Contact Us
                   </a>
                 </ul>
@@ -1862,8 +1880,7 @@
           <div class="row ">
             <div class="row-social col-xs-12 col-sm-12 col-md-6 d-none d-lg-inline">
               <ul class="d-flex justify-content-between">
-                <li><img class="d-none d-lg-inline" src="img/verisign.png" alt="VeriSign Secured" width="80"
-                    height="40" /></li>
+                <li><img class="d-none d-lg-inline" src="img/verisign.png" alt="VeriSign Secured" width="80" height="40" /></li>
                 <li><img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal" width="95" height="24" /></li>
                 <li><img src="img/visa.png" alt="Visa" width="60" height="20" /></li>
                 <li><img src="img/mastercard.png" alt="MasterCard" width="50" height="32" /></li>
@@ -1917,7 +1934,7 @@
   <a href="#" class="toTop">
     <img src="img/arrow-up.png" alt="">
   </a>
-  
+
   <!-- Check Out Mobile Button
   <div id="checkout-sticky" class="my-0 d-flex flex-nowrap justify-content-between w-100 d-lg-none py-1">
     <h3 class="text-center py-3 mb-0 w-100">Checkout</h3>
@@ -1926,14 +1943,14 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+  <script src="./plugins/jquery-2.2.4/jquery-min.js" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="./plugins/owl-carousel/js/owl.carousel.min.js"></script>
   <script src="./plugins/glide-3.4.1/dist/glide.min.js"></script>
   <script src="./plugins/fancybox/js/fancybox.js"></script>
@@ -1941,7 +1958,8 @@
   <script src="./js/scripts.js"></script>
   <script src="./js/plugins.js"></script>
   <script>
-    
+
   </script>
 </body>
+
 </html>

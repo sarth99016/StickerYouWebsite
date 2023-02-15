@@ -225,26 +225,30 @@ $(document).ready(function () {
     }
 
     // // add shadow to sticky checkout when it reeaches top of page
-    // if($(this).scrollTop() >= $('#checkout #sticky-checkout').offset().top) {
-    //   $('#checkout #sticky-checkout').addClass('shadow-b')
+    // if($(this).scrollTop() >= $('#cart #sticky-checkout').offset().top) {
+    //   $('#cart #sticky-checkout').addClass('shadow-b')
     // } else {
-    //   $('#checkout #sticky-checkout').removeClass('shadow-b')
+    //   $('#cart #sticky-checkout').removeClass('shadow-b')
     // }
 
-    // // Show up the sticky "coninue to checkout" box when user scroll down to the 4th item
-    // if($(this).scrollTop() > $('#cart .cart-items .cart-item:nth-of-type(5)').offset().top) {
-    //   $('#checkout #sticky-checkout').addClass('show')
-    // } else {
-    //   $('#checkout #sticky-checkout').removeClass('show')
-    // }
+    // Show up the sticky "coninue to checkout" box when user scroll down to the 4th item
+    let elemH = $('#cart .cart-items .cart-item:last-of-type').height();
+    let windH = $(window).height();
+    if($(this).scrollTop() >= ($('#cart .cart-items .cart-item:last-of-type').offset().top - (windH - elemH) ))
+    {
+      $('#cart #sticky-checkout').addClass('show')
+    } else {
+      $('#cart #sticky-checkout').removeClass('show')
+    }
 
       //add box-shadow to sticky checkout button when it reaches the top page
-      if($(this).scrollTop() >= $('#cart #sticky-checkout').offset().top) {
-        $('#cart #sticky-checkout').addClass('shadow')
-      } else {
-        $('#cart #sticky-checkout').removeClass('shadow')
-      }
+      // if($(this).scrollTop() >= $('#cart #sticky-checkout').offset().top) {
+      //   $('#cart #sticky-checkout').addClass('shadow')
+      // } else {
+      //   $('#cart #sticky-checkout').removeClass('shadow')
+      // }
   });
+
   // hide navbar search by the time you scroll down to the first row of product
   $(window).scroll(function () {
     if ($(".feature-products .custom-stickers") === true) {

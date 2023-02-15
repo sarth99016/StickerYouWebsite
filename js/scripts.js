@@ -374,7 +374,7 @@
   
   //select/unselect all items when clicking "select all" checkbox
   $('input#select-all').change(function() {
-    if(!$(this).attr('checked')) {
+    if($(this).attr('checked')) {
 
       $('.cart-item input.checkbox').trigger('click');
     }
@@ -395,6 +395,7 @@
     subTotal += parseFloat($(this).text())
   });
   $('[data-value=sub-total] .value').text(subTotal)
+  $('#total .value').text(subTotal + tax)
 
   // when check/uncheck items
   $('.cart-items .cart-item input.checkbox').on('change', function(e) {
