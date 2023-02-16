@@ -544,9 +544,10 @@
     $('.quantity-dropdown .dropdown_item input').on('input', function() {
       let quantity = $(this).parent().find('span.num').text()
       $(this).parentsUntil('.quantity').find('input').val(quantity)
-
+      $('.quantity-dropdown').remove();
       // setTimeout(() => {
-      //   $('.quantity-dropdown').addClass('closed');
+      //   // $('.quantity-dropdown').addClass('closed');
+      //   $('.quantity-dropdown').remove();
       // }, 200)
     })
 
