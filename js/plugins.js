@@ -1,6 +1,29 @@
 $(document).ready(function () {
 	("use strict");
 
+  // cart page carousel
+  $(".cart-carousel").owlCarousel({
+    //Responsive
+    loop: false,
+    margin: 0,
+    nav: false,
+    dots: true,  
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 0
+      },
+      1000: {
+        items: 1,
+        stagePadding: 0,
+        margin: 0,
+        mouseDrag: true,
+        touchDrage: true,
+      },
+    },
+  });
+  
 	// owl blogs -> home page
 	$(".owl-selling").owlCarousel({
 		//Responsive
