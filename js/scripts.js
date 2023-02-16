@@ -555,10 +555,11 @@
 
   // [ 4 ] Hide on blur
   $('.quantity-input input').on('blur', function() {
-    setTimeout(() => {
-        // $(this).parent().find('.quantity-dropdown').addClass('closed');
-        $(this).parent().find('.quantity-dropdown').remove();
-      }, 200)
+    $(this).parent().find('.quantity-dropdown').remove();
+    // setTimeout(() => {
+    //     // $(this).parent().find('.quantity-dropdown').addClass('closed');
+    //     $(this).parent().find('.quantity-dropdown').remove();
+    //   }, 200)
   })
 
   // $(document).on('click', function(e) {
