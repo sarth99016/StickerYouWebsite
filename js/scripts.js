@@ -555,7 +555,8 @@
   // [ 4 ] Hide on blur
   $('.quantity-input input').on('blur', function() {
     setTimeout(() => {
-        $(this).parent().find('.quantity-dropdown').addClass('closed');
+        // $(this).parent().find('.quantity-dropdown').addClass('closed');
+        $(this).parent().find('.quantity-dropdown').remove();
       }, 200)
   })
 
