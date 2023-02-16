@@ -1340,7 +1340,10 @@
                       class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
                       <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
                       <div class="d-flex align-items-center">
-                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <div class="quantity-input">
+                          <input type="number" name="quantity" class="form-control" value="200" />
+                          <!-- quantity dropdown -->
+                        </div>
                         <p class="price-discount m-0 ml-3">-10%</p>
                       </div>
                     </div>
@@ -1408,7 +1411,11 @@
                       class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
                       <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
                       <div class="d-flex align-items-center">
-                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <div class="quantity-input">
+                          <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                          <!-- quantity dropdown -->
+
+                        </div>
                         <p class="price-discount m-0 ml-3">-10%</p>
                       </div>
                     </div>
@@ -1476,7 +1483,11 @@
                       class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
                       <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
                       <div class="d-flex align-items-center">
-                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <div class="quantity-input">
+                          <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                          <!-- quantity dropdown -->
+
+                        </div>
                         <p class="price-discount m-0 ml-3">-10%</p>
                       </div>
                     </div>
@@ -1544,7 +1555,11 @@
                       class="quantity separator guest d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center">
                       <label for="quantity" class="label font-weight-400 mb-2 mb-md-0 mr-2">Q-ty:</label>
                       <div class="d-flex align-items-center">
-                        <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                        <div class="quantity-input">
+                          <input type="number" name="quantity" id="quantity" class="form-control" value="200" />
+                          <!-- quantity dropdown -->
+
+                        </div>
                         <p class="price-discount m-0 ml-3">-10%</p>
                       </div>
                     </div>
@@ -1604,9 +1619,9 @@
                     Continue to Secure Checkout
                   </button>
                 </a>
-                <div class="afterpay d-flex align-items-center flex-wrap mt-3 mb-4">
+                <div class="afterpay d-flex align-items-center justify-content-between flex-wrap mt-3 mb-4">
                   <span>4 payments of $25.23 with</span>
-                  <img src="./img/afterpay.svg" alt="afterpay">
+                  <img class="logo" src="./img/afterpay.svg" alt="afterpay">
                   <img src="./img/icon-library/question-mark.svg" alt="question-mark">
                 </div>
                 <div class="we-accept">
@@ -1626,7 +1641,7 @@
                 </div>
                 <div class="checkout_ques">
                   <h4>Satisfaction Guaranteed</h4>
-                  <p>
+                  <p class="text-nowrap">
                     You will love our products. We guarantee it! <br />
                     Question? <a href="#">Contact Us</a>
                   </p>
@@ -1645,11 +1660,6 @@
         </div>
       </div>
       <!-- End Shopping wrapper -->
-
-      <!-- Sign Up -->
-      <div class="signup-img d-none d-md-block">
-        <img class="w-100" src="./img/signup-img.png" alt="">
-      </div>
   </main>
 
   <!-- Delete Modal popup -->
@@ -1677,12 +1687,12 @@
   <!-- Delete Modal popup -->
 
   <!-- Footer -->
-  <footer class="container-fluid py-5">
+  <footer>
     <div class="container">
       <div class="row">
         <nav class="col-md-12 col-lg-12" aria-label="">
           <div class="row">
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block footer-text">
               <h5 class="text-capitalize">Shop Custom Products</h5>
               <li><a href="#">Custom Stickers</a></li>
               <li><a href="#">Labels</a></li>
@@ -1696,7 +1706,7 @@
               <li><a href="#">Yard Signs</a></li>
             </ul>
 
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block  footer-text">
               <h5 class="text-capitalize">Who We Are</h5>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Newsletter</a></li>
@@ -1706,7 +1716,7 @@
               <li><a href="#">Terms of Use</a></li>
               <li><a href="#">Free Samples & Catalog</a></li>
             </ul>
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block  footer-text">
               <h5 class="text-capitalize">Work With Us</h5>
               <li><a href="#">Promo & Reseller</a></li>
               <li><a href="#">Sponsorships</a></li>
@@ -1715,17 +1725,15 @@
               <li><a href="#">Packaging Solutions</a></li>
               <li><a href="#">Contact a Product Expert</a></li>
             </ul>
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
-              <h5 class="text-capitalize">Support</h5>
-              <li><a href="#">FAQ's</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Art & Design Services</a></li>
-              <li><a href="#">Video Tutorials</a></li>
-              <li><a href="#">Get a Quote</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="col-12 col-md-6 col-xl-4  footer-text mb-3 mb-md-0">
+              <h5 class="text-capitalize">Sign Up to Our Newslettter</h5>
+              <p>Sign up and Recieve Up 10 15% OFF. We will send you updates on our latest product and more. Need to take off?
+                Unsubscribe at any time</p>
+              <form class="subscribe">
+                <input class="form-control" type="email" id="sign-up" placeholder="Email Address">
+                <button type="button" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
 
             <!-- DROPDOWN LINKS -->
             <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
@@ -1840,10 +1848,10 @@
 
             <!-- DROPDOWN LINKS -->
             <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a id="a-support" class="shop open" data-toggle="collapse" href="#support" role="button" aria-expanded="false"
+              <a id="a-support" class="shop" data-toggle="collapse" href="#support" role="button" aria-expanded="false"
                 aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Support</h5>
-                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
               </a>
               <div id="support" class="collapse show">
                 <ul class="list-unstyled links">
@@ -1877,7 +1885,7 @@
             <!-- DROPDOWN LINKS -->
           </div>
 
-          <div class="row ">
+          <div class="row">
             <div class="row-social col-xs-12 col-sm-12 col-md-6 d-none d-lg-inline">
               <ul class="d-flex justify-content-between">
                 <li><img class="d-none d-lg-inline" src="img/verisign.png" alt="VeriSign Secured" width="80" height="40" /></li>
@@ -1887,12 +1895,13 @@
                 <li><img src="img/american-express.png" class="ml-2" alt="American Express" width="75" height="25" />
                 </li>
               </ul>
-              <ul class="d-flex">
+              <ul class="d-flex d-lg-none">
                 <li><img class="d-lg-none" src="img/verisign.png" alt="VeriSign Secured" width="80" height="40" /></li>
                 <li><img class="d-lg-none" src="img/paypal.png" alt="PayPal" width="95" height="24" /></li>
                 </li>
               </ul>
             </div>
+            <!-- Social links  -->
             <div class="d-none d-lg-inline row-social col-sm-12 col-md-6">
               <ul class="d-flex justify-content-lg-end">
                 <li><a href="https://www.facebook.com/stickeryou" target="_blank" class="btn btn-circ"><i
@@ -1909,21 +1918,76 @@
             </div>
           </div>
 
+          <!-- Support links  -->
+          <div class="support-lg justify-content-between d-none d-xl-flex">
+            <ul class="list-unstyled d-flex justify-content-between align-items-center">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Art & Design Services</a></li>
+              <li><a href="#">Video Tutorials</a></li>
+              <li><a href="#">Get a Quote</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- country dropdown -->
+            <div class="country dropdown show">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="flag" src="img/Currency/flag-usd.png" width="21" height="15" alt="United States" />
+                <span class="label active">United States <i class="fa fa-angle-down pl-1"></i></span>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png" width="21"
+                    height="15" alt="United States" />
+                  <span class="label active">United States</span>
+                </a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png" width="21"
+                    height="15" alt="Canada" />
+                  <span class="label">Canada</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png" width="21"
+                    height="15" alt="GBP" />
+                  <span class="label">GBP</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png" width="21"
+                    height="15" alt="AUD" />
+                  <span class="label">AUD</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png" width="21"
+                    height="15" alt="EUR" />
+                  <span class="label">EUR</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Support links  -->
+
           <div class="row-logo d-none d-sm-block d-md-none  col-md-12 col-lg-5 d-flex justify-content-center"
             style="max-height: 150px;">
-            <div class="mb-3 col-12">
+            <div class="my-3 col-12">
               <img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal" width="95" height="24" />
               <img src="img/visa.png" class="ml-2" alt="Visa" width="61" height="20" />
               <img src="img/mastercard.png" class="ml-2" alt="MasterCard" width="50" height="31" />
               <img src="img/american-express.png" class="ml-2" alt="American Express" width="75" height="25" />
             </div>
-
-
             <div class="col-lg-12 text-lg-right mr-0 mr-lg-10">
               <!-- <img src="img/american-express.png" class="ml-2 d-none d-lg-inline" alt="American Express" width="75" height="25" /> -->
               <img class="d-lg-none" src="img/paypal.png" alt="PayPal" width="95" height="24" />
               <img src="img/verisign.png" class="ml-4" alt="VeriSign Secured" width="100" height="50" />
             </div>
+          </div>
+          <!-- Social links  -->
+          <div class="d-md-none col-12 d-flex justify-content-center mt-3">
+            <ul class="d-flex justify-content-lg-end">
+              <li><a href="https://www.facebook.com/stickeryou" target="_blank" class="btn btn-circ"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/user/StickerYou" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fas fa-youtube-play"></i></a></li>
+              <li><a href="https://www.pinterest.ca/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-pinterest-p"></i></a></li>
+              <li><a href="https://twitter.com/stickeryou" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-twitter"></i></a></li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -1957,9 +2021,6 @@
 
   <script src="./js/scripts.js"></script>
   <script src="./js/plugins.js"></script>
-  <script>
-
-  </script>
 </body>
 
 </html>

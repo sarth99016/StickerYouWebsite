@@ -1306,7 +1306,7 @@
               </div>
             </div>
             <div class="price_section">
-              <div class="d-flex gap_10">
+              <div class="d-flex align-items-center gap_10">
                 <h3 class="fw_500">$13.73</h3>
                 <h6 class="label_price">$2.75 Per Label</h6>
               </div>
@@ -2651,16 +2651,21 @@
 
 
 <script>
-  const beerLabelList = document.querySelectorAll('.beerLabel_list li');
+  // const beerLabelList = document.querySelectorAll('.beerLabel_list li');
 
-  for (let i = 0; i < beerLabelList.length; i++) {
-    beerLabelList[i].addEventListener('click', function () {
-      for (let j = 0; j < beerLabelList.length; j++) {
-        beerLabelList[j].classList.remove('beerLabel_active');
-      }
-      this.classList.add('beerLabel_active');
-    });
-  }
+  // for (let i = 0; i < beerLabelList.length; i++) {
+  //   beerLabelList[i].addEventListener('click', function () {
+  //     for (let j = 0; j < beerLabelList.length; j++) {
+  //       beerLabelList[j].classList.remove('beerLabel_active');
+  //     }
+  //     this.classList.add('beerLabel_active');
+  //   });
+  // }
+
+  // Easy peasy lemon squeezy 
+  $('.beerLabel_list li').on('click', function () {
+    $(this).addClass('beerLabel_active').siblings().removeClass('beerLabel_active')
+  })
 </script>
 <script>
   // https://developers.google.com/youtube/iframe_api_reference

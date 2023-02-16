@@ -77,6 +77,45 @@ $lg: 1200px;
 	-webkit-box-orient: vertical;
 }
 
+.gap_5 {
+  gap: 5px;
+}
+
+.gap_10 {
+  gap: 10px;
+}
+
+.gap_15 {
+  gap: 15px;
+}
+
+.gap_20 {
+  gap: 20px;
+}
+
+.fw_300 {
+  font-weight: 300;
+}
+
+.fw_500 {
+  font-weight: 500;
+}
+
+.fw_700 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 p,
 ul,
 ol,
@@ -3646,7 +3685,6 @@ footer {
 
 	h3 {
 		font-size: 24px;
-		margin: 0 40px 0 0;
 		white-space: nowrap;
 	}
 
@@ -5506,12 +5544,11 @@ footer .footer-drop-links i {
 #cart {
 	#sticky-checkout {
     position: sticky;
-		z-index: 999;
+		z-index: 100;
 		background-color: #fff;
 		bottom: -200px;
 		opacity: 0;
 		transition: shadow, opacity, bottom 300ms ease-in-out;
-		z-index: 9999;
 		background-color: #fff;
 		top: 0;
 		opacity: 1;
@@ -5531,13 +5568,16 @@ footer .footer-drop-links i {
 		opacity: 1;
 	}
 	.good-hands-msg {
-		background-color: #4C555B;
+		background-color: #303030;
 		padding: 16px 15px;
 		p {
 			font-size: 18px;
 			line-height: 24px;
 			font-weight: 400;
 			color: #FFF;
+      b {
+        font-weight: 600;
+      }
 		}
 	}
 	.cart-head {
@@ -5698,6 +5738,100 @@ footer .footer-drop-links i {
 					}
 				}
 			}
+      .quantity-input {
+        position: relative;
+        .form-control {
+          background-image: url('../img/icon-library/arrow-down.svg');
+          background-repeat: no-repeat;
+          background-size: 22%;
+          background-position: 93% center;
+        }
+        .form-control:focus {
+          background-color: #fff;
+          border-color: $sy-blue;
+          outline: 0;
+          box-shadow: none
+        }
+        .quantity-dropdown {
+          display: flex;
+          // display: none;
+          position: absolute;
+          top: 55px;
+          left: 50%;
+          margin-left: -150px;
+          flex-direction: column;
+          background-color: #fff;
+          border: 1px solid #D9D9D9;
+          z-index: 100;
+          border-radius: 8px;
+          min-width: 300px;
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          &.closed {
+            display: none;
+          }
+          &::before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: 50%;
+            margin-left: -10px;
+            transform: rotate(-45deg);
+            background-color: #FFF;
+            border: 1px solid #D9D9D9;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            z-index: 10;
+
+          }
+          .dropdown_item {
+            position: relative;
+            z-index: 100;
+            i {
+              opacity: 0;
+              color: $sy-blue;
+            }
+            input {
+              display: none;
+              &:checked + label {
+                background-color: #CCEEF8;
+              }
+
+              &:checked + label i {
+                opacity: 1;
+              }
+            }
+            label {
+              cursor: pointer;
+              padding: 12px 16px;
+              margin-bottom: 0;
+              &:hover {
+                background-color: #CCEEF8;
+              }
+            }
+            span {
+              font-size: 18px;
+              font-weight: 400;
+            }
+            .discount {
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 12px;
+              background-image: url('../img/p.price-discount.image.png');
+              background-position: center left;
+              background-repeat: no-repeat;
+              background-size: 100% 64%;
+              width: 40px;
+              height: 30px;
+              padding-top: 7px;
+              padding-left: 6px;
+              padding-right: 5px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
 			.checkbox {
 				position: absolute;
 				width: 16px;
@@ -5837,7 +5971,9 @@ footer .footer-drop-links i {
 				font-weight: 600;
 			}
 			.afterpay {
-				gap: 10px;
+        .logo {
+          max-width: 85px;
+        }
 			}
 			.we-accept {
 				h4 {
@@ -5876,6 +6012,7 @@ footer .footer-drop-links i {
 				gap: 10px;
 				line-height: normal;
 				padding: 12px 16px;
+        margin-top: 16px;
 				color: #333;
 			}
 		}
@@ -5994,6 +6131,7 @@ footer .footer-drop-links i {
 		padding-bottom: 10px;
 		border-radius: 8px;
 		font-weight: 500;
+    margin-top: 32px;
 		gap: 12px;
 		&:disabled {
 			background-color: #969696;
@@ -10380,50 +10518,11 @@ nav {
 
 // soh code start 
 .product_withoutTemp_page {
-	.gap_5 {
-		gap: 5px;
-	}
-
-	.gap_10 {
-		gap: 10px;
-	}
-
-	.gap_15 {
-		gap: 15px;
-	}
-
-	.gap_20 {
-		gap: 20px;
-	}
-
-	.fw_300 {
-		font-weight: 300;
-	}
-
-	.fw_500 {
-		font-weight: 500;
-	}
-
-	.fw_700 {
-		font-weight: 700;
-	}
-
-	.flex_align {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
-		padding: 0;
-		margin: 0;
-	}
+  .flex_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 	.col-sticky {
 		position: sticky;
@@ -11135,11 +11234,12 @@ nav {
 
 				&.beerLabel_active {
 					border: 1px solid #01ACDC;
-					// border-top-right-radius: 0;
 
 					span {
 						position: absolute;
 						display: flex !important;
+            justify-content: center;
+            align-items: center;
 						width: 28px;
 						height: 28px;
 						right: 0px;
