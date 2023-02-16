@@ -544,22 +544,21 @@
     $('.quantity-dropdown .dropdown_item input').on('input', function() {
       let quantity = $(this).parent().find('span.num').text()
       $(this).parentsUntil('.quantity').find('input').val(quantity)
-      $('.quantity-dropdown').remove();
-      // setTimeout(() => {
-      //   // $('.quantity-dropdown').addClass('closed');
-      //   $('.quantity-dropdown').remove();
-      // }, 200)
+      
+    // setTimeout(() => {
+    //   $('.quantity-dropdown').addClass('closed');
+    // }, 200)
+
     })
 
   })
 
   // [ 4 ] Hide on blur
   $('.quantity-input input').on('blur', function() {
-    $(this).parent().find('.quantity-dropdown').remove();
-    // setTimeout(() => {
-    //     // $(this).parent().find('.quantity-dropdown').addClass('closed');
-    //     $(this).parent().find('.quantity-dropdown').remove();
-    //   }, 200)
+    setTimeout(() => {
+        $(this).parent().find('.quantity-dropdown').addClass('closed');
+        // $(this).parent().find('.quantity-dropdown').remove();
+      }, 200)
   })
 
   // $(document).on('click', function(e) {
