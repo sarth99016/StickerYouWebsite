@@ -5709,7 +5709,7 @@ footer .footer-drop-links i {
   height: 16px;
   left: 0px;
   top: 40%;
-  z-index: 100;
+  z-index: 10;
   opacity: 1;
   cursor: pointer;
 }

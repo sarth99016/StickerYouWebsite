@@ -531,7 +531,10 @@
   //[ 2 ] append on focus
   $('.quantity-input input').on('focus', function() {
 
-    $(dropdown).insertAfter($(this));
+    if(!$(this).parent().find('.quantity-dropdown').length) {
+      // $(dropdown).insertAfter($(this));
+      $(dropdown).appendTo($(this).parent());
+    }
 
     setTimeout(() => {
       $(this).parent().find('.quantity-dropdown').removeClass('closed');
