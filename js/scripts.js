@@ -577,16 +577,21 @@
     $(this).parent().find('.quantity-dropdown').addClass('opened')
   })
 
-  $('.quantity-input input').on('blur', function() {
-    setTimeout(() => {
-      $(this).parent().find('.quantity-dropdown').removeClass('opened')
-    }, 200)
-  })
+  // $('.quantity-input input').on('blur', function() {
+  //   if($(this).parent().find('.quantity-dropdown .active').length) {
+  //     $(this).parent().find('.quantity-dropdown').removeClass('opened')
+  //   }
+  //   // $(this).parent().find('.quantity-dropdown').removeClass('opened')
+  //   // setTimeout(() => {
+  //   //   $(this).parent().find('.quantity-dropdown').removeClass('opened')
+  //   // }, 200)
+  // })
 
   $('.quantity-dropdown .dropdown_item .sticker_count').on('click', function() {
     $(this).addClass('active').parent().siblings().find('.sticker_count').removeClass('active')
       let quantity = $(this).parent().find('span.num').text()
       $(this).parentsUntil('.quantity').find('input').val(quantity)
+      $(this).parent().parent().removeClass('opened')
     })
   
 })(jQuery);
