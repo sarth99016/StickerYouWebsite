@@ -582,8 +582,8 @@
   })
 
   $('.quantity-input input').on('change', function() {
-    $(this).parent().find('.quantity-dropdown').removeClass('opened')
-    $(this).blur()
+    $(this).focusout()
+    // $(this).parent().find('.quantity-dropdown').removeClass('opened')
   })
 
   // $('.quantity-input input').on('blur', function() {

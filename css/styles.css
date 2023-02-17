@@ -5536,8 +5536,8 @@ footer .footer-drop-links i {
   background-size: 100% 64%;
   width: 40px;
   height: 30px;
-  padding-top: 7px;
-  padding-left: 6px;
+  padding-top: 6px;
+  padding-left: 8px;
   padding-right: 5px;
 }
 
@@ -5566,8 +5566,8 @@ footer .footer-drop-links i {
   background-size: 100% 64%;
   width: 40px;
   height: 30px;
-  padding-top: 7px;
-  padding-left: 6px;
+  padding-top: 6px;
+  padding-left: 8px;
   padding-right: 5px;
 }
 
@@ -5632,6 +5632,7 @@ footer .footer-drop-links i {
   border-radius: 8px;
   min-width: 300px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  overflow: clip;
 }
 
 #cart .cart-items .cart-item .quantity-input .quantity-dropdown.opened {
@@ -5667,7 +5668,7 @@ footer .footer-drop-links i {
 
 #cart .cart-items .cart-item .quantity-input .quantity-dropdown .dropdown_item .sticker_count {
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 6px 15px;
   margin-bottom: 0;
 }
 
@@ -7094,8 +7095,8 @@ footer .footer-drop-links i {
   background-size: 100% 64%;
   width: 40px;
   height: 30px;
-  padding-top: 7px;
-  padding-left: 6px;
+  padding-top: 6px;
+  padding-left: 8px;
   padding-right: 5px;
 }
 
@@ -7124,8 +7125,8 @@ footer .footer-drop-links i {
   background-size: 100% 64%;
   width: 40px;
   height: 30px;
-  padding-top: 7px;
-  padding-left: 6px;
+  padding-top: 6px;
+  padding-left: 8px;
   padding-right: 5px;
 }
 
