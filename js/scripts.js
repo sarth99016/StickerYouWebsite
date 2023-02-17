@@ -577,6 +577,30 @@
     $(this).parent().find('.quantity-dropdown').addClass('opened')
   })
 
+  $('.quantity-input input').on('change', function() {
+    $(this).parent().find('.quantity-dropdown').removeClass('opened')
+    $(this).blur()
+  })
+
+  $('.quantity-input input').on('blur', function() {
+    setTimeout(() => {
+      $(this).parent().find('.quantity-dropdown').removeClass('opened')
+    },200)
+    
+    // $(this).blur()
+  })
+
+  if($(window).innerWidth() >= 767) {
+
+    $('.quantity-input input').mouseenter(function () { 
+      $(this).addClass('bg-none')
+    });
+
+    $('.quantity-input input').mouseleave(function () { 
+      $(this).removeClass('bg-none')
+    });
+  }
+
   // $('.quantity-input input').on('blur', function() {
   //   if($(this).parent().find('.quantity-dropdown .active').length) {
   //     $(this).parent().find('.quantity-dropdown').removeClass('opened')

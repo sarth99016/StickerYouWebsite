@@ -5745,6 +5745,9 @@ footer .footer-drop-links i {
           background-repeat: no-repeat;
           background-size: 22%;
           background-position: 93% center;
+					&.bg-none {
+						background: none;
+					}
         }
         .form-control:focus {
           background-color: #fff;
@@ -5753,8 +5756,8 @@ footer .footer-drop-links i {
           box-shadow: none
         }
         .quantity-dropdown {
-          // display: flex;
-          display: none;
+          opacity: 0;
+          // display: none;
           position: absolute;
           top: 55px;
           left: 50%;
@@ -5762,12 +5765,14 @@ footer .footer-drop-links i {
           flex-direction: column;
           background-color: #fff;
           border: 1px solid #D9D9D9;
-          z-index: 90;
+          z-index: 0;
           border-radius: 8px;
           min-width: 300px;
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
           &.opened {
-            display: flex;
+            // display: flex;
+						opacity: 1;
+						z-index: 90;
           }
           &::before {
             position: absolute;
