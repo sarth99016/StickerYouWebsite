@@ -5753,8 +5753,8 @@ footer .footer-drop-links i {
           box-shadow: none
         }
         .quantity-dropdown {
-          display: flex;
-          // display: none;
+          // display: flex;
+          display: none;
           position: absolute;
           top: 55px;
           left: 50%;
@@ -5766,8 +5766,8 @@ footer .footer-drop-links i {
           border-radius: 8px;
           min-width: 300px;
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
-          &.closed {
-            display: none;
+          &.opened {
+            display: flex;
           }
           &::before {
             position: absolute;
@@ -5792,24 +5792,38 @@ footer .footer-drop-links i {
               opacity: 0;
               color: $sy-blue;
             }
-            input {
-              display: none;
-              &:checked + label {
-                background-color: #CCEEF8;
-              }
-
-              &:checked + label i {
-                opacity: 1;
-              }
-            }
-            label {
-              cursor: pointer;
+						.sticker_count {
+							cursor: pointer;
               padding: 12px 16px;
               margin-bottom: 0;
               &:hover {
                 background-color: #CCEEF8;
               }
-            }
+							&.active {
+								background-color: #CCEEF8;
+								i {
+									opacity: 1;
+								}
+							}
+						}
+            // input {
+            //   display: none;
+            //   &:checked + label {
+            //     background-color: #CCEEF8;
+            //   }
+
+            //   &:checked + label i {
+            //     opacity: 1;
+            //   }
+            // }
+            // label {
+            //   cursor: pointer;
+            //   padding: 12px 16px;
+            //   margin-bottom: 0;
+            //   &:hover {
+            //     background-color: #CCEEF8;
+            //   }
+            // }
             span {
               font-size: 18px;
               font-weight: 400;
