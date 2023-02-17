@@ -5499,6 +5499,11 @@ footer .footer-drop-links i {
   color: #000;
 }
 
+#cart .cart-items .cart-item .discount-title {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 #cart .cart-items .cart-item .cart-item-price {
   gap: 10px;
 }
@@ -7796,6 +7801,10 @@ nav .breadcrumb {
     line-height: 24px;
     margin-bottom: 20px !important;
   }
+}
+
+nav .breadcrumb .breadcrumb-item + .breadcrumb-item {
+  padding-left: 5px;
 }
 
 nav .breadcrumb .breadcrumb-item a {
@@ -10484,6 +10493,12 @@ nav .breadcrumb .breadcrumb-item.current a {
   overflow: clip;
 }
 
+@media all and (max-width: 576px) {
+  .product_withoutTemp_page .diecut_Slider {
+    height: inherit;
+  }
+}
+
 .product_withoutTemp_page .diecut_Slider .active-slide-container {
   flex: 1 1 auto;
   max-height: 78%;
@@ -10493,10 +10508,12 @@ nav .breadcrumb .breadcrumb-item.current a {
   height: 100%;
 }
 
-.product_withoutTemp_page .diecut_Slider .slider-container {
-  flex: 0 1 100px;
-  position: relative;
-  margin-top: 15px;
+@media all and (min-width: 576px) {
+  .product_withoutTemp_page .diecut_Slider .slider-container {
+    flex: 0 1 100px;
+    position: relative;
+    margin-top: 15px;
+  }
 }
 
 .product_withoutTemp_page .diecut_Slider .slider {
@@ -10952,9 +10969,21 @@ nav .breadcrumb .breadcrumb-item.current a {
   padding: 80px 0 0 0;
 }
 
+@media all and (max-width: 768px) {
+  .product_withoutTemp_page .reviews_wrap {
+    padding: 56px 0 0 0;
+  }
+}
+
 .product_withoutTemp_page .reviews_wrap .container {
   padding-bottom: 80px;
   border-bottom: 1px solid #E7E7E7;
+}
+
+@media all and (max-width: 768px) {
+  .product_withoutTemp_page .reviews_wrap .container {
+    padding-bottom: 56px;
+  }
 }
 
 .product_withoutTemp_page .reviews_line {
@@ -10992,8 +11021,7 @@ nav .breadcrumb .breadcrumb-item.current a {
 }
 
 .product_withoutTemp_page .custom_sticker {
-  padding: 50px 0;
-  margin-top: 50px;
+  padding: 56px 0;
 }
 
 .product_withoutTemp_page .custom_sticker h1 {
@@ -11241,6 +11269,12 @@ nav .breadcrumb .breadcrumb-item.current a {
   height: 240px;
 }
 
+@media all and (max-width: 768px) {
+  .product_withoutTemp_page .video_container {
+    margin-top: 15px;
+  }
+}
+
 .product_withoutTemp_page #custom-play-button {
   position: absolute;
   top: 50%;
@@ -11464,6 +11498,7 @@ nav .breadcrumb .breadcrumb-item.current a {
   }
   .product_withoutTemp_page h1 {
     font-size: 28px;
+    margin-bottom: 10px;
   }
   .product_withoutTemp_page .faqs_wrap .question_wrap {
     gap: 5px;
