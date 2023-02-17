@@ -573,7 +573,11 @@
   //     }
   // })
 
-  $('.quantity-input input').on('focus', function() {
+  // $('.quantity-input input').on('focus', function() {
+  //   $(this).parent().find('.quantity-dropdown').addClass('opened')
+  // })
+
+  $('.quantity-input input').focus(function() {
     $(this).parent().find('.quantity-dropdown').addClass('opened')
   })
 
@@ -582,7 +586,15 @@
     $(this).blur()
   })
 
-  $('.quantity-input input').on('blur', function() {
+  // $('.quantity-input input').on('blur', function() {
+  //   setTimeout(() => {
+  //     $(this).parent().find('.quantity-dropdown').removeClass('opened')
+  //   },200)
+    
+  //   // $(this).blur()
+  // })
+
+  $('.quantity-input input').focusout(function() {
     setTimeout(() => {
       $(this).parent().find('.quantity-dropdown').removeClass('opened')
     },200)
