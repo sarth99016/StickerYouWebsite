@@ -5624,7 +5624,7 @@ footer .footer-drop-links i {
   flex-direction: column;
   background-color: #fff;
   border: 1px solid #D9D9D9;
-  z-index: 100;
+  z-index: 90;
   border-radius: 8px;
   min-width: 300px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
@@ -5652,7 +5652,7 @@ footer .footer-drop-links i {
 
 #cart .cart-items .cart-item .quantity-input .quantity-dropdown .dropdown_item {
   position: relative;
-  z-index: 100;
+  z-index: 90;
 }
 
 #cart .cart-items .cart-item .quantity-input .quantity-dropdown .dropdown_item i {
