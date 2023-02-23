@@ -416,190 +416,14 @@
 
   /* ------- Stickers Quantity Dropdown - Cart page ------- */
 
-  // [ 1 ] Create Quantity dropdown
-  // let dropdown = document.createElement('div');
-  //   dropdown.setAttribute('class', 'quantity-dropdown')
-  //   dropdown.innerHTML =
-  //     `  <!-- 1 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="1">
-  //         <label for="1" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">1</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <span class="total-price">$10.18</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 5 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="5">
-  //         <label for="5" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">5</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-10%</p>
-  //             <span class="total-price">$13.73</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 10 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="10">
-  //         <label for="10" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">10</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-26%</p>
-  //             <span class="total-price">$21.87</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 15 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="15">
-  //         <label for="15" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">15</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-26%</p>
-  //             <span class="total-price">$29.16</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 20 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="20">
-  //         <label for="20" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">20</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-26%</p>
-  //             <span class="total-price">$36.45</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 40 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="40">
-  //         <label for="40" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">40</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-10%</p>
-  //             <span class="total-price">$13.73</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 80 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="80">
-  //         <label for="80" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">80</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-50%</p>
-  //             <span class="total-price">$49.00</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 200 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="200">
-  //         <label for="200" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">200</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-67%</p>
-  //             <span class="total-price">$81.00</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //       <!-- 500 sticker -->
-  //       <div class="dropdown_item">
-  //         <input type="radio" name="quantity" id="500">
-  //         <label for="500" class="d-flex align-items-center justify-content-between">
-  //           <span><span class="num">500</span> sticker</span>
-  //           <div class="d-flex align-items-center gap_10">
-  //             <p class="discount">-69%</p>
-  //             <span class="total-price">$154.50</span>
-  //             <i class="fa fa-check"></i>
-  //           </div>
-  //         </label>
-  //       </div>
-  //     `;
-  //[ 2 ] append on focus
-  // $('.quantity-input input').on('focus', function() {
-
-  //   if(!$(this).parent().find('.quantity-dropdown').length) {
-  //     // $(dropdown).insertAfter($(this));
-  //     $(dropdown).appendTo($(this).parent());
-  //   }
-
-  //   setTimeout(() => {
-  //     $(this).parent().find('.quantity-dropdown').removeClass('closed');
-  //   })
-  
-  //   // [ 3 ] choose the quantity from dropdown
-  //   $('.quantity-dropdown .dropdown_item input').on('input', function() {
-  //     let quantity = $(this).parent().find('span.num').text()
-  //     $(this).parentsUntil('.quantity').find('input').val(quantity)
-      
-  //   // setTimeout(() => {
-  //   //   $('.quantity-dropdown').addClass('closed');
-  //   // }, 200)
-
-  //   })
-
-  // })
-
-  // // [ 4 ] Hide on blur
-  // $('.quantity-input input').on('blur', function() {
-  //   setTimeout(() => {
-  //       $(this).parent().find('.quantity-dropdown').addClass('closed');
-  //       // $(this).parent().find('.quantity-dropdown').remove();
-  //     }, 200)
-  // })
-
-  // $(document).on('click', function(e) {
-  //     $('.quantity-dropdown, .quantity-input').on('click', function(e) {
-  //       e.stopPropagation()
-  //     })
-
-  //     if($('.quantity-input').find('.quantity-dropdown').hasClass('closed')) {
-  //       return 0
-  //     } else {
-  //       $('.quantity-input').find('.quantity-dropdown').addClass('closed')
-  //     }
-  // })
-
-  // $('.quantity-input input').on('focus', function() {
-  //   $(this).parent().find('.quantity-dropdown').addClass('opened')
-  // })
-
   $('.quantity-input input').focus(function() {
     $(this).parent().find('.quantity-dropdown').addClass('opened')
   })
-
-  $('.quantity-input input').on('change', function() {
-    $(this).focusout()
-    // $(this).parent().find('.quantity-dropdown').removeClass('opened')
-  })
-
-  // $('.quantity-input input').on('blur', function() {
-  //   setTimeout(() => {
-  //     $(this).parent().find('.quantity-dropdown').removeClass('opened')
-  //   },200)
-    
-  //   // $(this).blur()
-  // })
 
   $('.quantity-input input').focusout(function() {
     setTimeout(() => {
       $(this).parent().find('.quantity-dropdown').removeClass('opened')
     },200)
-    
-    // $(this).blur()
   })
 
   if($(window).innerWidth() >= 767) {
@@ -613,21 +437,24 @@
     });
   }
 
-  // $('.quantity-input input').on('blur', function() {
-  //   if($(this).parent().find('.quantity-dropdown .active').length) {
-  //     $(this).parent().find('.quantity-dropdown').removeClass('opened')
-  //   }
-  //   // $(this).parent().find('.quantity-dropdown').removeClass('opened')
-  //   // setTimeout(() => {
-  //   //   $(this).parent().find('.quantity-dropdown').removeClass('opened')
-  //   // }, 200)
-  // })
 
   $('.quantity-dropdown .dropdown_item .sticker_count').on('click', function() {
     $(this).addClass('active').parent().siblings().find('.sticker_count').removeClass('active')
       let quantity = $(this).parent().find('span.num').text()
       $(this).parentsUntil('.quantity').find('input').val(quantity)
       $(this).parent().parent().removeClass('opened')
+    })
+
+    //ART-CATEFORY PAGE --> customize_tooltip 
+    $('.title-sticker span').mouseenter(function() {
+      $('.customize_tooltip').fadeIn()
+    })
+
+    $('.title-sticker span').mouseleave(function() {
+      $('.customize_tooltip').fadeOut()
+      $('.customize_tooltip').mouseenter(function(e) {
+        e.stopPropagation()
+      })
     })
   
 })(jQuery);

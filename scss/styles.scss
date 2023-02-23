@@ -1913,6 +1913,7 @@ footer {
 		border: 1px solid #b4b4b4;
 		border-radius: 8px;
 		padding: 6px;
+		margin-top: 20px;
 
 		.form-control {
 			border: 0;
@@ -4151,8 +4152,17 @@ p.toggle-text {
 /*  Art Asset Pages */
 /*                  */
 .art-asset {
-	overflow-x: hidden;
-
+	.quote_wrapper {
+		padding-bottom: 80px;
+	}
+	.art-asset_img {
+		@include respond-to-screen-size-by-min($md) {
+			height: 60vh;
+		}
+		img {
+			object-fit: contain;
+		}
+	}
 	.product {
 		h1 {
 			font-weight: 400;
@@ -4374,6 +4384,11 @@ p.toggle-text {
 		}
 	}
 
+	.reviews_wrap {
+		padding: 80px 0;
+		background: #ECF5FB;
+	}
+
 	.trending-products {
 		.card {
 			border: 1px solid #ddd;
@@ -4472,7 +4487,7 @@ p.toggle-text {
 	}
 
 	.related-tags {
-		padding-bottom: 80px;
+		padding: 80px 0;
 
 		@include respond-to-screen-size-by-max($sm) {
 			padding-bottom: 40px;
@@ -5651,6 +5666,7 @@ footer .footer-drop-links i {
 			.discount-title {
 				font-size: 12px;
 				font-weight: 500;
+				line-height: 6px;
 			}
 			.cart-item-price {
         gap: 10px;
@@ -5761,8 +5777,8 @@ footer .footer-drop-links i {
           box-shadow: none
         }
         .quantity-dropdown {
-          opacity: 0;
-          // display: none;
+          // opacity: 0;
+          display: none;
           position: absolute;
           top: 55px;
           left: 50%;
@@ -5770,15 +5786,15 @@ footer .footer-drop-links i {
           flex-direction: column;
           background-color: #fff;
           border: 1px solid #D9D9D9;
-          z-index: 0;
+          z-index: 90;
           border-radius: 8px;
           min-width: 300px;
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
 					overflow: clip;
           &.opened {
-            // display: flex;
-						opacity: 1;
-						z-index: 90;
+            display: flex;
+						// opacity: 1;
+						// z-index: 90;
           }
           &::before {
             position: absolute;
@@ -10240,20 +10256,111 @@ nav {
 }
 
 .art-category-page {
+	.seciton-content {
+		position: relative;
+	}
+	.title-sticker {
+		position: static;
+		@include respond-to-screen-size-by-max($sm) {
+			position: relative;
+		}
+		font-weight: 400;
+		.customize {
+			display: inline-flex;
+			align-items: center;
+			column-gap: 5px;
+			color: $sy-blue;
+			cursor: pointer;
+			.underline {
+				text-decoration: underline;
+			}
+		}
+	}
+	.customize_tooltip {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		top: 80px;
+		left: 0;
+		right: 0;
+		padding: 24px;
+		border-radius: 16px;
+		background-color: #fff;
+		border: 1px solid #F2F2F2;
+		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+		@include respond-to-screen-size-by-max($md) {
+			top: 100px;
+		}
+		@include respond-to-screen-size-by-max($sm) {
+			top: 75px;
+			width: 95%;
+			left: 2.5%;
+		}
+		.steps {
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			row-gap: 20px;
+			width: 100%;
+			
+			.step {
+				flex: 0 0 33.3333%;
+				position: relative;
+				@include respond-to-screen-size-by-max($sm) {
+					flex: 1 0 33.3333%;
+				}
+				&:nth-of-type(1)::after, &:nth-of-type(2)::after {
+					position: absolute;
+					content: '';
+					top: 50%;
+					right: 0;
+					width: 60px;
+					height: 50px;
+					margin-top: -25px;
+					background-image: url('../img/always-say-yes-arrow.png');
+					background-repeat: no-repeat;
+					background-size: contain;
+					z-index: 100;
+					@include respond-to-screen-size-by-max($lg) {
+						display: none;
+					}
+				}
+			}
+			.step_title {
+				display: flex;
+				align-items: start;
+				gap: 5px;
+				.num {
+					display: inline-block;
+					background-color: #FFF0DA;
+					border-radius: 50%;
+					min-width: 42px;
+					height: 42px;
+					text-align: center;
+					line-height: 42px;
+				}
+			}
+		}
+	}
 	.custom-stickers {
 		.prod-grid {
 			.col-6 {
 				margin-bottom: 1rem;
 			}
-
-			a {
-				// margin-bottom: 15px;
+			.custom-stickers_sticker {
+				display: block;
+				border: 1px solid #E0E0E0;
+				border-radius: 16px;
+				overflow: clip;
 				height: 100%;
 			}
 		}
 
 		h4 {
 			font-size: 16px !important;
+			line-height: 24px;
 			text-align: left;
 			margin: 0;
 			padding: 15px;
@@ -10270,7 +10377,7 @@ nav {
 	}
 
 	.row.host {
-		gap: 15px
+		// gap: 15px
 	}
 }
 
@@ -10959,6 +11066,14 @@ nav {
 		color: #FFFFFF;
 		margin-top: 40px;
 		margin-bottom: 15px;
+		&.outline {
+			background-color: #fff;
+			border: 1px solid $sy-blue;
+			color: $sy-blue
+		}
+		@include respond-to-screen-size-by-max($sm) {
+			font-size: 16px;
+		}
 	}
 
 	.beer_product {
@@ -11200,7 +11315,7 @@ nav {
 			padding: 12px;
 			border-radius: 0px 0px 16px 16px;
 			background-color: #fff;
-			height: 200px;
+			min-height: 200px;
 
 			span {
 				font-weight: 500;
@@ -11333,6 +11448,11 @@ nav {
 		width: 100%;
 		display: none;
 		transition: all 5s ease-in-out;
+		a.outline {
+			background-color: #fff;
+			color: $sy-blue;
+			border: 1px solid $sy-blue;
+		}
 	}
 
 	.video_container {

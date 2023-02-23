@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="plugins/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="plugins/glide-3.4.1/dist/css/glide.core.min.css">
-
+  <!-- Slick css -->
+  <link rel="stylesheet" href="css/slick.min.css" />
+  <link rel="stylesheet" href="css/slick-theme.min.css" />
   <link rel="stylesheet" href="css/styles.css">
 
 
@@ -41,1564 +43,1569 @@
     </div> -->
 
   <!-- Start Header -->
-  <header class="page-header container-fluid">
-  <div class="container">
-    <div class="row d-flex justify-content-center flex-column flex-sm-row">
+  <header class="page-header container-fluid" style="top: 0 !important">
+    <div class="container">
+      <div class="row d-flex justify-content-center flex-column flex-sm-row">
 
-      <!-- Mobile Nav Toggle -->
-      <nav 
-        class="d-none primary-nav desktop mobile navbar navbar-expand-lg fixed-top-right navbar-light">
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-          data-target="#navbarNavMobileMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-icon-line line-1"></span>
-          <span class="navbar-icon-line line-2"></span>
-          <span class="navbar-icon-line line-3"></span>
-        </button>
-      </nav>
-
-      <!-- Logo -->
-        <span class="logo">
-          <a href="#"><img src="img/sylogo-2x.png" alt="StickerYou Custom Stickers" /></a>
-        </span>
-
-      <div class="nav-group col d-flex align-items-center flex-wrap ml-sm-4">
-
-        <!-- Seacrh -->
-        <div class="search input-group">
-          <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
-          <div class="input-group-append">
-            <span class="input-group-text"><i class="fas fa-search"></i></span>
-          </div>
-        </div>
-
-        <!-- Secondary Nav -->
-        <div class="secondary-nav d-flex align-items-center flex-wrap flex-sm-nowrap justify-content-center">
-          <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-outline-primary">Get a
-              Quote</button></a>
-          <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-primary">Create Now</button></a>
-          <div class="currency dropdown show mx-2">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <span class="label active font-weight-400">Hi, Vivian <i class="fa fa-angle-down pl-1"></i></span>
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
-              <a class="dropdown-item currency-style" href="#">
-                <span class="label active">My Account</span>
-              </a>
-              <a class="dropdown-item currency-style" href="#">
-                <span class="label">Order History</span></a>
-              <a class="dropdown-item currency-style" href="#">
-                <span class="label">Logout</span></a>
-            </div>
-          </div>
-
-          <div class="currency dropdown show mx-2">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img class="flag" src="img/Currency/flag-usd.png" width="21" height="15" alt="USD" />
-              <span class="label active font-weight-400">USD <i class="fa fa-angle-down pl-1"></i></span>
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
-              <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png"
-                  width="21" height="15" alt="USD" />
-                <span class="label active">USD</span>
-              </a>
-              <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png"
-                  width="21" height="15" alt="CAD" />
-                <span class="label">CAD</span></a>
-              <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png"
-                  width="21" height="15" alt="GBP" />
-                <span class="label">GBP</span></a>
-              <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png"
-                  width="21" height="15" alt="AUD" />
-                <span class="label">AUD</span></a>
-              <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png"
-                  width="21" height="15" alt="EUR" />
-                <span class="label">EUR</span></a>
-            </div>
-          </div>
-
-          <div class="cart mx-2">
-            <a href="#"><img src="img/online-shopping-cart.png" alt="shopping cart"><span class="num">2</span></a>
-          </div>
-        </div>
-
-        <!-- primary Nav -->
-        <nav class="primary-nav navbar navbar-expand-lg fixed-top-right navbar-light pl-0">
-          <!-- Nav Toggler -- No Need For it
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <!-- Mobile Nav Toggle -->
+        <nav class="d-none primary-nav desktop mobile navbar navbar-expand-lg fixed-top-right navbar-light">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavMobileMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-icon-line line-1"></span>
+            <span class="navbar-icon-line line-2"></span>
+            <span class="navbar-icon-line line-3"></span>
           </button>
-          <!-- Nav Toggler -->
+        </nav>
 
-          <div class="collapse navbar-collapse show flex-column flex-sm-row" id="navbarNavAltMarkup">
-            <!-- Dropdown #1 -->
-            <div class="dropdown">
-              <a class="shop " href="#" role="button" id="dropdownShopLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">All Products
-                <i class="fa fa-angle-down pl-1"></i>
+
+        <div class="nav-group col d-flex align-items-center flex-wrap ml-sm-4">
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#"><img src="img/sylogo-2x.png" alt="StickerYou Custom Stickers" /></a>
+          </div>
+
+          <!-- Seacrh -->
+          <div class="search input-group pt-2 px-4">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+
+          <!-- Secondary Nav -->
+          <div class="secondary-nav d-flex align-items-center flex-wrap flex-md-nowrap justify-content-center pt-2">
+            <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-outline-primary">Get a
+                Quote</button></a>
+            <a href="#" class="mx-2 mb-2 mb-sm-0"><button class="btn btn-primary">Create Now</button></a>
+            <!-- Account dropdown -->
+            <div class="currency dropdown show mx-2 d-none">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="label active font-weight-400">Hi, Vivian <i class="fa fa-angle-down pl-1"></i></span>
               </a>
 
-              <div class="dropdown-menu" aria-labelledby="dropdownShopLink">
-                <div class="row">
-                  <!-- LIST #1 -->
-                  <div class="col-12 col-sm-6 col-lg-3 menu_list">
-                    <h4>Shop By Product</h4>
+              <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
+                <a class="dropdown-item currency-style" href="#">
+                  <span class="label active">My Account</span>
+                </a>
+                <a class="dropdown-item currency-style" href="#">
+                  <span class="label">Order History</span></a>
+                <a class="dropdown-item currency-style" href="#">
+                  <span class="label">Logout</span></a>
+              </div>
+            </div>
+            <!-- Currency dropdown -->
+            <div class="currency dropdown show mx-2">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="flag" src="img/Currency/flag-usd.png" width="21" height="15" alt="USD" />
+                <span class="label active font-weight-400">USD <i class="fa fa-angle-down pl-1"></i></span>
+              </a>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="stickers" class="" href="#">Stickers <i class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #1 (STICKERS)-->
-                      <div class="dropdown-secondary-menu" id="stickers">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop by Format</h4>
-                            <a class="dropdown-item" href="#">Die-Cut Sticker Singles</a>
-                            <a class="dropdown-item" href="#">Die-Cut Sticker Pages</a>
-                            <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
-                            <a class="dropdown-item" href="#">Sticker Rolls</a>
-                            <a class="dropdown-item" href="#">Transfer Sickers</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Stickers</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            <h4>Shop by Material</h4>
-                            <a class="dropdown-item" href="#">Custom Vinyl Stickers</a>
-                            <a class="dropdown-item" href="#">Clear Stickers</a>
-                            <a class="dropdown-item" href="#">Permenant Stickers</a>
-                            <a class="dropdown-item" href="#">Matte Stickers</a>
-                            <a class="dropdown-item" href="#">Holographic Sickers</a>
-                            <a class="dropdown-item" href="#">Glitter Sickers</a>
-                            <a class="dropdown-item" href="#">Scratch and sniff Sickers</a>
-                            <a class="dropdown-item" href="#">Reflective Sickers</a>
-                            <a class="dropdown-item" href="#">Waterproof Sickers</a>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Other Sticker Products</h4>
-                            <a class="dropdown-item" href="#">Browse Art For Sticker Pages</a>
-                            <a class="dropdown-item" href="#">Photo Stickers</a>
-                            <a class="dropdown-item" href="#">Car Decals & Stickers</a>
-                            <a class="dropdown-item" href="#">Sports & Helmet Sickers</a>
-                            <a class="dropdown-item" href="#">Business Sickers</a>
-                            <a class="dropdown-item" href="#">Shape Sickers</a>
-                            <a class="dropdown-item" href="#">Calendar Sickers</a>
-                            <a class="dropdown-item" href="#">Door Sickers</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png" width="21"
+                    height="15" alt="USD" />
+                  <span class="label active">USD</span>
+                </a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png" width="21"
+                    height="15" alt="CAD" />
+                  <span class="label">CAD</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png" width="21"
+                    height="15" alt="GBP" />
+                  <span class="label">GBP</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png" width="21"
+                    height="15" alt="AUD" />
+                  <span class="label">AUD</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png" width="21"
+                    height="15" alt="EUR" />
+                  <span class="label">EUR</span></a>
+              </div>
+            </div>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="labels" class="" href="#">lables <i class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #1 (STICKERS)-->
-                      <div class="dropdown-secondary-menu" id="labels">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Roll Labels</h4>
-                            <a class="dropdown-item" href="#">Durable Roll Labels</a>
-                            <a class="dropdown-item" href="#">Clear Roll Labels</a>
-                            <a class="dropdown-item" href="#">Eco-Safe Paper Roll Labels</a>
-                            <a class="dropdown-item" href="#">Foil Labels</a>
-                            <a class="dropdown-item" href="#">Matte Roll Labels</a>
-                            <a class="dropdown-item" href="#">Paper Roll Labels</a>
-                            <a class="dropdown-item" href="#">Removable Roll Labels</a>
-                            <a class="dropdown-item" href="#">Writable Roll Labels</a>
-                            <a class="dropdown-item" href="#">Shop All Roll Labels</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Labels</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            <h4>Shop By Application</h4>
-                            <a class="dropdown-item" href="#">Water Bottle Labels</a>
-                            <a class="dropdown-item" href="#">Lip Balm Labels</a>
-                            <a class="dropdown-item" href="#">Jar Labels</a>
-                            <a class="dropdown-item" href="#">Wine Labels</a>
-                            <a class="dropdown-item" href="#">Beer Labels</a>
-                            <a class="dropdown-item" href="#">Honey Labels</a>
-                            <a class="dropdown-item" href="#">Kids Labels</a>
-                            <a class="dropdown-item" href="#">Packing Tape</a>
-                            <a class="dropdown-item" href="#">Candle Labels</a>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Other Label Products</h4>
-                            <a class="dropdown-item" href="#">White Labels</a>
-                            <a class="dropdown-item" href="#">Clear Labels</a>
-                            <a class="dropdown-item" href="#">Product Labels</a>
-                            <a class="dropdown-item" href="#">Food & Drink Labels</a>
-                            <a class="dropdown-item" href="#">Business Labels</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="cart mx-2">
+              <!-- <a href="#"><img src="img/online-shopping-cart.png" alt="shopping cart"><span class="num">2</span></a> -->
+              <a href="/account/login" title="Login" class="btn btn-circ btn-circ-user-profile">&nbsp;</a>
+              <a href="/cart" title="Your shopping cart" class="btn btn-circ btn-circ-cart">
+                <span id="cart-counter" class="num d-none">0</span>
+              </a>
+            </div>
+          </div>
 
+          <!-- primary Nav -->
+          <nav class="primary-nav navbar navbar-expand-lg fixed-top-right navbar-light pl-0">
+            <!-- Nav Toggler -- No Need For it
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- Nav Toggler -->
 
-                    <div class="dropdown-item sub">
-                      <a data-show="decals" class="" href="#">Decals <i class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #4 (Decals)-->
-                      <div class="dropdown-secondary-menu" id="decals">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-4 menu_list border-none">
-                            <h4>Shop Wall Decals</h4>
-                            <a class="dropdown-item" href="#">Logo Custom Wall Decals</a>
-                            <a class="dropdown-item" href="#">Clear Wall Decals</a>
-                            <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
-                            <a class="dropdown-item" href="#">Vinyl Wall Lettering</a>
-                            <a class="dropdown-item" href="#">Vinyl Wall Graphics</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Stickers</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-4 menu_list border-none ">
-                            <h4>Shop Window Decals</h4>
-                            <a class="dropdown-item" href="#">Clear Window Decals</a>
-                            <a class="dropdown-item" href="#">Vinyl Window Lettering</a>
-                            <a class="dropdown-item" href="#">Vinyl Window Graphics</a>
-                            <a class="dropdown-item" href="#">Frosted Window Decals</a>
-                            <a class="dropdown-item" href="#">Car Window Decals</a>
-                            <a class="dropdown-item" href="#">Window Clings</a>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-4 menu_list border-none">
-                            <h4>Shop Floor Decals</h4>
-                            <a class="dropdown-item" href="#">Indoor Floor Decals</a>
-                            <a class="dropdown-item" href="#">Outdoor Street Decals</a>
-                            <h4 class="mt-4">Shop Floor Decals</h4>
-                            <a class="dropdown-item" href="#">Outdoor Decals</a>
-                            <a class="dropdown-item" href="#">Car Decals</a>
-                            <a class="dropdown-item" href="#">Phone Skins</a>
-                            <a class="dropdown-item" href="#">Dry Erase Wall Decals</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="collapse navbar-collapse show flex-column flex-sm-row" id="navbarNavAltMarkup">
+              <!-- Dropdown #1 -->
+              <div class="dropdown">
+                <a class="shop " href="#" role="button" id="dropdownShopLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">All Products
+                  <i class="fa fa-angle-down pl-1"></i>
+                </a>
 
+                <div class="dropdown-menu" aria-labelledby="dropdownShopLink">
+                  <div class="row">
+                    <!-- LIST #1 -->
+                    <div class="col-12 col-sm-6 col-lg-3 menu_list">
+                      <h4>Shop By Product</h4>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="temporary-tattoos" class="" href="#">Temporary Tattoos <i
-                          class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
-                      <div class="dropdown-secondary-menu" id="temporary-tattoos">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Tattoos</h4>
-                            <a class="dropdown-item" href="#">Custom Temporary Tattoo</a>
-                            <a class="dropdown-item" href="#">Speciality Temporary Tattoo</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Tattoos</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            <h4>Custom Temp Tattoo</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
-                                </a>
-                              </div>
-                              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
-                            </div>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>SpecialityTemp Tattoo</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
-                                </a>
-                              </div>
-                              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="dropdown-item sub">
-                      <a data-show="iron-on" class="" href="#">Iron-On Transfers <i class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #5 (Iron-On)-->
-                      <div class=" dropdown-secondary-menu" id="iron-on">
-                        <div class="row">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Solid Iron-Ons</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100"
-                                    src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
-                                    alt="Solid Iron-ons">
-                                </a>
-                              </div>
-                              <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                      <div class="dropdown-item sub">
+                        <a data-show="stickers" class="" href="#">Stickers <i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #1 (STICKERS)-->
+                        <div class="dropdown-secondary-menu" id="stickers">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop by Format</h4>
+                              <a class="dropdown-item" href="#">Die-Cut Sticker Singles</a>
+                              <a class="dropdown-item" href="#">Die-Cut Sticker Pages</a>
+                              <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
+                              <a class="dropdown-item" href="#">Sticker Rolls</a>
+                              <a class="dropdown-item" href="#">Transfer Sickers</a>
                               <div class="btn-box">
-                                <button class="btn btn-outline-primary abs"><a href="#">See All Iron-Ons</a></button>
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Stickers</a></button>
                               </div>
                             </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            <h4>Iron-On Labels</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Iron-On Labels">
-                                </a>
-                              </div>
-                              <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+                              <h4>Shop by Material</h4>
+                              <a class="dropdown-item" href="#">Custom Vinyl Stickers</a>
+                              <a class="dropdown-item" href="#">Clear Stickers</a>
+                              <a class="dropdown-item" href="#">Permenant Stickers</a>
+                              <a class="dropdown-item" href="#">Matte Stickers</a>
+                              <a class="dropdown-item" href="#">Holographic Sickers</a>
+                              <a class="dropdown-item" href="#">Glitter Sickers</a>
+                              <a class="dropdown-item" href="#">Scratch and sniff Sickers</a>
+                              <a class="dropdown-item" href="#">Reflective Sickers</a>
+                              <a class="dropdown-item" href="#">Waterproof Sickers</a>
                             </div>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Iron-On Lettering Transfers</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg"
-                                    alt="Lettering Transfers">
-                                </a>
-                              </div>
-                              <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Other Sticker Products</h4>
+                              <a class="dropdown-item" href="#">Browse Art For Sticker Pages</a>
+                              <a class="dropdown-item" href="#">Photo Stickers</a>
+                              <a class="dropdown-item" href="#">Car Decals & Stickers</a>
+                              <a class="dropdown-item" href="#">Sports & Helmet Sickers</a>
+                              <a class="dropdown-item" href="#">Business Sickers</a>
+                              <a class="dropdown-item" href="#">Shape Sickers</a>
+                              <a class="dropdown-item" href="#">Calendar Sickers</a>
+                              <a class="dropdown-item" href="#">Door Sickers</a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="magnet" class="" href="#">Magnet<i
-                          class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
-                      <div class="dropdown-secondary-menu" id="magnet">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Magnets</h4>
-                            <a class="dropdown-item" href="#">Car Magnets</a>
-                            <a class="dropdown-item" href="#">Fridge Magnets</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Magnets</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            
-
-                            <h4>Car Magnets</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/CustomCarMagnets.jpg" alt="Custom Car Magnets">
-                                </a>
+                      <div class="dropdown-item sub">
+                        <a data-show="labels" class="" href="#">lables <i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #1 (STICKERS)-->
+                        <div class="dropdown-secondary-menu" id="labels">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Roll Labels</h4>
+                              <a class="dropdown-item" href="#">Durable Roll Labels</a>
+                              <a class="dropdown-item" href="#">Clear Roll Labels</a>
+                              <a class="dropdown-item" href="#">Eco-Safe Paper Roll Labels</a>
+                              <a class="dropdown-item" href="#">Foil Labels</a>
+                              <a class="dropdown-item" href="#">Matte Roll Labels</a>
+                              <a class="dropdown-item" href="#">Paper Roll Labels</a>
+                              <a class="dropdown-item" href="#">Removable Roll Labels</a>
+                              <a class="dropdown-item" href="#">Writable Roll Labels</a>
+                              <a class="dropdown-item" href="#">Shop All Roll Labels</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Labels</a></button>
                               </div>
-                              <p>Super durable and thicker magnets that will stay strong and last long on any vehicle.</p>
                             </div>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Fridge Magnets</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/CustomMagnets_2.jpg" alt="Custom Magnets">
-                                </a>
-                              </div>
-                              <p>Order custom magnets in any shape and size, in quantities as low as 1 magnet.</p>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+                              <h4>Shop By Application</h4>
+                              <a class="dropdown-item" href="#">Water Bottle Labels</a>
+                              <a class="dropdown-item" href="#">Lip Balm Labels</a>
+                              <a class="dropdown-item" href="#">Jar Labels</a>
+                              <a class="dropdown-item" href="#">Wine Labels</a>
+                              <a class="dropdown-item" href="#">Beer Labels</a>
+                              <a class="dropdown-item" href="#">Honey Labels</a>
+                              <a class="dropdown-item" href="#">Kids Labels</a>
+                              <a class="dropdown-item" href="#">Packing Tape</a>
+                              <a class="dropdown-item" href="#">Candle Labels</a>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Other Label Products</h4>
+                              <a class="dropdown-item" href="#">White Labels</a>
+                              <a class="dropdown-item" href="#">Clear Labels</a>
+                              <a class="dropdown-item" href="#">Product Labels</a>
+                              <a class="dropdown-item" href="#">Food & Drink Labels</a>
+                              <a class="dropdown-item" href="#">Business Labels</a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="dropdown-item"><a href="#">Patches</a></div>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="packaging-pouches" class="" href="#">Packaging Pouches<i
-                          class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
-                      <div class="dropdown-secondary-menu" id="packaging-pouches">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Packaging Pouches</h4>
-                            <a class="dropdown-item" href="#">Flat Pouches</a>
-                            <a class="dropdown-item" href="#">Stand-Up Pouches</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Pouches</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
-                            <h4>Flat Pouches</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
-                                </a>
+                      <div class="dropdown-item sub">
+                        <a data-show="decals" class="" href="#">Decals <i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #4 (Decals)-->
+                        <div class="dropdown-secondary-menu" id="decals">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-4 menu_list border-none">
+                              <h4>Shop Wall Decals</h4>
+                              <a class="dropdown-item" href="#">Logo Custom Wall Decals</a>
+                              <a class="dropdown-item" href="#">Clear Wall Decals</a>
+                              <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
+                              <a class="dropdown-item" href="#">Vinyl Wall Lettering</a>
+                              <a class="dropdown-item" href="#">Vinyl Wall Graphics</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Stickers</a></button>
                               </div>
-                              <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and customize your labels.</p>
                             </div>
-                          </div>
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Stand-Up Pouches</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
-                                </a>
-                              </div>
-                              <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide variety of pouch colors and sizes, and personalize your labels.</p>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-4 menu_list border-none ">
+                              <h4>Shop Window Decals</h4>
+                              <a class="dropdown-item" href="#">Clear Window Decals</a>
+                              <a class="dropdown-item" href="#">Vinyl Window Lettering</a>
+                              <a class="dropdown-item" href="#">Vinyl Window Graphics</a>
+                              <a class="dropdown-item" href="#">Frosted Window Decals</a>
+                              <a class="dropdown-item" href="#">Car Window Decals</a>
+                              <a class="dropdown-item" href="#">Window Clings</a>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-4 menu_list border-none">
+                              <h4>Shop Floor Decals</h4>
+                              <a class="dropdown-item" href="#">Indoor Floor Decals</a>
+                              <a class="dropdown-item" href="#">Outdoor Street Decals</a>
+                              <h4 class="mt-4">Shop Floor Decals</h4>
+                              <a class="dropdown-item" href="#">Outdoor Decals</a>
+                              <a class="dropdown-item" href="#">Car Decals</a>
+                              <a class="dropdown-item" href="#">Phone Skins</a>
+                              <a class="dropdown-item" href="#">Dry Erase Wall Decals</a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="dropdown-item"><a href="#">Name Badges</a></div>
 
-                    <div class="dropdown-item sub">
-                      <a data-show="static-clings" class="" href="#">Static Clings<i
-                          class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
-                      <div class="dropdown-secondary-menu" id="static-clings">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Static Cling Pages</h4>
-                            <a class="dropdown-item" href="#">Clear Static Clings</a>
-                            <a class="dropdown-item" href="#">White Static Clings</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Clings</a></button>
-                            </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Large Cling Decals</h4>
-                            <a class="dropdown-item" href="#">Clear Static Clings</a>
-                            <a class="dropdown-item" href="#">White Static Clings</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Clings</a></button>
-                            </div>
-                          </div>
-                          
-                          <!-- LIST #3 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Most Popular</h4>
-                            <div class="card">
-                              <div class="img">
-                                <a href="#">
-                                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
-                                </a>
+                      <div class="dropdown-item sub">
+                        <a data-show="temporary-tattoos" class="" href="#">Temporary Tattoos <i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
+                        <div class="dropdown-secondary-menu" id="temporary-tattoos">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Tattoos</h4>
+                              <a class="dropdown-item" href="#">Custom Temporary Tattoo</a>
+                              <a class="dropdown-item" href="#">Speciality Temporary Tattoo</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Tattoos</a></button>
                               </div>
-                              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                            </div>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+                              <h4>Custom Temp Tattoo</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
+                                  </a>
+                                </div>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
+                              </div>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>SpecialityTemp Tattoo</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
+                                  </a>
+                                </div>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="dropdown-item sub mb-5">
-                      <a data-show="yard-signs" class="" href="#">Yard Signs<i
-                          class="fa fa-angle-right"></i></a>
-                      <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
-                      <div class="dropdown-secondary-menu" id="yard-signs">
-                        <div class="row h-100">
-                          <!-- LIST #1 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Make Your Own Yard Sign</h4>
-                            <a class="dropdown-item" href="#">Custom Yard Signs</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Yard Signs</a></button>
+
+                      <div class="dropdown-item sub">
+                        <a data-show="iron-on" class="" href="#">Iron-On Transfers <i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #5 (Iron-On)-->
+                        <div class=" dropdown-secondary-menu" id="iron-on">
+                          <div class="row">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Solid Iron-Ons</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
+                                      alt="Solid Iron-ons">
+                                  </a>
+                                </div>
+                                <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                                <div class="btn-box">
+                                  <button class="btn btn-outline-primary abs"><a href="#">See All
+                                      Iron-Ons</a></button>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <!-- LIST #2 -->
-                          <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
-                            <h4>Shop Yard Sign Templates</h4>
-                            <a class="dropdown-item" href="#">Contractor Yard Signs</a>
-                            <a class="dropdown-item" href="#">Real Estate Yard Signs</a>
-                            <a class="dropdown-item" href="#">Birthday Yard Signs</a>
-                            <a class="dropdown-item" href="#">Wedding Yard Signs</a>
-                            <div class="btn-box">
-                              <button class="btn btn-outline-primary abs"><a href="#">See All Yard Signs</a></button>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+                              <h4>Iron-On Labels</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Iron-On Labels">
+                                  </a>
+                                </div>
+                                <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                              </div>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Iron-On Lettering Transfers</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg"
+                                      alt="Lettering Transfers">
+                                  </a>
+                                </div>
+                                <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="btn-box">
-                      <button class="btn btn-outline-primary abs"><a href="#">See All Products</a></button>
-                    </div>
-                  </div>
-                  <!-- LIST #2 -->
-                  <div class="col-12 col-sm-6 col-lg-3 menu_list">
-                    <h4>Shop By Interest</h4>
-                    <a class="dropdown-item" href="#">Covid-19 Products</a>
-                    <a class="dropdown-item" href="#">Automotives & Mechanics</a>
-                    <a class="dropdown-item" href="#">Beer & Brewing</a>
-                    <a class="dropdown-item" href="#">Cannabis</a>
-                    <a class="dropdown-item" href="#">Coffee & Tea</a>
-                    <a class="dropdown-item" href="#">Contractors</a>
-                    <a class="dropdown-item" href="#">Food & Restaurants</a>
-                    <a class="dropdown-item" href="#">Health & Beauty</a>
-                    <a class="dropdown-item" href="#">Photographers</a>
-                    <div class="btn-box">
-                      <button class="btn btn-outline-primary abs"><a href="#">See All Interests</a></button>
-                    </div>
-                  </div>
-                  <!-- LIST #3 -->
-                  <div class="col-12 col-sm-6 col-lg-3 menu_list">
-                    <h4>StickerYou Library</h4>
-                    <div class="card">
-                      <div class="img">
-                        <a href="#">
-                          <img class="w-100" src="/img/products/the-store.png" alt="The Store">
-                        </a>
+
+                      <div class="dropdown-item sub">
+                        <a data-show="magnet" class="" href="#">Magnet<i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
+                        <div class="dropdown-secondary-menu" id="magnet">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Magnets</h4>
+                              <a class="dropdown-item" href="#">Car Magnets</a>
+                              <a class="dropdown-item" href="#">Fridge Magnets</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Magnets</a></button>
+                              </div>
+                            </div>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+
+
+                              <h4>Car Magnets</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/CustomCarMagnets.jpg" alt="Custom Car Magnets">
+                                  </a>
+                                </div>
+                                <p>Super durable and thicker magnets that will stay strong and last long on any
+                                  vehicle.</p>
+                              </div>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Fridge Magnets</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/CustomMagnets_2.jpg" alt="Custom Magnets">
+                                  </a>
+                                </div>
+                                <p>Order custom magnets in any shape and size, in quantities as low as 1 magnet.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+
+                      <div class="dropdown-item"><a href="#">Patches</a></div>
+
+                      <div class="dropdown-item sub">
+                        <a data-show="packaging-pouches" class="" href="#">Packaging Pouches<i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
+                        <div class="dropdown-secondary-menu" id="packaging-pouches">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Packaging Pouches</h4>
+                              <a class="dropdown-item" href="#">Flat Pouches</a>
+                              <a class="dropdown-item" href="#">Stand-Up Pouches</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Pouches</a></button>
+                              </div>
+                            </div>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none ">
+                              <h4>Flat Pouches</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
+                                  </a>
+                                </div>
+                                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of
+                                  colors and
+                                  customize your labels.</p>
+                              </div>
+                            </div>
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Stand-Up Pouches</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
+                                  </a>
+                                </div>
+                                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays.
+                                  Select from a
+                                  wide variety of pouch colors and sizes, and personalize your labels.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown-item"><a href="#">Name Badges</a></div>
+
+                      <div class="dropdown-item sub">
+                        <a data-show="static-clings" class="" href="#">Static Clings<i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
+                        <div class="dropdown-secondary-menu" id="static-clings">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Static Cling Pages</h4>
+                              <a class="dropdown-item" href="#">Clear Static Clings</a>
+                              <a class="dropdown-item" href="#">White Static Clings</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Clings</a></button>
+                              </div>
+                            </div>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Large Cling Decals</h4>
+                              <a class="dropdown-item" href="#">Clear Static Clings</a>
+                              <a class="dropdown-item" href="#">White Static Clings</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Clings</a></button>
+                              </div>
+                            </div>
+
+                            <!-- LIST #3 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Most Popular</h4>
+                              <div class="card">
+                                <div class="img">
+                                  <a href="#">
+                                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
+                                  </a>
+                                </div>
+                                <p>Create your own custom products sith our easy-to-use award winning online editor!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item sub mb-5">
+                        <a data-show="yard-signs" class="" href="#">Yard Signs<i class="fa fa-angle-right"></i></a>
+                        <!-- Dropdown secondary menu #3 (temporary-tattoos)-->
+                        <div class="dropdown-secondary-menu" id="yard-signs">
+                          <div class="row h-100">
+                            <!-- LIST #1 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Make Your Own Yard Sign</h4>
+                              <a class="dropdown-item" href="#">Custom Yard Signs</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard
+                                    Signs</a></button>
+                              </div>
+                            </div>
+                            <!-- LIST #2 -->
+                            <div class="col-12 col-sm-6 col-lg-4 menu_list border-none">
+                              <h4>Shop Yard Sign Templates</h4>
+                              <a class="dropdown-item" href="#">Contractor Yard Signs</a>
+                              <a class="dropdown-item" href="#">Real Estate Yard Signs</a>
+                              <a class="dropdown-item" href="#">Birthday Yard Signs</a>
+                              <a class="dropdown-item" href="#">Wedding Yard Signs</a>
+                              <div class="btn-box">
+                                <button class="btn btn-outline-primary abs"><a href="#">See All Yard
+                                    Signs</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <div class="btn-box">
-                        <button class="btn btn-outline-primary abs"><a href="#">Visit Store</a></button>
+                        <button class="btn btn-outline-primary abs"><a href="#">See All Products</a></button>
                       </div>
                     </div>
-                  </div>
-                  <!-- LIST #4 -->
-                  <div class="col-12 col-sm-6 col-lg-3 menu_list">
-                    <h4>Sticker Maker</h4>
-                    <div class="card">
-                      <div class="img">
-                        <a href="#">
-                          <img class="w-100" src="/img/products/clings@2x.jpg" alt="Sticker Maker">
-                        </a>
-                      </div>
-                      <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                    <!-- LIST #2 -->
+                    <div class="col-12 col-sm-6 col-lg-3 menu_list">
+                      <h4>Shop By Interest</h4>
+                      <a class="dropdown-item" href="#">Covid-19 Products</a>
+                      <a class="dropdown-item" href="#">Automotives & Mechanics</a>
+                      <a class="dropdown-item" href="#">Beer & Brewing</a>
+                      <a class="dropdown-item" href="#">Cannabis</a>
+                      <a class="dropdown-item" href="#">Coffee & Tea</a>
+                      <a class="dropdown-item" href="#">Contractors</a>
+                      <a class="dropdown-item" href="#">Food & Restaurants</a>
+                      <a class="dropdown-item" href="#">Health & Beauty</a>
+                      <a class="dropdown-item" href="#">Photographers</a>
                       <div class="btn-box">
-                        <button class="btn btn-outline-primary abs"><a href="#">Create Now</a></button>
+                        <button class="btn btn-outline-primary abs"><a href="#">See All Interests</a></button>
                       </div>
                     </div>
-                  </div>
+                    <!-- LIST #3 -->
+                    <div class="col-12 col-sm-6 col-lg-3 menu_list">
+                      <h4>StickerYou Library</h4>
+                      <div class="card">
+                        <div class="img">
+                          <a href="#">
+                            <img class="w-100" src="/img/products/the-store.png" alt="The Store">
+                          </a>
+                        </div>
+                        <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                        <div class="btn-box">
+                          <button class="btn btn-outline-primary abs"><a href="#">Visit Store</a></button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- LIST #4 -->
+                    <div class="col-12 col-sm-6 col-lg-3 menu_list">
+                      <h4>Sticker Maker</h4>
+                      <div class="card">
+                        <div class="img">
+                          <a href="#">
+                            <img class="w-100" src="/img/products/clings@2x.jpg" alt="Sticker Maker">
+                          </a>
+                        </div>
+                        <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                        <div class="btn-box">
+                          <button class="btn btn-outline-primary abs"><a href="#">Create Now</a></button>
+                        </div>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown"><a href="#">Custom Stickers</a></div>
+              <div class="dropdown"><a href="#">Custom Labels</a></div>
+              <div class="dropdown"><a href="#">Custom Decals</a></div>
+              <div class="dropdown"><a href="#">Temporary Tattoos</a></div>
+              <div class="dropdown"><a href="#">Iron-Ons</a></div>
+              <div class="dropdown"><a href="#">Magnets</a></div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+
+
+      <div class="d-none search mobile input-group my-3">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu collapse navbar-collapse" id="navbarNavMobileMarkup">
+      <!-- toggle icon -->
+      <div class="toggle-icon">
+        <!-- Mobile Nav Toggle -->
+        <nav aria-label="" class="primary-nav mobile navbar navbar-expand-lg fixed-top-right navbar-light">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavMobileMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-icon-line line-1"></span>
+            <span class="navbar-icon-line line-2"></span>
+            <span class="navbar-icon-line line-3"></span>
+          </button>
+        </nav>
+        <!-- Customer Name -->
+        <div class="w-100 ml-2">
+          <span class="font-weight-400">Hi, Vivian</span>
+        </div>
+        <!-- cart -->
+        <div class="cart mx-4">
+          <a href="#"><img src="img/online-shopping-cart.png" alt=""><span class="num">2</span></a>
+        </div>
+      </div>
+      <!-- toggle icon -->
+
+      <!-- Search -->
+      <div class="search sidemenu mobile input-group my-3">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+
+
+
+      <!-- Menu Links -->
+      <div class="menu-links w-100">
+        <!-- icon grid -->
+        <div class="grid-icon-container">
+          <div class="grid-icon">
+            <a href="#">
+              <img class="custom" src="img/top/custom.png" alt="custom stickers" />
+              <span>
+                Custom stickers
+              </span>
+            </a>
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/labels.png" alt="labels" />
+              <span>
+                Labels
+              </span>
+            </a>
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/decals.png" alt="decals" />
+              <span>
+                Decals
+              </span>
+            </a>
+
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/tattoos.png" alt="tattoos" />
+              <span>
+                Tattoos
+              </span>
+            </a>
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/iron-ons.png" alt="iron-ons" />
+              <span>
+                Iron-ons
+              </span>
+            </a>
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/Pouches.png" alt="Pouches" />
+              <span>
+                Pouches
+              </span>
+            </a>
+          </div>
+          <div class="grid-icon">
+            <a href="#">
+              <img src="img/top/the-store.png" alt="Art-store" />
+              <span>
+                Art Store
+              </span>
+            </a>
+          </div>
+
+        </div>
+        <!-- Item #1 -->
+        <div class="menu-item menu-cat">
+
+          <a class="shop" href="#mobileShopMenu" role="button" style="font-weight: 400;">
+            All Products <i class="fa fa-angle-right"></i>
+          </a>
+
+          <!-- Mobile SideBar Menu -->
+          <div id="mobileShopMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Main Menu</a>
+            </div>
+            <!-- Back to main menu -->
+
+            <!-- LIST #1 -->
+            <div class="menu_list">
+              <h4>Shop By Product</h4>
+              <a class="dropdown-item" href="#StickersSubMenu">Stickers <i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#LabelsSubMenu">Labels <i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#TattoosSubMenu">Temporary Tattoos <i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#DecalsSubMenu">Decals <i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#IronOnSubMenu">Iron-On Transfers <i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#MagnetsSubMenu">Magnets<i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#">Patches</a>
+              <a class="dropdown-item" href="#PouchesSubMenu">Packaging Pouches<i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#">Name Badges</a>
+              <a class="dropdown-item" href="#ClingsSubMenu">Static Clings<i class="fa fa-angle-right"></i></a>
+              <a class="dropdown-item" href="#YardSignsSubMenu">Yard Signs<i class="fa fa-angle-right"></i></a>
+              <button class="btn btn-outline-primary"><a href="#">See All Products</a></button>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list">
+              <h4>Shop By Interest</h4>
+              <a class="dropdown-item" href="#">Covid-19 Products</a>
+              <a class="dropdown-item" href="#">Automotives & Mechanics</a>
+              <a class="dropdown-item" href="#">Beer & Brewing</a>
+              <a class="dropdown-item" href="#">Cannabis</a>
+              <a class="dropdown-item" href="#">Coffee & Tea</a>
+              <a class="dropdown-item" href="#">Contractors</a>
+              <a class="dropdown-item" href="#">Food & Restaurants</a>
+              <a class="dropdown-item" href="#">Health & Beauty</a>
+              <a class="dropdown-item" href="#">Photographers</a>
+              <button class="btn btn-outline-primary"><a href="#">See All Interests</a></button>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list">
+              <h4>StickerYou Library</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/the-store.png" alt="The Store">
+                  </a>
+                </div>
+                <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
+                <button class="btn btn-outline-primary"><a href="#">Visit Store</a></button>
+              </div>
+            </div>
+            <!-- LIST #4 -->
+            <div class="menu_list">
+              <h4>Sticker Maker</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/clings@2x.jpg" alt="Sticker Maker">
+                  </a>
+                </div>
+                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
+                <button class="btn btn-outline-primary"><a href="#">Create Now</a></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile SideBar SubMenu #1 (STICKERS)-->
+          <div id="StickersSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
+
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop by Format</h4>
+              <a class="dropdown-item" href="#">Die-Cut Sticker Singles</a>
+              <a class="dropdown-item" href="#">Die-Cut Sticker Pages</a>
+              <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
+              <a class="dropdown-item" href="#">Sticker Rolls</a>
+              <a class="dropdown-item" href="#">Transfer Sickers</a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none ">
+              <h4>Shop by Material</h4>
+              <a class="dropdown-item" href="#">Custom Vinyl Stickers</a>
+              <a class="dropdown-item" href="#">Clear Stickers</a>
+              <a class="dropdown-item" href="#">Permenant Stickers</a>
+              <a class="dropdown-item" href="#">Matte Stickers</a>
+              <a class="dropdown-item" href="#">Holographic Sickers</a>
+              <a class="dropdown-item" href="#">Glitter Sickers</a>
+              <a class="dropdown-item" href="#">Scratch and sniff Sickers</a>
+              <a class="dropdown-item" href="#">Reflective Sickers</a>
+              <a class="dropdown-item" href="#">Waterproof Sickers</a>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Other Sticker Products</h4>
+              <a class="dropdown-item" href="#">Browse Art For Sticker Pages</a>
+              <a class="dropdown-item" href="#">Photo Stickers</a>
+              <a class="dropdown-item" href="#">Car Decals & Stickers</a>
+              <a class="dropdown-item" href="#">Sports & Helmet Sickers</a>
+              <a class="dropdown-item" href="#">Business Sickers</a>
+              <a class="dropdown-item" href="#">Shape Sickers</a>
+              <a class="dropdown-item" href="#">Calendar Sickers</a>
+              <a class="dropdown-item" href="#">Door Sickers</a>
+              <button class="btn btn-outline-primary"><a href="#">See All Stickers</a></button>
+            </div>
+          </div>
+
+          <!-- Mobile SideBar SubMenu #2 (Labels)-->
+          <div id="LabelsSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
+
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Roll Labels</h4>
+              <a class="dropdown-item" href="#">Durable Roll Labels</a>
+              <a class="dropdown-item" href="#">Clear Roll Labels</a>
+              <a class="dropdown-item" href="#">Eco-Safe Paper Roll Labels</a>
+              <a class="dropdown-item" href="#">Foil Labels</a>
+              <a class="dropdown-item" href="#">Matte Roll Labels</a>
+              <a class="dropdown-item" href="#">Paper Roll Labels</a>
+              <a class="dropdown-item" href="#">Removable Roll Labels</a>
+              <a class="dropdown-item" href="#">Writable Roll Labels</a>
+              <a class="dropdown-item" href="#">Shop All Roll Labels</a>
+              <button class="btn btn-outline-primary"><a href="#">See All Labels</a></button>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none ">
+              <h4>Shop By Application</h4>
+              <a class="dropdown-item" href="#">Water Bottle Labels</a>
+              <a class="dropdown-item" href="#">Lip Balm Labels</a>
+              <a class="dropdown-item" href="#">Jar Labels</a>
+              <a class="dropdown-item" href="#">Wine Labels</a>
+              <a class="dropdown-item" href="#">Beer Labels</a>
+              <a class="dropdown-item" href="#">Honey Labels</a>
+              <a class="dropdown-item" href="#">Kids Labels</a>
+              <a class="dropdown-item" href="#">Packing Tape</a>
+              <a class="dropdown-item" href="#">Candle Labels</a>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Other Label Products</h4>
+              <a class="dropdown-item" href="#">White Labels</a>
+              <a class="dropdown-item" href="#">Clear Labels</a>
+              <a class="dropdown-item" href="#">Product Labels</a>
+              <a class="dropdown-item" href="#">Food & Drink Labels</a>
+              <a class="dropdown-item" href="#">Business Labels</a>
+            </div>
+          </div>
+
+          <!-- Mobile SideBar SubMenu #3 (Tattoos)-->
+          <div id="TattoosSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
+
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Tattoos</h4>
+              <a class="dropdown-item" href="#">Custom Temporary Tattoo</a>
+              <a class="dropdown-item" href="#">Speciality Temporary Tattoo</a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none ">
+              <h4>Custom Temp Tattoo</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="dropdown"><a href="#">Custom Stickers</a></div>
-            <div class="dropdown"><a href="#">Custom Labels</a></div>
-            <div class="dropdown"><a href="#">Custom Decals</a></div>
-            <div class="dropdown"><a href="#">Temporary Tattoos</a></div>
-            <div class="dropdown"><a href="#">Iron-Ons</a></div>
-            <div class="dropdown"><a href="#">Magnets</a></div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <div class="d-none search mobile input-group my-3">
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
-      <div class="input-group-append">
-        <span class="input-group-text"><i class="fas fa-search"></i></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu collapse navbar-collapse" id="navbarNavMobileMarkup">
-    <!-- toggle icon -->
-    <div class="toggle-icon">
-      <!-- Mobile Nav Toggle -->
-      <nav aria-label="" class="primary-nav mobile navbar navbar-expand-lg fixed-top-right navbar-light">
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-          data-target="#navbarNavMobileMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-icon-line line-1"></span>
-          <span class="navbar-icon-line line-2"></span>
-          <span class="navbar-icon-line line-3"></span>
-        </button>
-      </nav>
-      <!-- Customer Name -->
-      <div class="w-100 ml-2">
-        <span class="font-weight-400">Hi, Vivian</span>
-      </div>
-      <!-- cart -->
-      <div class="cart mx-4">
-        <a href="#"><img src="img/online-shopping-cart.png" alt=""><span class="num">2</span></a>
-      </div>
-    </div>
-    <!-- toggle icon -->
-
-    <!-- Search -->
-    <div class="search sidemenu mobile input-group my-3">
-      <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
-      <div class="input-group-append">
-        <span class="input-group-text"><i class="fas fa-search"></i></span>
-      </div>
-    </div>
-
-
-
-    <!-- Menu Links -->
-    <div class="menu-links w-100">
-      <!-- icon grid -->
-      <div class="grid-icon-container">
-        <div class="grid-icon">
-          <a href="#">
-            <img class="custom" src="img/top/custom.png" alt="custom stickers" />
-            <span>
-              Custom stickers
-            </span>
-          </a>
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/labels.png" alt="labels" />
-            <span>
-              Labels
-            </span>
-          </a>
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/decals.png" alt="decals" />
-            <span>
-              Decals
-            </span>
-          </a>
-          
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/tattoos.png" alt="tattoos" />
-            <span>
-              Tattoos
-            </span>
-          </a>
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/iron-ons.png" alt="iron-ons" />
-            <span>
-              Iron-ons
-            </span>
-          </a>
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/Pouches.png" alt="Pouches" />
-            <span>
-              Pouches
-            </span>
-          </a>
-        </div>
-        <div class="grid-icon">
-          <a href="#">
-            <img src="img/top/the-store.png" alt="Art-store" />
-            <span>
-              Art Store
-            </span>
-          </a>
-        </div>
-        
-      </div>
-      <!-- Item #1 -->
-      <div class="menu-item menu-cat">
-
-        <a class="shop" href="#mobileShopMenu" role="button" style="font-weight: 400;">
-          All Products <i class="fa fa-angle-right"></i>
-        </a>
-
-        <!-- Mobile SideBar Menu -->
-        <div id="mobileShopMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Main Menu</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list">
-            <h4>Shop By Product</h4>
-            <a class="dropdown-item" href="#StickersSubMenu">Stickers <i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#LabelsSubMenu">Labels <i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#TattoosSubMenu">Temporary Tattoos <i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#DecalsSubMenu">Decals <i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#IronOnSubMenu">Iron-On Transfers <i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#MagnetsSubMenu">Magnets<i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#">Patches</a>
-            <a class="dropdown-item" href="#PouchesSubMenu">Packaging Pouches<i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#">Name Badges</a>
-            <a class="dropdown-item" href="#ClingsSubMenu">Static Clings<i class="fa fa-angle-right"></i></a>
-            <a class="dropdown-item" href="#YardSignsSubMenu">Yard Signs<i class="fa fa-angle-right"></i></a>
-            <button class="btn btn-outline-primary"><a href="#">See All Products</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list">
-            <h4>Shop By Interest</h4>
-            <a class="dropdown-item" href="#">Covid-19 Products</a>
-            <a class="dropdown-item" href="#">Automotives & Mechanics</a>
-            <a class="dropdown-item" href="#">Beer & Brewing</a>
-            <a class="dropdown-item" href="#">Cannabis</a>
-            <a class="dropdown-item" href="#">Coffee & Tea</a>
-            <a class="dropdown-item" href="#">Contractors</a>
-            <a class="dropdown-item" href="#">Food & Restaurants</a>
-            <a class="dropdown-item" href="#">Health & Beauty</a>
-            <a class="dropdown-item" href="#">Photographers</a>
-            <button class="btn btn-outline-primary"><a href="#">See All Interests</a></button>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list">
-            <h4>StickerYou Library</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/the-store.png" alt="The Store">
-                </a>
-              </div>
-              <p>Browse through our marketplace of trendy and artist collaboration stickers</p>
-              <button class="btn btn-outline-primary"><a href="#">Visit Store</a></button>
-            </div>
-          </div>
-          <!-- LIST #4 -->
-          <div class="menu_list">
-            <h4>Sticker Maker</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/clings@2x.jpg" alt="Sticker Maker">
-                </a>
-              </div>
-              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
-              <button class="btn btn-outline-primary"><a href="#">Create Now</a></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile SideBar SubMenu #1 (STICKERS)-->
-        <div id="StickersSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop by Format</h4>
-            <a class="dropdown-item" href="#">Die-Cut Sticker Singles</a>
-            <a class="dropdown-item" href="#">Die-Cut Sticker Pages</a>
-            <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
-            <a class="dropdown-item" href="#">Sticker Rolls</a>
-            <a class="dropdown-item" href="#">Transfer Sickers</a>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none ">
-            <h4>Shop by Material</h4>
-            <a class="dropdown-item" href="#">Custom Vinyl Stickers</a>
-            <a class="dropdown-item" href="#">Clear Stickers</a>
-            <a class="dropdown-item" href="#">Permenant Stickers</a>
-            <a class="dropdown-item" href="#">Matte Stickers</a>
-            <a class="dropdown-item" href="#">Holographic Sickers</a>
-            <a class="dropdown-item" href="#">Glitter Sickers</a>
-            <a class="dropdown-item" href="#">Scratch and sniff Sickers</a>
-            <a class="dropdown-item" href="#">Reflective Sickers</a>
-            <a class="dropdown-item" href="#">Waterproof Sickers</a>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Other Sticker Products</h4>
-            <a class="dropdown-item" href="#">Browse Art For Sticker Pages</a>
-            <a class="dropdown-item" href="#">Photo Stickers</a>
-            <a class="dropdown-item" href="#">Car Decals & Stickers</a>
-            <a class="dropdown-item" href="#">Sports & Helmet Sickers</a>
-            <a class="dropdown-item" href="#">Business Sickers</a>
-            <a class="dropdown-item" href="#">Shape Sickers</a>
-            <a class="dropdown-item" href="#">Calendar Sickers</a>
-            <a class="dropdown-item" href="#">Door Sickers</a>
-            <button class="btn btn-outline-primary"><a href="#">See All Stickers</a></button>
-          </div>
-        </div>
-
-        <!-- Mobile SideBar SubMenu #2 (Labels)-->
-        <div id="LabelsSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Roll Labels</h4>
-            <a class="dropdown-item" href="#">Durable Roll Labels</a>
-            <a class="dropdown-item" href="#">Clear Roll Labels</a>
-            <a class="dropdown-item" href="#">Eco-Safe Paper Roll Labels</a>
-            <a class="dropdown-item" href="#">Foil Labels</a>
-            <a class="dropdown-item" href="#">Matte Roll Labels</a>
-            <a class="dropdown-item" href="#">Paper Roll Labels</a>
-            <a class="dropdown-item" href="#">Removable Roll Labels</a>
-            <a class="dropdown-item" href="#">Writable Roll Labels</a>
-            <a class="dropdown-item" href="#">Shop All Roll Labels</a>
-            <button class="btn btn-outline-primary"><a href="#">See All Labels</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none ">
-            <h4>Shop By Application</h4>
-            <a class="dropdown-item" href="#">Water Bottle Labels</a>
-            <a class="dropdown-item" href="#">Lip Balm Labels</a>
-            <a class="dropdown-item" href="#">Jar Labels</a>
-            <a class="dropdown-item" href="#">Wine Labels</a>
-            <a class="dropdown-item" href="#">Beer Labels</a>
-            <a class="dropdown-item" href="#">Honey Labels</a>
-            <a class="dropdown-item" href="#">Kids Labels</a>
-            <a class="dropdown-item" href="#">Packing Tape</a>
-            <a class="dropdown-item" href="#">Candle Labels</a>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Other Label Products</h4>
-            <a class="dropdown-item" href="#">White Labels</a>
-            <a class="dropdown-item" href="#">Clear Labels</a>
-            <a class="dropdown-item" href="#">Product Labels</a>
-            <a class="dropdown-item" href="#">Food & Drink Labels</a>
-            <a class="dropdown-item" href="#">Business Labels</a>
-          </div>
-        </div>
-
-        <!-- Mobile SideBar SubMenu #3 (Tattoos)-->
-        <div id="TattoosSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Tattoos</h4>
-            <a class="dropdown-item" href="#">Custom Temporary Tattoo</a>
-            <a class="dropdown-item" href="#">Speciality Temporary Tattoo</a>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none ">
-            <h4>Custom Temp Tattoo</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Custom Temp Tattoo">
-                </a>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>SpecialityTemp Tattoo</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Speciality Temp Tattoo">
+                  </a>
+                </div>
+                <button class="btn btn-outline-primary"><a href="#">See All Tattoos</a></button>
               </div>
             </div>
           </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>SpecialityTemp Tattoo</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Speciality Temp Tattoo">
-                </a>
-              </div>
-              <button class="btn btn-outline-primary"><a href="#">See All Tattoos</a></button>
+
+          <!-- Mobile SideBar SubMenu #4 (Decals)-->
+          <div id="DecalsSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
+
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Wall Decals</h4>
+              <a class="dropdown-item" href="#">Logo Custom Wall Decals</a>
+              <a class="dropdown-item" href="#">Clear Wall Decals</a>
+              <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
+              <a class="dropdown-item" href="#">Vinyl Wall Lettering</a>
+              <a class="dropdown-item" href="#">Vinyl Wall Graphics</a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none ">
+              <h4>Shop Window Decals</h4>
+              <a class="dropdown-item" href="#">Clear Window Decals</a>
+              <a class="dropdown-item" href="#">Vinyl Window Lettering</a>
+              <a class="dropdown-item" href="#">Vinyl Window Graphics</a>
+              <a class="dropdown-item" href="#">Frosted Window Decals</a>
+              <a class="dropdown-item" href="#">Car Window Decals</a>
+              <a class="dropdown-item" href="#">Window Clings</a>
+            </div>
+            <!-- LIST #3 -->
+            <div class=" menu_list border-none">
+              <h4>Shop Floor Decals</h4>
+              <a class="dropdown-item" href="#">Indoor Floor Decals</a>
+              <a class="dropdown-item" href="#">Outdoor Street Decals</a>
+              <h4 class="mt-4">Shop Floor Decals</h4>
+              <a class="dropdown-item" href="#">Outdoor Decals</a>
+              <a class="dropdown-item" href="#">Car Decals</a>
+              <a class="dropdown-item" href="#">Phone Skins</a>
+              <a class="dropdown-item" href="#">Dry Erase Wall Decals</a>
+              <button class="btn btn-outline-primary"><a href="#">See All Decals</a></button>
             </div>
           </div>
-        </div>
 
-        <!-- Mobile SideBar SubMenu #4 (Decals)-->
-        <div id="DecalsSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
+          <!-- Mobile SideBar SubMenu #5 (Iron-on)-->
+          <div id="IronOnSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
 
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Wall Decals</h4>
-            <a class="dropdown-item" href="#">Logo Custom Wall Decals</a>
-            <a class="dropdown-item" href="#">Clear Wall Decals</a>
-            <a class="dropdown-item" href="#">Kiss-Cut Sticker Singles</a>
-            <a class="dropdown-item" href="#">Vinyl Wall Lettering</a>
-            <a class="dropdown-item" href="#">Vinyl Wall Graphics</a>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none ">
-            <h4>Shop Window Decals</h4>
-            <a class="dropdown-item" href="#">Clear Window Decals</a>
-            <a class="dropdown-item" href="#">Vinyl Window Lettering</a>
-            <a class="dropdown-item" href="#">Vinyl Window Graphics</a>
-            <a class="dropdown-item" href="#">Frosted Window Decals</a>
-            <a class="dropdown-item" href="#">Car Window Decals</a>
-            <a class="dropdown-item" href="#">Window Clings</a>
-          </div>
-          <!-- LIST #3 -->
-          <div class=" menu_list border-none">
-            <h4>Shop Floor Decals</h4>
-            <a class="dropdown-item" href="#">Indoor Floor Decals</a>
-            <a class="dropdown-item" href="#">Outdoor Street Decals</a>
-            <h4 class="mt-4">Shop Floor Decals</h4>
-            <a class="dropdown-item" href="#">Outdoor Decals</a>
-            <a class="dropdown-item" href="#">Car Decals</a>
-            <a class="dropdown-item" href="#">Phone Skins</a>
-            <a class="dropdown-item" href="#">Dry Erase Wall Decals</a>
-            <button class="btn btn-outline-primary"><a href="#">See All Decals</a></button>
-          </div>
-        </div>
-
-        <!-- Mobile SideBar SubMenu #5 (Iron-on)-->
-        <div id="IronOnSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Solid Iron-Ons</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg"
-                    alt="Solid Iron-ons">
-                </a>
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Solid Iron-Ons</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/stickeryou_solidironons_squarethumbnail@2x.jpg" alt="Solid Iron-ons">
+                  </a>
+                </div>
+                <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
+                <!-- <button class="btn btn-outline-primary"><a href="#">Go to StickerYouStore.com</a></button> -->
               </div>
-              <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
-              <!-- <button class="btn btn-outline-primary"><a href="#">Go to StickerYouStore.com</a></button> -->
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none">
+              <h4>Iron-On Labels</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Iron-On Labels">
+                  </a>
+                </div>
+                <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
+                <!-- <button class="btn btn-outline-primary"><a href="#">Go to StickerYouStore.com</a></button> -->
+              </div>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Iron-On Lettering Transfers</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#"></a>
+                  <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg" alt="Lettering Transfers">
+                </div>
+                <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
+                <button class="btn btn-outline-primary"><a href="#">See All Iron-Ons</a></button>
+              </div>
             </div>
           </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none">
-            <h4>Iron-On Labels</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Iron-On Labels">
-                </a>
-              </div>
-              <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
-              <!-- <button class="btn btn-outline-primary"><a href="#">Go to StickerYouStore.com</a></button> -->
-            </div>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Iron-On Lettering Transfers</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#"></a>
-                <img class="w-100" src="/img/products/vinylwindowgraphics_squarethumbnail@2x.jpg"
-                  alt="Lettering Transfers">
-              </div>
-              <!-- <p>Browse through our marketplace of trendy and artist collaboration stickers</p> -->
-              <button class="btn btn-outline-primary"><a href="#">See All Iron-Ons</a></button>
-            </div>
-          </div>
-        </div>
 
-        <!-- Mobile SideBar SubMenu #6 (Magnet)-->
-        <div id="MagnetsSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
+          <!-- Mobile SideBar SubMenu #6 (Magnet)-->
+          <div id="MagnetsSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
 
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Magnets</h4>
-            <a class="dropdown-item" href="#">Car Magnets</a>
-            <a class="dropdown-item" href="#">Fridge Magnets</a>
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Magnets</h4>
+              <a class="dropdown-item" href="#">Car Magnets</a>
+              <a class="dropdown-item" href="#">Fridge Magnets</a>
               <button class="btn btn-outline-primary"><a href="#">See All Magnets</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none">
-            <h4>Car Magnets</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/CustomCarMagnets.jpg" alt="Car Magnets">
-                </a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none">
+              <h4>Car Magnets</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/CustomCarMagnets.jpg" alt="Car Magnets">
+                  </a>
+                </div>
+                <p>Super durable and thicker magnets that will stay strong and last long on any vehicle.</p>
               </div>
-              <p>Super durable and thicker magnets that will stay strong and last long on any vehicle.</p>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Fridge Magnets</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#"></a>
+                  <img class="w-100" src="/img/products/CustomMagnets_2.jpg" alt="Fridge Magnets">
+                </div>
+                <p>Order custom magnets in any shape and size, in quantities as low as 1 magnet.</p>
+              </div>
             </div>
           </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Fridge Magnets</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#"></a>
-                <img class="w-100" src="/img/products/CustomMagnets_2.jpg"
-                  alt="Fridge Magnets">
-              </div>
-              <p>Order custom magnets in any shape and size, in quantities as low as 1 magnet.</p>
+
+          <!-- Mobile SideBar SubMenu #7 (Packaging Pouches)-->
+          <div id="PouchesSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
-          </div>
-        </div>
+            <!-- Back to main menu -->
 
-        <!-- Mobile SideBar SubMenu #7 (Packaging Pouches)-->
-        <div id="PouchesSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Packaging Pouches</h4>
-            <a class="dropdown-item" href="#">Flat Pouches</a>
-            <a class="dropdown-item" href="#">Stand-Up Pouches</a>
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Packaging Pouches</h4>
+              <a class="dropdown-item" href="#">Flat Pouches</a>
+              <a class="dropdown-item" href="#">Stand-Up Pouches</a>
               <button class="btn btn-outline-primary"><a href="#">See All Pouches</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none">
-            <h4>Flat Pouches</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
-                </a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none">
+              <h4>Flat Pouches</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/FlatPouches-All-Swatch.jpg" alt="Flat Pouches">
+                  </a>
+                </div>
+                <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and
+                  customize your
+                  labels.</p>
               </div>
-              <p>Flat packaging pouches are perfect for conserving space. Select from a variety of colors and customize your labels.</p>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Stand-Up Pouches</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
+                  </a>
+                </div>
+                <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide
+                  variety of
+                  pouch colors and sizes, and personalize your labels.</p>
+              </div>
             </div>
           </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Stand-Up Pouches</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/StandUpPouches-All-Swatch.jpg" alt="Stand-Up Pouches">
-                </a>
-              </div>
-              <p>Stand-up packaging pouches are perfect for storefront shelves and POP displays. Select from a wide variety of pouch colors and sizes, and personalize your labels.</p>
+
+          <!-- Mobile SideBar SubMenu #8 (Static Clings)-->
+          <div id="ClingsSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
             </div>
-          </div>
-        </div>
+            <!-- Back to main menu -->
 
-        <!-- Mobile SideBar SubMenu #8 (Static Clings)-->
-        <div id="ClingsSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
-
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Shop Static Cling Pages</h4>
-            <a class="dropdown-item" href="#">Clear Static Clings</a>
-            <a class="dropdown-item" href="#">White Static Clings</a>
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Shop Static Cling Pages</h4>
+              <a class="dropdown-item" href="#">Clear Static Clings</a>
+              <a class="dropdown-item" href="#">White Static Clings</a>
               <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none">
-            <h4>Shop Large Cling Decals</h4>
-            <a class="dropdown-item" href="#">Clear Static Clings</a>
-            <a class="dropdown-item" href="#">White Static Clings</a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none">
+              <h4>Shop Large Cling Decals</h4>
+              <a class="dropdown-item" href="#">Clear Static Clings</a>
+              <a class="dropdown-item" href="#">White Static Clings</a>
               <button class="btn btn-outline-primary"><a href="#">See All Clings</a></button>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Most Popular</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Stand-Up Pouches">
-                </a>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Most Popular</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Stand-Up Pouches">
+                  </a>
+                </div>
+                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
               </div>
-              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
             </div>
           </div>
-        </div>
 
-        <!-- Mobile SideBar SubMenu #9 (Yard Signs)-->
-        <div id="YardSignsSubMenu" class="">
-          <!-- Back to main menu -->
-          <div class="backward">
-            <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
-          </div>
-          <!-- Back to main menu -->
+          <!-- Mobile SideBar SubMenu #9 (Yard Signs)-->
+          <div id="YardSignsSubMenu" class="">
+            <!-- Back to main menu -->
+            <div class="backward">
+              <a href="#"><i class="fa fa-angle-left"></i> Shop All</a>
+            </div>
+            <!-- Back to main menu -->
 
-          <!-- LIST #1 -->
-          <div class="menu_list border-none">
-            <h4>Make Your Own Yard Sign</h4>
-            <a class="dropdown-item" href="#">Custom Yard Signs</a>
-            <button class="btn btn-outline-primary"><a href="#">See All Yard Signs</a></button>
-          </div>
-          <!-- LIST #2 -->
-          <div class="menu_list border-none">
-            <h4>Shop Yard Sign Templates</h4>
-            <a class="dropdown-item" href="#">Contractor Yard Signs</a>
-            <a class="dropdown-item" href="#">Real Estate Yard Signs</a>
-            <a class="dropdown-item" href="#">Birthday Yard Signs</a>
-            <a class="dropdown-item" href="#">Wedding Yard Signs</a>
+            <!-- LIST #1 -->
+            <div class="menu_list border-none">
+              <h4>Make Your Own Yard Sign</h4>
+              <a class="dropdown-item" href="#">Custom Yard Signs</a>
               <button class="btn btn-outline-primary"><a href="#">See All Yard Signs</a></button>
-          </div>
-          <!-- LIST #3 -->
-          <div class="menu_list border-none">
-            <h4>Most Popular</h4>
-            <div class="card">
-              <div class="img">
-                <a href="#">
-                  <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Stand-Up Pouches">
-                </a>
+            </div>
+            <!-- LIST #2 -->
+            <div class="menu_list border-none">
+              <h4>Shop Yard Sign Templates</h4>
+              <a class="dropdown-item" href="#">Contractor Yard Signs</a>
+              <a class="dropdown-item" href="#">Real Estate Yard Signs</a>
+              <a class="dropdown-item" href="#">Birthday Yard Signs</a>
+              <a class="dropdown-item" href="#">Wedding Yard Signs</a>
+              <button class="btn btn-outline-primary"><a href="#">See All Yard Signs</a></button>
+            </div>
+            <!-- LIST #3 -->
+            <div class="menu_list border-none">
+              <h4>Most Popular</h4>
+              <div class="card">
+                <div class="img">
+                  <a href="#">
+                    <img class="w-100" src="/img/products/tattoos@2x.jpg" alt="Stand-Up Pouches">
+                  </a>
+                </div>
+                <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
               </div>
-              <p>Create your own custom products sith our easy-to-use award winning online editor!</p>
             </div>
           </div>
-        </div>
 
+        </div>
+      </div>
+
+      <!-- bottom links -->
+      <div class="container-fluid mobile-fluid text-center mb-0 p-0">
+        <div class=" btn-primary-square-container">
+          <div class="btn-primary-square">
+            Create Now
+          </div>
+          <div class="btn-primary-square-grey">
+            Get a Quote
+          </div>
+        </div>
+        <div id="mobile-menu-bottom-buttons">
+          <div id="mobile-menu-account-button" class="menu-item text-center" style="border-bottom: none;">
+            <a class="mobile-menu-account px-5 py-4" href="#" style="border-bottom: none; font-weight: 400;">My
+              Account</a>
+          </div>
+          <div class="menu-item text-center" style="border: none;">
+            <a id="mobile-menu-login-button" class="mobile-menu-login  py-4" href="login.html"
+              style="border-bottom: none; font-weight: bold;  font-weight: 400;">My Account</a>
+          </div>
+          <div class="menu-item text-center" style="border: none;">
+            <a id="mobile-menu-login-button" class="mobile-menu-login  py-4" href="login.html"
+              style="border: none; font-weight: 400;">Log Out</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- bottom links -->
-    <div class="container-fluid mobile-fluid text-center mb-0 p-0">
-      <div class=" btn-primary-square-container">
-        <div class="btn-primary-square">
-          Create Now
-        </div>
-        <div class="btn-primary-square-grey">
-          Get a Quote
-        </div>
-      </div>
-      <div id="mobile-menu-bottom-buttons">
-        <div id="mobile-menu-account-button" class="menu-item text-center" style="border-bottom: none;">
-          <a class="mobile-menu-account px-5 py-4" href="#" style="border-bottom: none; font-weight: 400;">My
-            Account</a>
-        </div>
-        <div class="menu-item text-center" style="border: none;">
-          <a id="mobile-menu-login-button" class="mobile-menu-login  py-4" href="login.html"
-            style="border-bottom: none; font-weight: bold;  font-weight: 400;">My Account</a>
-        </div>
-        <div class="menu-item text-center" style="border: none;">
-          <a id="mobile-menu-login-button" class="mobile-menu-login  py-4" href="login.html"
-            style="border: none; font-weight: 400;">Log Out</a>
-        </div>
-      </div>
+    <div class="scrollmenu d-none">
+      <a href="/products/custom-stickers/335" id="dropdown-18534-Link" class="quote-request">
+        Custom Stickers
+      </a>
+      <a href="/products/custom-labels/654" id="dropdown-18556-Link" class="quote-request">
+        Custom Labels
+      </a>
+      <a href="/products/decals/535" id="dropdown-17209-Link" class="quote-request">
+        Decals
+      </a>
+      <a href="/products/temporary-tattoos/601" id="dropdown-17324-Link" class="quote-request">
+        Temporary Tattoos
+      </a>
+      <a href="/products/iron-on-transfers/616" id="dropdown-18681-Link" class="quote-request">
+        Iron-Ons
+      </a>
+      <a href="/products/magnets/634" id="dropdown-18682-Link" class="quote-request">
+        Magnets
+      </a>
     </div>
-  </div>
-
   </header>
   <!-- End Header -->
 
-  <main class="art-asset">
+  <main class="art-asset product_withoutTemp_page">
 
     <div class="art-asset-page mt-4 mb-5">
-      <!-- breadcrumb -->
-      <nav aria-label="breadcrumb">
-        <div class="container">
-          <ol class="breadcrumb bg-transparent">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item target contracted"><a href="#">StickerYou Products</a></li>
-            <li class="breadcrumb-item target contracted"><a href="#">Custom Stickers</a></li>
-            <li class="breadcrumb-item target contracted"><a href="#">Sticker Art</a></li>
-            <li class="breadcrumb-item current"><a href="#">Unicorn Stickers</a></li>
-          </ol>
-        </div>
-      </nav>
-      <!-- Product -->
-      <div class="product mt-3 mb-5">
-        <div class="container">
-          <!-- Header -->
-          <div class=" d-flex slider-heading flex-wrap text-center text-sm-left position-relative my-3">
-            <h1>Purple Unicorn Sticker</h1>
-            <div class="stars-img">
-              <span class="yotpo-stars review">
-                <span class="ratings">
-                  <span class="review-rating-count">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                  </span>
-                  <span class="review-rating-count-subtext"> 4.93/5</span>
-                  <span id="height-spacer">&nbsp;</span>
-                  <a href="#prod-reviews"><span>1515</span> Reviews</a>
-                </span>
-              </span>
-              </div>
-          </div>  
-          <!-- Product edit section -->
-          <div class="row justify-content-center align-items-stretch flex-wrap">
-            <div class="prod-edit col-12 col-lg-8 d-flex flex-column mb-4 mb-lg-0 p-0">
-              <div class="prod-edit-img flex-grow-1">
-                <img class="w-100" src="/img/products/die-cut-singles/purple_unicorn.png" alt="Purple Unicorn Sticker">
+      <div class="container">
+        <div class="quote_wrapper position-relative row justify-content-center align-items-start flex-wrap">
+          <div class="col-12 col-lg-6 col-sticky">
+            <!-- destop version start -->
+            <div class="art-asset_img d-none d-md-block">
+              <img class="w-100 h-100" src="./img/products/die-cut-singles/purple_unicorn.png" alt="">
+            </div>
+            <!-- destop version end -->
+          </div>
+
+          <div class="quote-calculator col-12 col-lg-6">
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-transparent pl-0 pt-0 mt-3">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item target contracted"><a href="#">StickerYou Products</a></li>
+                <li class="breadcrumb-item  contract"><a href="#">...</a></li>
+                <li class="breadcrumb-item"><a href="#">Custom Stickers</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Die-Cut Stickers</li>
+              </ol>
+            </nav>
+            <!-- breadcrumb -->
+
+            <!-- Header -->
+            <div class=" d-flex slider-heading flex-wrap text-center position-relative">
+              <h1 class="text-left fw_500">Purple Unicorn</h1>
+              <div class="stars_wrap">
+                <div class="star_line">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowHalf_Star.svg" alt="">
+                </div>
+                <div class="reviews_content">
+                  <p>4.93/5</p>
+                  <p>1454 Reviews</p>
+                </div>
               </div>
             </div>
-    
-            <div class="quote-calculator col-12 col-lg-4">
-              <!-- Price & save to cart -->
-              <div class="quote-price row justify-content-between align-items-center  mb-3">
-                <div class="col-7">
-                  <div class="prod-price">
-                    <div class="single-price d-flex align-items-center flex-wrap">
-                      <strong>$2.75</strong>
+            <div class="price_section">
+              <div class="d-flex align-items-center gap_10">
+                <h3 class="fw_500">$13.73</h3>
+                <h6 class="label_price">$2.75 Per Label</h6>
+              </div>
+              <div class="d-flex gap_5">
+                <img src="img/product - without temp/afterPay.svg" alt="">
+                <p>4 payments of $4.75 with</p>
+                <sub><img src="img/product - without temp/help_icon.svg" alt=""></sub>
+              </div>
+            </div>
+            <div class="prod-desc">Make high-quality individually die-cut vinyl stickers in any size, shape and
+              quantity. Our easy proprietary Sticker Maker online technology....<a href="#" class="cta">Learn More</a>
+            </div>
+            <p class="view_product">🔥 <span>23</span> people are viewing this product right now</p>
+            <div class="art-asset_img d-md-block mb-3">
+              <img class="w-100 h-100" src="./img/products/die-cut-singles/purple_unicorn.png" alt="">
+            </div>
+            <div class="size-quantity">
+              <h5>Choose your size and quantity</h5>
+              <div class="choose_quality">
+                <div class="d-flex gap_10 align-items-center">
+                  <div class="form_group">
+                    <span>Width</span>
+                    <input type="text" class="form-control" placeholder="2.00">
+                  </div>
+                  <div class="lock">
+                    <img src="./img/Lock.svg" alt="lock">
+                  </div>
+                  <div class="form_group">
+                    <span>Height</span>
+                    <input type="text" class="form-control" placeholder="2.00">
+                  </div>
+                </div>
+                <div class="d-flex gap_10 align-items-center">
+                  <div class="d-flex gap_10 align-items-center">
+                    <input type="radio" id="button1" name="group" checked>
+                    <label for="button1"></label>
+                    <p>Inches</p>
+                  </div>
+                  <div class="d-flex gap_10 align-items-center">
+                    <input type="radio" id="button2" name="group">
+                    <label for="button2"></label>
+                    <p>centimeters</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator-bg">
+              <div class="list-group">
+                <ul>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input activated-calc-input">
+                    <p class="pl-2 m-0">20 Stickers</p>
+                    <div>
+                      <p class="price pr-2 m-0" data-sticker-price="9.99">$13.73<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">40 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-10%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="17.99">$13.73<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">60 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-26%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="23.49">$21.87<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">80 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-26%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="39.99">$29.16<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0 d-flex gap_10 w-100">100 Stickers
+                      <a class="flex_align most_popular d-none d-md-flex">
+                        <i class="fa fa-angle-left"></i>
+                        Most Popular
+                      </a>
+                    </p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-26%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="54.99">$36.45<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">160 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-37%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="84.75">$50.32<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">200 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-50%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="157.50">$49.00<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">500 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-67%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="289.90">$81.00<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
+                    <p class="pl-2 m-0">2000 Stickers</p>
+                    <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                      <p class="price-discount m-0 mr-3">-69%</p>
+                      <p class="price pr-2 m-0" data-sticker-price="289.90">$154.50<i style="color:#01acdc;"
+                          class="px-1 calc-check fab fa-check hide"></i></p>
+                    </div>
+                  </li>
+                  <div class="custom-calculator-input-wrapper">
+                    <li class="d-flex justify-content-between py-2 align-items-center">
                       <div>
-                        per sticker
-                        <div class="total">$13.75 total</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5 text-right">
-                  <div class="save-to-cart">
-                    <a href="#">
-                      <button class="btn btn-primary py-2 m-auto">
-                        <span class="mr-2">Add to Cart</span> <i class="fa fa-angle-right"></i>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- order & delivery details -->
-              <div class="row">
-                <div class="col">
-                  <div class="order-delivery-details">
-                    <div class="order-in font-weight-bold">Order in the next <span class="time"> 02 <span>hrs</span> : 03 <span>min</span></span></div>
-                  <div class="delivery">
-                    <span class="font-weight-bold">Get this by</span>
-                    : November 7  
-                    <a href="#" data-toggle="tooltip">
-                      See delivery options 
-                      <div class="tooltip bs-tooltip-bottom" role="tooltip">
-                        <div class="tooltip-inner">
-                          <p class="mb-0">November 7 via Express</p>
-                          <p class="mb-0">November 8 via Rush</p>
-                          <p class="mb-0">November 14 via Standard</p>
+                        <div class="calculator-box">
+                          <input id="calculator-custom-input" placeholder="Enter amount" type="number" class="ml-3" min="10"
+                            max="10000" />
+                          <span class="calculator-close-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000" class="bi bi-x"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                          </span>
+                          <!-- Tooltip -->
+                          <div class="tool-tip">
+                            <span class="text">This field is required</span>
+                            <span class="arrow"></span>
+                          </div>
+                          <!-- Tooltip -->
                         </div>
                       </div>
-                    </a> 
-                  </div>
-                </div>
-                </div>
-              </div>
-              <!-- Quote -->
-              <div class="row quote-row mt-3"  id="start-qoute">
-                <div class="qty-list col-12">
-                  <div class="just justify-content-xl-between ">
-                    <div class="col-12 p-0">
-                      <div class="calculator-bg">
-                        <div class="list-group">
-                          <ul>
-                            <li
-                              class="d-flex justify-content-between align-items-center  custom-calulator-input activated-calc-input">
-                              <p class="pl-2 m-0">1 Stickers</p>
-                              <div>
-                                <p class="price pr-2 m-0" data-sticker-price="10.18">$10.18<i style="color:#01acdc;"
-                                    class="px-1 calc-check fab fa-check"></i></p>
-                              </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
-                              <p class="pl-2 m-0">5 Stickers</p>
-                              <div class="discount-price d-flex justify-content-center align-items-center py-1">
-                                <p class="price-discount m-0 mr-3">-13%</p>
-                                <p class="price pr-2 m-0" data-sticker-price="13.99">$17.73<i style="color:#01acdc;"
-                                    class="px-1 calc-check fab fa-check hide"></i></p>
-                              </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
-                              <p class="pl-2 m-0">10 Stickers</p>
-                              <div class="discount-price d-flex justify-content-center align-items-center py-1">
-                                <p class="price-discount m-0 mr-3">-21%</p>
-                                <p class="price pr-2 m-0" data-sticker-price="23.49">$15.04<i style="color:#01acdc;"
-                                    class="px-1 calc-check fab fa-check hide"></i></p>
-                              </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
-                              <p class="pl-2 m-0">50 Stickers</p>
-                              <div class="discount-price d-flex justify-content-center align-items-center py-1">
-                                <p class="price-discount m-0 mr-3">-45%</p>
-                                <p class="price pr-2 m-0" data-sticker-price="15.04">$15.04<i style="color:#01acdc;"
-                                    class="px-1 calc-check fab fa-check hide"></i></p>
-                              </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  custom-calulator-input">
-                              <p class="pl-2 m-0">100 Stickers</p>
-                              <div class="discount-price d-flex justify-content-center align-items-center py-1">
-                                <p class="price-discount m-0 mr-3">-45%</p>
-                                <p class="price pr-2 m-0" data-sticker-price="85.75">$85.75<i style="color:#01acdc;"
-                                    class="px-1 calc-check fab fa-check hide"></i></p>
-                              </div>
-                            </li>
-                            <div class="custom-calculator-input-wrapper">
-                              <li class="d-flex justify-content-between py-2 align-items-center">
-                                <div>
-                                  <div class="calculator-box">
-                                    <input id="calculator-custom-input" type="number" class="ml-3" min="10" max="10000" />
-                                    <span class="calculator-custom-text-helper"> Stickers</span>
-                                    <!-- Tooltip -->
-                                    <div class="tool-tip">
-                                      <span class="text">This field is required</span>
-                                      <span class="arrow"></span>
-                                    </div>
-                                    <!-- Tooltip -->
-                                  </div>
-                                </div>
-                                <div class="discount-price d-flex justify-content-center align-items-center py-1">
-                                  <p class="price-discount m-0 mr-3">-10%</p>
-                                  <p class="price pr-2 m-0 d-flex align-items-center" data-sticker-price="17.99">
-                                    <span>$17.99</span>
-                                    <img src="https://d6ce0no7ktiq.cloudfront.net/images/web/loaders/light.gif"
-                                      class="loader" style="display: none;">
-                                    <i style="color:#01acdc;" class="px-1 calc-check fab fa-check"></i></p>
-                                </div>
-                              </li>
-                            </div>
-                          </ul>
-    
-                          <p id="calculator-custom-qty" class="pl-3 pt-2">Custom Quantity</p>
-                        </div>
+                      <div class="discount-price d-flex justify-content-center align-items-center py-1">
+                        <p class="price-discount m-0 mr-3">-10%</p>
+                        <p class="price pr-2 m-0 d-flex align-items-center" data-sticker-price="17.99">
+                          <span>$17.99</span>
+                          <img src="https://d6ce0no7ktiq.cloudfront.net/images/web/loaders/light.gif" class="loader"
+                            style="display: none;">
+                          <i style="color:#01acdc;" class="px-1 calc-check fab fa-check"></i>
+                        </p>
                       </div>
-    
-                    </div>
-    
+                    </li>
                   </div>
-                </div>
+                </ul>
+
+                <p id="calculator-custom-qty">Custom Quantity</p>
               </div>
-              <!-- info -->
-              <div class="prod-info row my-3">
-                <div class="col-12">
-                  <div class="prod-name d-flex justify-content-between align-items-baseline mb-2">
-                    <h4 class="title mb-0 pr-4 ">Product</h4>
-                    <span class="name">Laminated White Vinyl Removable Semi-Gloss Sticker</span>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="prod-size d-flex align-items-baseline  justify-content-start">
-                    <h4 class="title mb-0 pr-4 ">Size</h4>
-                    <span class="size">2.5' x 3.64'</span>
-                  </div>
-                </div>
-              </div>
-              <!-- edit design button -->
-              <div class="edit-design-btn">
-                <div class="row">
-                  <div class="col">
-                    <a href="">
-                      <button class="btn btn-outline-primary py-2">Customize This</button>
-                    </a>
-                  </div>
-                </div>
+              <div class="business_money">
+                <img src="img/product - without temp/money_business.svg" alt="">
+                <p><span>Save $100</span> per Die-Cut Sticker when You <span>Order 150!</span></p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Product Feature -->
-      <div class="product-feature text-left text-sm-center mb-5">
-        <h2 class="mb-4 text-center">Product Feature</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-113.png" alt="Any Size, shape & quantity">
-              </div>
-              <p class="mb-0 mb-sm-3">Any Size, shape & quantity</p>
+            <div class="product_summary">
+              <h5 class="text-capitalize">Summary</h5>
+              <ul class="productSummary_inner">
+                <li>
+                  <p class="fw_500">Size</p>
+                  <p class="fw_300">2” x 2”</p>
+                </li>
+                <li>
+                  <p class="fw_500">Finish</p>
+                  <p class="fw_300">Gloss</p>
+                </li>
+                <li>
+                  <p class="fw_500">Material</p>
+                  <p class="fw_300">White BOPP</p>
+                </li>
+                <li>
+                  <p class="fw_500">Adhesive</p>
+                  <p class="fw_300">Removable</p>
+                </li>
+                <li>
+                  <p class="fw_500">Quantity</p>
+                  <p class="fw_300">20</p>
+                </li>
+                <li>
+                  <p class="fw_500">Price</p>
+                  <p class="fw_300">USD $13.73</p>
+                </li>
+              </ul>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2  d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-114.png" alt="Bubble-free">
+            <div class="d-flex gap_20 flex-column flex-md-row">
+              <div class="d-flex gap_10">
+                <img src="img/product - without temp/AnySize.svg" alt="">
+                <p class="fw_300">Order in any size,<br>
+                  die-cut shape, and quantity.</p>
               </div>
-              <p class="mb-0 mb-sm-3">Bubble-free</p>
+              <div class="d-flex gap_10">
+                <img src="img/product - without temp/truck.svg" alt="">
+                <p class="fw_300">Receive your order in as little <br> as 4 days.</p>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2  d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-115.png" alt="Sun & water resistant">
+            <div class="order_time">
+              <img src="img/product - without temp/order_time.svg" alt="">
+              <div>
+                <p><a href="">Order in the next 00 hrs : 52 min</a> Get this by:</p>
+                <span>September 20 via Express ••• September 21 via Rush ••• September 26 via Standard</span>
               </div>
-              <p class="mb-0 mb-sm-3">Sun & water resistant</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2  d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-116.png" alt="Dishwasher & microwave safe">
-              </div>
-              <p class="mb-0 mb-sm-3">Dishwasher & microwave safe</p>
+            <div class="flex_align gap_10" id="target-element">
+              <a href="" class="flex_align makeSticker_btn makeSticker__btn text-uppercase">Add to cart</a>
+              <a href="" class="flex_align makeSticker_btn makeSticker__btn outline text-uppercase">Customize <span
+                  class="d-none d-md-block">&nbsp;</span>this</a>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2  d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-117.png" alt="Dishwasher & microwave safe">
+            <!-- <a href="" class="flex_align makeSticker_btn makeSticker__btn" id="target-element">Make Stickers now</a> -->
+            <a href="" class="order_time order__time">
+              <div>
+                <p>Need help creating? Let's get in touch.</p>
+                <span>Our Product Experts are here to assist you with your order free of charge.</span>
               </div>
-              <p class="mb-0 mb-sm-3">Dishwasher & microwave safe</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2  d-flex d-sm-block align-items-center mb-2 mb-sm-0">
-              <div class="icon">
-                <img src="/img/feature icons/group-118.png" alt="Removable without residue">
-              </div>
-              <p class="mb-0 mb-sm-3">Removable without residue</p>
+              <img src="img/product - without temp/right_arrow.svg" alt="">
+            </a>
+            <div id="scroll_btn" class="align-items-center gap_10">
+              <a href="" class="flex_align makeSticker_btn m-0 text-uppercase">Add to cart</a>
+              <a href="" class="flex_align makeSticker_btn m-0 text-uppercase outline">
+                Customize <span class="d-none d-md-block">&nbsp;this</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- TRENDING PRODUCTS -->
-      <section id="trending-products" class="trending-products mb-5 text-center">
+      <!-- reviews wrap start  -->
+      <section class="reviews_wrap">
         <div class="container">
-          <!-- Heading -->
-          <div class="heading text-center mb-5">
-            <h2>Also Available As</h2>
-          </div>
-          <!-- ROW -->
-        <div class="row">
-          <div class="owl-lg-4 owl-carousel owl-theme d-flex ">
-
-            <!-- Card -->
-            <div class="card">
-              <img class="card-img-top" src="img/index/product-slider/Purple-Unicorn-Magnet.webp"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-text">Purple Unicorn Magnet</h4>
-                <span class="price"">From $2.66</span>
+          <div class="reviews_line">
+            <div class="d-flex gap_15 flex-wrap">
+              <h1 class="fw_500">Reviews</h1>
+              <div class="stars_wrap d-flex gap_15 align-items-center">
+                <div class="star_line">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                  <img src="img/product - without temp/yellowHalf_Star.svg" alt="">
+                </div>
+                <div class="reviews_content">
+                  <p>4.93/5</p>
+                  <p>1454 Reviews</p>
+                </div>
               </div>
             </div>
-
-            <!-- Card -->
-            <div class=" card">
-              <img class="card-img-top" src="img/index/product-slider/Purple-Unicorn-Tattoo.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-text">Purple Unicorn Tattoo</h4>
-                <span class="price"">From $2.66</span>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class=" card">
-              <img class="card-img-top" src="img/index/product-slider/Purple-Unicorn-Wine-Label.png"
-                    alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-text">Purple Unicorn Wine Label</h4>
-                <span class="price">From $2.39</span>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class=" card">
-              <img class="card-img-top" src="img/index/product-slider/Purple-Unicorn-Magnet-2.png"
-                        alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-text">Purple Unicorn Magnet</h4>
-                <span class="price"">From $2.86</span>
-              </div>
-            </div>
-            <!-- Card -->
-            <div class=" card">
-              <img class="card-img-top" src="img/index/product-slider/Purple-Unicorn-Magnet-3.png"
-                        alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-text">Purple Unicorn Magnet</h4>
-                <span class="price"">From $2.86</span>
-              </div>
+            <div class="reviews_logo">
+              <img src="img/product - without temp/yot.svg" alt="">
             </div>
           </div>
-        </div>
+          <ul class="comment_box">
+            <li>
+              <div class="reviews_line my-0">
+                <div class="d-flex gap_10 align-items-center">
+                  <img src="img/product - without temp/comment_img.svg" alt="">
+                  <div class="stars_wrap flex-column">
+                    <div class="reviews_content">
+                      <p>April F. <span>Verified Buyer</span></p>
+                    </div>
+                    <div class="star_line mb-0">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <p class="fw_500 date_title">5/14/2021</p>
+              </div>
+              <p class="fw_300 pl-5 mt-md-0 mt-2">Great price, great quality sticker. Best I was able to find on the web.
+              </p>
+            </li>
+            <li>
+              <div class="reviews_line my-0">
+                <div class="d-flex gap_10 align-items-center">
+                  <img src="img/product - without temp/comment_img.svg" alt="">
+                  <div class="stars_wrap">
+                    <div class="reviews_content">
+                      <p>April F. <span>Verified Buyer</span></p>
+                    </div>
+                    <div class="star_line mb-0">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <p class="fw_500 date_title">5/14/2021</p>
+              </div>
+              <p class="fw_300 pl-5 mt-md-0 mt-2">Great price, great quality sticker. Best I was able to find on the web.
+              </p>
+            </li>
+            <li>
+              <div class="reviews_line my-0">
+                <div class="d-flex gap_10 align-items-center">
+                  <img src="img/product - without temp/comment_img.svg" alt="">
+                  <div class="stars_wrap">
+                    <div class="reviews_content">
+                      <p>April F. <span>Verified Buyer</span></p>
+                    </div>
+                    <div class="star_line mb-0">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                      <img src="img/product - without temp/yellowFull_Star.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <p class="fw_500 date_title">5/14/2021</p>
+              </div>
+              <p class="fw_300 pl-5 mt-md-0 mt-2">Great price, great quality sticker. Best I was able to find on the web.
+              </p>
+            </li>
+          </ul>
+          <p class="read_reviews">Read More Reviews</p>
         </div>
       </section>
-      <!-- TRENDING PRODUCTS -->
-
-      <!-- Reviews -->
-      <div class="reviews-content mb-5" id="reviews-content">
-        <div class="container">
-          <div class="heading">
-            <h3>Reviews(1355)</h3>
-          </div>
-  
-          <!-- review inner -->
-          <div class="reviews-container">
-            <!-- box -->
-            <div class="review-box py-4">
-              <div class="head d-flex">
-                <div class="buyer-avatar mr-3">
-                  <img class="avatar" src="/img/anonymous_user.png" alt="">
-                </div>
-                <div class="buyer-info">
-                  <span class="name">John Doe</span>
-                  <span class="status">Verified Buyer</span>
-                  <p class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </p>
-                </div>
-                <div class="date">5/14/2020</div>
-              </div>
-              <div class="body">
-                <p class="review-text">
-                  Great price, great quality sticker. Best I was able to find on the web.
-                </p>
-              </div>
-            </div>
-            <!-- box -->
-            <div class="review-box py-4">
-              <div class="head d-flex">
-                <div class="buyer-avatar mr-3">
-                  <img class="avatar" src="/img/anonymous_user.png" alt="">
-                </div>
-                <div class="buyer-info">
-                  <span class="name">John Doe</span>
-                  <span class="status">Verified Buyer</span>
-                  <p class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </p>
-                </div>
-                <div class="date">5/14/2020</div>
-              </div>
-              <div class="body">
-                <p class="review-text">
-                  Great price, great quality sticker. Best I was able to find on the web.
-                </p>
-              </div>
-            </div>
-            <!-- box -->
-            <div class="review-box py-4">
-              <div class="head d-flex">
-                <div class="buyer-avatar mr-3">
-                  <img class="avatar" src="/img/anonymous_user.png" alt="">
-                </div>
-                <div class="buyer-info">
-                  <span class="name">John Doe</span>
-                  <span class="status">Verified Buyer</span>
-                  <p class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </p>
-                </div>
-                <div class="date">5/14/2020</div>
-              </div>
-              <div class="body">
-                <p class="review-text">
-                  Great price, great quality sticker. Best I was able to find on the web.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- review inner -->
-      </div>
-
-      <!-- Tag -->
+      <!-- reviews wrap end -->
       <div class="related-tags">
         <div class="container">
           <div class="row mb-2 mb-sm-5">
@@ -1631,97 +1638,119 @@
           </div>
         </div>
       </div>
+
+      <!-- custom sticker slick start  -->
+      <section class="custom_sticker">
+        <div class="container">
+          <!-- slick slider start here  -->
+          <h1>Also Available As</h1>
+          <!-- <div class="position-relative"> -->
+          <div class="slick_arrow slick-prev flex_align"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+              <path
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" />
+            </svg></div>
+          <div class="slick_arrow slick-next flex_align"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+              <path
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+            </svg>
+          </div>
+          <!-- </div> -->
+          <!-- <img src="assets/img/prev_arrow.svg" alt="" class="slick-prev">
+              <img src="assets/img/next_arrow.svg" alt="" class="slick-next"> -->
+          <div class="sticker_slick">
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/sticker-cut-signal.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Custom Vinyl Stickers</h5>
+                <span>$1.40 Per Sticker </span>
+                <p>Perfectly cut individual stickers with backing, great for events, merch, and general branding</p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/temp-tattos.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Bumper Stickers</h5>
+                <span>$2.20 Per Sticker</span>
+                <p>Paper laminate labels for cost-effective branding, great for packaging, natural products and cosmetics
+                </p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/solid-iron.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Vinyl Logo Stickers</h5>
+                <span>$2.20 Per Sticker </span>
+                <p>Easily create your own custom branded clothing with premium iron-ons of your designs</p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/floor-decals.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Holographic Die-Cut
+                  Stickers</h5>
+                <span>$1.80 Per Sticker</span>
+                <p>Skin-safe temporary tattoos with your custom designs, great for corporate events, DIY projects, and
+                  product activations</p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/temp-tattos.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Custom Vinyl Stickers</h5>
+                <span>$1.40 Per Sticker </span>
+                <p>Perfectly cut individual stickers with backing, great for events, merch, and general branding</p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/floor-decals.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Bumper Stickers</h5>
+                <span>$2.20 Per Sticker</span>
+                <p>Paper laminate labels for cost-effective branding, great for packaging, natural products and cosmetics
+                </p>
+              </div>
+            </a>
+            <a href="" class="sticker_box">
+              <div class="sticker_img">
+                <img src="./img/index/product-slider/solid-iron.png" alt="">
+              </div>
+              <div class="sticker_detail">
+                <h5>Vinyl Logo Stickers</h5>
+                <span>$2.20 Per Sticker </span>
+                <p>Easily create your own custom branded clothing with premium iron-ons of your designs</p>
+              </div>
+            </a>
+
+          </div>
+          <!-- slick end  -->
+        </div>
+      </section>
+      <!-- custom sticker slick end -->
+
     </div>
-      
-
-
-      
   </main>
 
-  <!-- Modal -->
-  <div class=" modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalTitle" focus
-                                          aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header py-1 bg-light">
-          <h5 class="modal-title text-capitalize" id="exampleModalLongTitle">Order
-            Options</h5>
-          <button type="button" class="close" data-dismiss="modal"
-            aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p class="text-center font-weight-bold">I am making:</p>
-          <div class="row d-flex justify-content-between">
-            <div class="one-design col-sm-6">
-              <div class="d-inline-flex">
-                <input class="mt-1" type="radio" id="same-design"
-                  name="order-option" value="same-design">
-                <label class="text-center" for="same-design">Same design printed on
-                  pages, rolls or hand-outs
-
-                  <img id="same-design-img"
-                    src="./img/stickermaker/HowWillYouOrder_Wizard.png"
-                    alt="How will you order">
-                </label>
-              </div>
-            </div>
-            <div class="many-design col-sm-6">
-              <div class="d-inline-flex">
-                <input class="mt-1" type="radio" id="many-design"
-                  name="order-option" value="many-design">
-                <label class="text-center" for="many-design">More than one design on
-                  a page
-
-                  <img id="many-design-img"
-                    src="./img/stickermaker/HowWillYouOrder_PageMaker.png"
-                    alt="How will you order">
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <button type="button"
-            class="btn btn-primary bg-light font-weight-light text-dark"
-            data-dismiss="modal">CANCEL</button>
-          <button type="button" class="btn btn-primary font-weight-bold">CONTINUE <i
-              class="fas fa-chevron-circle-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Ends -->
-
-
-  <div class=" row-subscribe container-fluid py-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col">
-          <h2 class="h1">Let’s Keep in Touch</h2>
-          <p class="mb-4">Join our email list for exclusive access to the best deals
-            and stickiest news</p>
-
-          <div class="d-flex flex-wrap justify-content-center align-items-start">
-            <input type="email" class="form-control form-control-lg my-3 my-md-0"
-              placeholder="E-mail Address" />
-            <button class="btn btn-default btn-outline-white m-0 ml-md-4">Sign
-              up</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Footer -->
-  <footer class="container-fluid py-5">
+  <footer class=" footerWrap">
     <div class="container">
       <div class="row">
         <nav class="col-md-12 col-lg-12" aria-label="">
           <div class="row">
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block footer-text">
               <h5 class="text-capitalize">Shop Custom Products</h5>
               <li><a href="#">Custom Stickers</a></li>
               <li><a href="#">Labels</a></li>
@@ -1735,7 +1764,7 @@
               <li><a href="#">Yard Signs</a></li>
             </ul>
 
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block  footer-text">
               <h5 class="text-capitalize">Who We Are</h5>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Newsletter</a></li>
@@ -1745,7 +1774,7 @@
               <li><a href="#">Terms of Use</a></li>
               <li><a href="#">Free Samples & Catalog</a></li>
             </ul>
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
+            <ul class="col-12 col-md-6 col-lg-4 col-xl d-none d-md-block  footer-text">
               <h5 class="text-capitalize">Work With Us</h5>
               <li><a href="#">Promo & Reseller</a></li>
               <li><a href="#">Sponsorships</a></li>
@@ -1754,66 +1783,55 @@
               <li><a href="#">Packaging Solutions</a></li>
               <li><a href="#">Contact a Product Expert</a></li>
             </ul>
-            <ul class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block  footer-text">
-              <h5 class="text-capitalize">Support</h5>
-              <li><a href="#">FAQ's</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Art & Design Services</a></li>
-              <li><a href="#">Video Tutorials</a></li>
-              <li><a href="#">Get a Quote</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="col-12 col-md-6 col-xl-4  footer-text mb-3 mb-md-0">
+              <h5 class="text-capitalize">Sign Up to Our Newslettter</h5>
+              <p>Sign up and Recieve Up 10 15% OFF. We will send you updates on our latest product and
+                more. Need to
+                take off?
+                Unsubscribe at any time</p>
+              <form class="subscribe">
+                <input class="form-control" type="email" id="sign-up" placeholder="Email Address">
+                <button type="button" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
 
             <!-- DROPDOWN LINKS -->
-            <div
-              class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a class="shop collapsed" data-toggle="collapse" href="#customProducts"
-                role="button" aria-expanded="false" aria-controls="mobileShopMenu">
+            <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
+              <a class="shop collapsed" data-toggle="collapse" href="#customProducts" role="button" aria-expanded="false"
+                aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Shop Custom Products</h5>
                 <i class="fas fa-chevron-down"></i>
               </a>
               <div id="customProducts" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Custom Stickers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Labels
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Decals
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Temporary Tattoos
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Iron-On Transfers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Patches
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Name Badges
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Magnets
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Packaging Pouches
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Yard Signs
                   </a>
                 </ul>
@@ -1822,41 +1840,33 @@
             <!-- DROPDOWN LINKS -->
 
             <!-- DROPDOWN LINKS -->
-            <div
-              class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a class="shop collapsed" data-toggle="collapse" href="#whoWeAre"
-                role="button" aria-expanded="false" aria-controls="mobileShopMenu">
+            <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
+              <a class="shop collapsed" data-toggle="collapse" href="#whoWeAre" role="button" aria-expanded="false"
+                aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Who We Are</h5>
                 <i class="fas fa-chevron-down"></i>
               </a>
               <div id="whoWeAre" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     About Us
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Newsletter
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     StickerYou Blog
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Careers
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Privacy Policy
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Terms of Use
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Free Samples & Catalog
                   </a>
                 </ul>
@@ -1865,37 +1875,30 @@
             <!-- DROPDOWN LINKS -->
 
             <!-- DROPDOWN LINKS -->
-            <div
-              class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a class="shop collapsed" data-toggle="collapse" href="#workWithUs"
-                role="button" aria-expanded="false" aria-controls="mobileShopMenu">
+            <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
+              <a class="shop collapsed" data-toggle="collapse" href="#workWithUs" role="button" aria-expanded="false"
+                aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Work With Us</h5>
                 <i class="fas fa-chevron-down"></i>
               </a>
               <div id="workWithUs" class="collapse">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Promo & Reseller
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Sponsorships
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Student Discount
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Affiliate Program
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Packaging Solutions
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Contact a Product Expert
                   </a>
                 </ul>
@@ -1904,46 +1907,36 @@
             <!-- DROPDOWN LINKS -->
 
             <!-- DROPDOWN LINKS -->
-            <div
-              class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
-              <a id="a-support" class="shop open" data-toggle="collapse"
-                href="#support" role="button" aria-expanded="false"
+            <div class="col-xs-12 col-md-6 menu-item menu-cat d-md-none footer-drop-links footer-text">
+              <a id="a-support" class="shop" data-toggle="collapse" href="#support" role="button" aria-expanded="false"
                 aria-controls="mobileShopMenu">
                 <h5 class="mt-3 mt-md-0">Support</h5>
-                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
               </a>
               <div id="support" class="collapse show">
                 <ul class="list-unstyled links">
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     FAQ's
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Return Policy
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Pricing
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Shipping
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Art & Design Services
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Video Tutorials
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Get a Quote
                   </a>
-                  <a href="#" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="mobileShopMenu1">
+                  <a href="#" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileShopMenu1">
                     Contact Us
                   </a>
                 </ul>
@@ -1952,99 +1945,137 @@
             <!-- DROPDOWN LINKS -->
           </div>
 
-          <div class="row ">
+          <div class="row">
             <div class="row-social col-xs-12 col-sm-12 col-md-6 d-none d-lg-inline">
-              <ul class="d-flex justify-content-between">
-                <li><img class="d-none d-lg-inline" src="img/verisign.png"
-                    alt="VeriSign Secured" width="80" height="40" /></li>
-                <li><img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal"
-                    width="95" height="24" /></li>
+              <ul class="d-flex justify-content-between footerInside">
+                <li><img class="d-none d-lg-inline" src="img/verisign.png" alt="VeriSign Secured" width="80" height="40" /></li>
+                <li><img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal" width="95" height="24" /></li>
                 <li><img src="img/visa.png" alt="Visa" width="60" height="20" /></li>
-                <li><img src="img/mastercard.png" alt="MasterCard" width="50"
-                    height="32" /></li>
-                <li><img src="img/american-express.png" class="ml-2"
-                    alt="American Express" width="75" height="25" />
+                <li><img src="img/mastercard.png" alt="MasterCard" width="50" height="32" /></li>
+                <li><img src="img/american-express.png" class="ml-2" alt="American Express" width="75" height="25" />
                 </li>
               </ul>
-              <ul class="d-flex">
-                <li><img class="d-lg-none" src="img/verisign.png"
-                    alt="VeriSign Secured" width="80" height="40" /></li>
-                <li><img class="d-lg-none" src="img/paypal.png" alt="PayPal"
-                    width="95" height="24" /></li>
+              <ul class="d-flex d-lg-none">
+                <li><img class="d-lg-none" src="img/verisign.png" alt="VeriSign Secured" width="80" height="40" /></li>
+                <li><img class="d-lg-none" src="img/paypal.png" alt="PayPal" width="95" height="24" />
+                </li>
                 </li>
               </ul>
             </div>
+            <!-- Social links  -->
             <div class="d-none d-lg-inline row-social col-sm-12 col-md-6">
               <ul class="d-flex justify-content-lg-end">
-                <li><a href="https://www.facebook.com/stickeryou" target="_blank"
-                    class="btn btn-circ"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/stickeryou/" target="_blank"
-                    class="btn btn-circ ml-2"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li><a href="https://www.youtube.com/user/StickerYou" target="_blank"
-                    class="btn btn-circ ml-2"><i class="fas fa-youtube-play"></i></a>
-                </li>
-                <li><a href="https://www.pinterest.ca/stickeryou/" target="_blank"
-                    class="btn btn-circ ml-2"><i class="fab fa-pinterest-p"></i></a>
-                </li>
-                <li><a href="https://twitter.com/stickeryou" target="_blank"
-                    class="btn btn-circ ml-2"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/stickeryou" target="_blank" class="btn btn-circ"><i
+                      class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                      class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/user/StickerYou" target="_blank" class="btn btn-circ ml-2"><i
+                      class="fas fa-youtube-play"></i></a></li>
+                <li><a href="https://www.pinterest.ca/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                      class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="https://twitter.com/stickeryou" target="_blank" class="btn btn-circ ml-2"><i
+                      class="fab fa-twitter"></i></a></li>
               </ul>
             </div>
           </div>
 
-          <div
-            class="row-logo d-none d-sm-block d-md-none  col-md-12 col-lg-5 d-flex justify-content-center"
-            style="max-height: 150px;">
-            <div class="mb-3 col-12">
-              <img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal"
-                width="95" height="24" />
-              <img src="img/visa.png" class="ml-2" alt="Visa" width="61"
-                height="20" />
-              <img src="img/mastercard.png" class="ml-2" alt="MasterCard" width="50"
-                height="31" />
-              <img src="img/american-express.png" class="ml-2" alt="American Express"
-                width="75" height="25" />
+          <!-- Support links  -->
+          <div class="support-lg justify-content-between d-none d-xl-flex">
+            <ul class="list-unstyled d-flex justify-content-between align-items-center">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Art & Design Services</a></li>
+              <li><a href="#">Video Tutorials</a></li>
+              <li><a href="#">Get a Quote</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- country dropdown -->
+            <div class="country dropdown show">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="flag" src="img/Currency/flag-usd.png" width="21" height="15" alt="United States" />
+                <span class="label active">United States <i class="fa fa-angle-down pl-1"></i></span>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-usd.png" width="21"
+                    height="15" alt="United States" />
+                  <span class="label active">United States</span>
+                </a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-cad.png" width="21"
+                    height="15" alt="Canada" />
+                  <span class="label">Canada</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-gbd.png" width="21"
+                    height="15" alt="GBP" />
+                  <span class="label">GBP</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-aud.png" width="21"
+                    height="15" alt="AUD" />
+                  <span class="label">AUD</span></a>
+                <a class="dropdown-item currency-style" href="#"><img class="flag" src="img/currency/flag-eur.png" width="21"
+                    height="15" alt="EUR" />
+                  <span class="label">EUR</span></a>
+              </div>
             </div>
+          </div>
+          <!-- Support links  -->
 
-
+          <div class="row-logo d-none d-sm-block d-md-none  col-md-12 col-lg-5 d-flex justify-content-center"
+            style="max-height: 150px;">
+            <div class="my-3 col-12">
+              <img class="d-none d-lg-inline" src="img/paypal.png" alt="PayPal" width="95" height="24" />
+              <img src="img/visa.png" class="ml-2" alt="Visa" width="61" height="20" />
+              <img src="img/mastercard.png" class="ml-2" alt="MasterCard" width="50" height="31" />
+              <img src="img/american-express.png" class="ml-2" alt="American Express" width="75" height="25" />
+            </div>
             <div class="col-lg-12 text-lg-right mr-0 mr-lg-10">
               <!-- <img src="img/american-express.png" class="ml-2 d-none d-lg-inline" alt="American Express" width="75" height="25" /> -->
-              <img class="d-lg-none" src="img/paypal.png" alt="PayPal" width="95"
-                height="24" />
-              <img src="img/verisign.png" class="ml-4" alt="VeriSign Secured"
-                width="100" height="50" />
+              <img class="d-lg-none" src="img/paypal.png" alt="PayPal" width="95" height="24" />
+              <img src="img/verisign.png" class="ml-4" alt="VeriSign Secured" width="100" height="50" />
             </div>
+          </div>
+          <!-- Social links  -->
+          <div class="d-md-none col-12 d-flex justify-content-center mt-3">
+            <ul class="d-flex justify-content-lg-end">
+              <li><a href="https://www.facebook.com/stickeryou" target="_blank" class="btn btn-circ"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/user/StickerYou" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fas fa-youtube-play"></i></a></li>
+              <li><a href="https://www.pinterest.ca/stickeryou/" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-pinterest-p"></i></a></li>
+              <li><a href="https://twitter.com/stickeryou" target="_blank" class="btn btn-circ ml-2"><i
+                    class="fab fa-twitter"></i></a></li>
+            </ul>
           </div>
         </nav>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll to top Button -->
-  <a href="#" class="toTop">
-    <img src="img/arrow-up.png" alt="">
-  </a>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous">
+  <script src=" https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous">
   </script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous">
-  </script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
   <script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
   <script src="plugins/glide-3.4.1/dist/glide.min.js"></script>
 
   <script src="js/scripts.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/slick.min.js"></script>
   <script type="application/ld+json">
     // Google Structered Data 
     {
@@ -2079,6 +2110,113 @@
         }
       }
     }
+  </script>
+
+  <!-- top slick start -->
+  <script>
+    $(document).ready(function () {
+      $('.sticker_slick').slick({
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        centerMode: false,
+        infinite: false,
+        arrows: true,
+
+        nextArrow: '.slick-next',
+        prevArrow: '.slick-prev',
+
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+
+        }, {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3.1,
+            slidesToScroll: 1,
+            infinite: false,
+
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          }
+        }]
+      });
+    });
+  </script>
+
+  <script>
+    // select the target element
+    const targetElement = document.querySelector("#target-element");
+    // select the button
+    const scrollBtn = document.querySelector("#scroll_btn");
+    // create the observer
+    const observer = new IntersectionObserver((entries) => {
+      // check if the target element is intersecting with the viewport
+      if (entries[0].isIntersecting) {
+        // hide the button
+        scrollBtn.style.display = "none";
+      } else {
+        // show the button
+        scrollBtn.style.display = "flex";
+        if (targetElement.getBoundingClientRect().top < scrollBtn.getBoundingClientRect().top) {
+          scrollBtn.style.display = "none";
+        }
+      }
+    });
+
+    // start observing the target element
+    observer.observe(targetElement);
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var makeSticker_btn = $(".makeSticker__btn");
+        var makeSticker_btn_top = makeSticker_btn.offset().top;
+        var makeSticker_btn_height = makeSticker_btn.height();
+        var page_header = $(".page-header");
+        var page_header_height = page_header.height();
+        var page_header_top = page_header.offset().top;
+        var page_header_bottom = page_header_top + page_header_height;
+        var beerLabel_fixed = $(".beerLabel_fixed");
+        var beerLabel_fixed_height = beerLabel_fixed.height();
+        var beerLabel_fixed_top = beerLabel_fixed.offset().top;
+        var beerLabel_fixed_bottom = beerLabel_fixed_top + beerLabel_fixed_height;
+        var footer = $(".footerWrap");
+        var footer_top = footer.offset().top;
+
+        if (page_header_bottom >= (makeSticker_btn_top + (makeSticker_btn_height * 0.5))) {
+          // beerLabel_fixed.addClass("sticky");
+          $(".beerLabel_fixed").fadeIn(200);
+        } else {
+          $(".beerLabel_fixed").fadeOut(200);
+        }
+
+      });
+    });
+  </script>
+  <script>
+    $(window).on("scroll", function () {
+      var footerPosition = $(".footerWrap").offset().top;
+      var currentScroll = $(this).scrollTop();
+      if (currentScroll >= footerPosition) {
+        $(".beerLabel_fixed").addClass("footer-sticky");
+      } else {
+        $(".beerLabel_fixed").removeClass("footer-sticky");
+      }
+    });
+    //Make Product Gallary sticky on top
+    const headerH = $('.page-header').innerHeight();
+    $('.product_withoutTemp_page .col-sticky').css('top', headerH + 48)
   </script>
 
 </body>
